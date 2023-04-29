@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dndmod:block/alder_slab"
+    },
+    "type=double": {
+      "model": "dndmod:block/alder_planks"
+    },
+    "type=top": {
+      "model": "dndmod:block/alder_slab_top"
+    }
+  }
+}

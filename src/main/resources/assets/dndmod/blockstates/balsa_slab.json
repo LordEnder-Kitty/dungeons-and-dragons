@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dndmod:block/balsa_slab"
+    },
+    "type=double": {
+      "model": "dndmod:block/balsa_planks"
+    },
+    "type=top": {
+      "model": "dndmod:block/balsa_slab_top"
+    }
+  }
+}

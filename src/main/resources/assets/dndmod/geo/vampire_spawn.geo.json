@@ -1,0 +1,231 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "VampireSpawn",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "head",
+					"parent": "VampireSpawn",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{
+							"origin": [-4, 24, -4],
+							"size": [8, 8, 8],
+							"uv": {
+								"north": {"uv": [8, 8], "uv_size": [8, 8]},
+								"east": {"uv": [0, 8], "uv_size": [8, 8]},
+								"south": {"uv": [24, 8], "uv_size": [8, 8]},
+								"west": {"uv": [16, 8], "uv_size": [8, 8]},
+								"up": {"uv": [8, 0], "uv_size": [8, 8]},
+								"down": {"uv": [16, 8], "uv_size": [8, -8]}
+							}
+						}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "VampireSpawn",
+					"pivot": [0, 12, 0],
+					"cubes": [
+						{
+							"origin": [-4, 12, -2],
+							"size": [8, 12, 4],
+							"uv": {
+								"north": {"uv": [4, 20], "uv_size": [8, 12]},
+								"east": {"uv": [0, 20], "uv_size": [4, 12]},
+								"south": {"uv": [16, 20], "uv_size": [8, 12]},
+								"west": {"uv": [12, 20], "uv_size": [4, 12]},
+								"up": {"uv": [4, 16], "uv_size": [8, 4]},
+								"down": {"uv": [12, 20], "uv_size": [8, -4]}
+							}
+						}
+					]
+				},
+				{
+					"name": "rightarm",
+					"parent": "VampireSpawn",
+					"pivot": [-4, 22, 0]
+				},
+				{
+					"name": "upperhalf",
+					"parent": "rightarm",
+					"pivot": [-4, 22, 0],
+					"cubes": [
+						{
+							"origin": [-8, 18, -2],
+							"size": [4, 6, 4],
+							"uv": {
+								"north": {"uv": [28, 20], "uv_size": [4, 6]},
+								"east": {"uv": [24, 20], "uv_size": [4, 6]},
+								"south": {"uv": [36, 20], "uv_size": [4, 6]},
+								"west": {"uv": [32, 20], "uv_size": [4, 6]},
+								"up": {"uv": [28, 16], "uv_size": [4, 4]},
+								"down": {"uv": [32, 20], "uv_size": [4, -4]}
+							}
+						}
+					]
+				},
+				{
+					"name": "lowerhalf",
+					"parent": "rightarm",
+					"pivot": [-6, 18, 2],
+					"cubes": [
+						{
+							"origin": [-8, 12, -2],
+							"size": [4, 6, 4],
+							"uv": {
+								"north": {"uv": [28, 26], "uv_size": [4, 6]},
+								"east": {"uv": [24, 26], "uv_size": [4, 6]},
+								"south": {"uv": [36, 26], "uv_size": [4, 6]},
+								"west": {"uv": [32, 26], "uv_size": [4, 6]},
+								"up": {"uv": [28, 16], "uv_size": [4, 4]},
+								"down": {"uv": [32, 20], "uv_size": [4, -4]}
+							}
+						}
+					]
+				},
+				{
+					"name": "leftarm",
+					"parent": "VampireSpawn",
+					"pivot": [4, 22, 0]
+				},
+				{
+					"name": "upperhalf2",
+					"parent": "leftarm",
+					"pivot": [4, 22, 0],
+					"cubes": [
+						{
+							"origin": [4, 18, -2],
+							"size": [4, 6, 4],
+							"uv": {
+								"north": {"uv": [4, 36], "uv_size": [4, 6]},
+								"east": {"uv": [0, 36], "uv_size": [4, 6]},
+								"south": {"uv": [12, 36], "uv_size": [4, 6]},
+								"west": {"uv": [8, 36], "uv_size": [4, 6]},
+								"up": {"uv": [4, 32], "uv_size": [4, 4]},
+								"down": {"uv": [8, 36], "uv_size": [4, -4]}
+							}
+						}
+					]
+				},
+				{
+					"name": "lowerhalf2",
+					"parent": "leftarm",
+					"pivot": [6, 18, 2],
+					"cubes": [
+						{
+							"origin": [4, 12, -2],
+							"size": [4, 6, 4],
+							"uv": {
+								"north": {"uv": [4, 42], "uv_size": [4, 6]},
+								"east": {"uv": [0, 42], "uv_size": [4, 6]},
+								"south": {"uv": [12, 42], "uv_size": [4, 6]},
+								"west": {"uv": [8, 42], "uv_size": [4, 6]},
+								"up": {"uv": [4, 32], "uv_size": [4, 4]},
+								"down": {"uv": [8, 36], "uv_size": [4, -4]}
+							}
+						}
+					]
+				},
+				{
+					"name": "rightleg",
+					"parent": "VampireSpawn",
+					"pivot": [-2, 12, 0]
+				},
+				{
+					"name": "upperhalf3",
+					"parent": "rightleg",
+					"pivot": [-2, 12, 0],
+					"cubes": [
+						{
+							"origin": [-4, 6, -2],
+							"size": [4, 6, 4],
+							"uv": {
+								"north": {"uv": [20, 36], "uv_size": [4, 6]},
+								"east": {"uv": [16, 36], "uv_size": [4, 6]},
+								"south": {"uv": [28, 36], "uv_size": [4, 6]},
+								"west": {"uv": [24, 36], "uv_size": [4, 6]},
+								"up": {"uv": [20, 32], "uv_size": [4, 4]},
+								"down": {"uv": [24, 36], "uv_size": [4, -4]}
+							}
+						}
+					]
+				},
+				{
+					"name": "lowerhalf3",
+					"parent": "rightleg",
+					"pivot": [-2, 6, -2],
+					"cubes": [
+						{
+							"origin": [-4, 0, -2],
+							"size": [4, 6, 4],
+							"uv": {
+								"north": {"uv": [20, 42], "uv_size": [4, 6]},
+								"east": {"uv": [16, 42], "uv_size": [4, 6]},
+								"south": {"uv": [28, 42], "uv_size": [4, 6]},
+								"west": {"uv": [24, 42], "uv_size": [4, 6]},
+								"up": {"uv": [20, 32], "uv_size": [4, 4]},
+								"down": {"uv": [24, 36], "uv_size": [4, -4]}
+							}
+						}
+					]
+				},
+				{
+					"name": "leftleg",
+					"parent": "VampireSpawn",
+					"pivot": [2, 12, 0]
+				},
+				{
+					"name": "upperhalf4",
+					"parent": "leftleg",
+					"pivot": [2, 12, 0],
+					"cubes": [
+						{
+							"origin": [0, 6, -2],
+							"size": [4, 6, 4],
+							"uv": {
+								"north": {"uv": [36, 4], "uv_size": [4, 6]},
+								"east": {"uv": [32, 4], "uv_size": [4, 6]},
+								"south": {"uv": [44, 4], "uv_size": [4, 6]},
+								"west": {"uv": [40, 4], "uv_size": [4, 6]},
+								"up": {"uv": [36, 0], "uv_size": [4, 4]},
+								"down": {"uv": [40, 4], "uv_size": [4, -4]}
+							}
+						}
+					]
+				},
+				{
+					"name": "lowerhalf4",
+					"parent": "leftleg",
+					"pivot": [2, 6, -2],
+					"cubes": [
+						{
+							"origin": [0, 0, -2],
+							"size": [4, 6, 4],
+							"uv": {
+								"north": {"uv": [36, 10], "uv_size": [4, 6]},
+								"east": {"uv": [32, 10], "uv_size": [4, 6]},
+								"south": {"uv": [44, 10], "uv_size": [4, 6]},
+								"west": {"uv": [40, 10], "uv_size": [4, 6]},
+								"up": {"uv": [36, 0], "uv_size": [4, 4]},
+								"down": {"uv": [40, 4], "uv_size": [4, -4]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

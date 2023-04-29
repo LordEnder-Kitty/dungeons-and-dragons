@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "dndmod:block/silver_block",
+    "side": "dndmod:block/silver_block",
+    "top": "dndmod:block/silver_block"
+  }
+}

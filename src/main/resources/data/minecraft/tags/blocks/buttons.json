@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:ash_button",
+    "dndmod:alder_button",
+    "dndmod:balsa_button"
+  ]
+}

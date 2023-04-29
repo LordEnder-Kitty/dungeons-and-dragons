@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "dndmod:block/balsa_planks",
+    "side": "dndmod:block/balsa_planks",
+    "top": "dndmod:block/balsa_planks"
+  }
+}

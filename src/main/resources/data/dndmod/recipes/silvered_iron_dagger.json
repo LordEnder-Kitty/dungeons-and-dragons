@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "dndmod:iron_dagger"
+  },
+  "addition": {
+    "item": "dndmod:silver_ingot"
+  },
+  "result": {
+    "item": "dndmod:silvered_iron_dagger"
+  }
+}

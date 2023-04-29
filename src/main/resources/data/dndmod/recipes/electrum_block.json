@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "dndmod:electrum_ingot"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "dndmod:electrum_block"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XO",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "X": {
+      "item": "minecraft:map"
+    },
+    "O": {
+      "item": "minecraft:compass"
+    }
+  },
+  "result": {
+    "item": "dndmod:sdventuring_table"
+  }
+}

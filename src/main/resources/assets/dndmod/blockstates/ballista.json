@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dndmod:block/ballista"
+    },
+    "facing=south": {
+      "model": "dndmod:block/ballista",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dndmod:block/ballista",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "dndmod:block/ballista",
+      "y": 90
+    }
+  }
+}

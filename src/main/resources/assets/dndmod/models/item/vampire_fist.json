@@ -1,0 +1,95 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "dndmod:item/vampire_fist",
+		"particle": "dndmod:item/vampire_fist"
+	},
+	"elements": [
+		{
+			"from": [8, -1.875, 8.375],
+			"to": [8, -1.125, 9.375],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0.5, 8.875]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 1], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 0, 1, 1], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [0, 1, 0, 0], "texture": "#0"},
+				"west": {"uv": [0, 1, 1, 2], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 0, 1], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 1], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, -0.875, 8.375],
+			"to": [8, -0.125, 9.375],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0.5, 8.875]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 1], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [1, 0, 2, 1], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [0, 1, 0, 0], "texture": "#0"},
+				"west": {"uv": [1, 1, 2, 2], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 0, 1], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 1], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 0.125, 8.375],
+			"to": [8, 0.875, 9.375],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0.5, 8.875]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 1], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 2, 1, 3], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [0, 1, 0, 0], "texture": "#0"},
+				"west": {"uv": [2, 0, 3, 1], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 0, 1], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 1], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 1.125, 8.375],
+			"to": [8, 1.875, 9.375],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0.5, 8.875]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 1], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [1, 2, 2, 3], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [0, 1, 0, 0], "texture": "#0"},
+				"west": {"uv": [2, 1, 3, 2], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 0, 1], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 1], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [2, 6, -1.25]
+		},
+		"thirdperson_lefthand": {
+			"translation": [2, 6, -1.25]
+		},
+		"ground": {
+			"rotation": [22.5, 0, 0],
+			"translation": [0, 6.25, 0]
+		},
+		"gui": {
+			"rotation": [180, -90, 180],
+			"translation": [1.5, 12, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"head": {
+			"rotation": [0, 0, -119.25],
+			"translation": [14.5, -6.25, -8.5],
+			"scale": [1.50391, 1.50391, 1.50391]
+		},
+		"fixed": {
+			"translation": [0, 12, -1.75],
+			"scale": [1.50195, 1.50195, 1.50195]
+		}
+	},
+	"groups": [
+		{
+			"name": "fist",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

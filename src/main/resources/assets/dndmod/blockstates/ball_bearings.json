@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dndmod:block/ball_bearings"
+    },
+    "facing=south": {
+      "model": "dndmod:block/ball_bearings",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dndmod:block/ball_bearings",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "dndmod:block/ball_bearings",
+      "y": 90
+    }
+  }
+}

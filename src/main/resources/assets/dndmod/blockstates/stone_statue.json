@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dndmod:block/stone_statue"
+    },
+    "facing=south": {
+      "model": "dndmod:block/stone_statue",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dndmod:block/stone_statue",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "dndmod:block/stone_statue",
+      "y": 90
+    }
+  }
+}

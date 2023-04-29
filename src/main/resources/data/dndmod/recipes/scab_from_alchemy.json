@@ -1,0 +1,11 @@
+{
+  "type": "dndmod:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:rotten_flesh"
+    }
+  ],
+  "output": {
+    "item": "dndmod:scab"
+  }
+}

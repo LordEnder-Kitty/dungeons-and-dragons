@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "platinum_ingot",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "dndmod:raw_platinum"
+  },
+  "result": "dndmod:platinum_ingot"
+}

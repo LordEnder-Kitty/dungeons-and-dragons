@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dndmod:block/silver_slab"
+    },
+    "type=double": {
+      "model": "dndmod:block/silver_block"
+    },
+    "type=top": {
+      "model": "dndmod:block/silver_slab_top"
+    }
+  }
+}

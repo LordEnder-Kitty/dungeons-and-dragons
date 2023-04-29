@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "dndmod:silver_nugget"
+    },
+    "X": {
+      "item": "minecraft:melon_slice"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "dndmod:silver_melon"
+  }
+}

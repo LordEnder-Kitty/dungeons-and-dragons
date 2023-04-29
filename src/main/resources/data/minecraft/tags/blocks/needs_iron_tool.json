@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:silvered_blackstone",
+    "dndmod:electrum_block",
+    "dndmod:raw_electrum_block",
+    "dndmod:electrum_ore",
+    "dndmod:deepslate_electrum_ore",
+    "dndmod:endstone_electrum_ore",
+    "dndmod:netherrack_electrum_ore"
+  ]
+}

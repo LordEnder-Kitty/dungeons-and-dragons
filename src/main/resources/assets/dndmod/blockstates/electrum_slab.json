@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dndmod:block/electrum_slab"
+    },
+    "type=double": {
+      "model": "dndmod:block/electrum_block"
+    },
+    "type=top": {
+      "model": "dndmod:block/electrum_slab_top"
+    }
+  }
+}

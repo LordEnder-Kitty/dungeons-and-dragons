@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "dndmod:block/cracked_silver_block"
+  }
+}

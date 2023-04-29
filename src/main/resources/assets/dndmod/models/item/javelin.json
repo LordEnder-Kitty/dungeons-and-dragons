@@ -1,0 +1,75 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "dndmod:item/javelin",
+		"particle": "dndmod:item/javelin"
+	},
+	"elements": [
+		{
+			"from": [7.5, -16, 8.5],
+			"to": [8.5, 32, 9.5],
+			"faces": {
+				"north": {"uv": [0, 0, 0.25, 12], "texture": "#0"},
+				"east": {"uv": [0.25, 0, 0.5, 12], "texture": "#0"},
+				"south": {"uv": [0.5, 0, 0.75, 12], "texture": "#0"},
+				"west": {"uv": [0.75, 0, 1, 12], "texture": "#0"},
+				"up": {"uv": [2.25, 1.25, 2, 1], "texture": "#0"},
+				"down": {"uv": [2.25, 1.25, 2, 1.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.25, 5, 8.25],
+			"to": [8.75, 11, 9.75],
+			"faces": {
+				"north": {"uv": [1, 0, 1.5, 1.5], "texture": "#0"},
+				"east": {"uv": [1.5, 0, 2, 1.5], "texture": "#0"},
+				"south": {"uv": [1, 1.5, 1.5, 3], "texture": "#0"},
+				"west": {"uv": [1.5, 1.5, 2, 3], "texture": "#0"},
+				"up": {"uv": [2.5, 0.5, 2, 0], "texture": "#0"},
+				"down": {"uv": [2.5, 0.5, 2, 1], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, -2, 0]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, -2, 0]
+		},
+		"firstperson_righthand": {
+			"rotation": [-80, 0, 0],
+			"translation": [2, 0, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-80, 0, 0],
+			"translation": [2, 0, 0]
+		},
+		"ground": {
+			"rotation": [-90, 0, 0]
+		},
+		"gui": {
+			"rotation": [0, 0, 45],
+			"scale": [0.50586, 0.50586, 0.50586]
+		},
+		"head": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -14.25],
+			"scale": [2.00391, 2.00391, 2.00391]
+		},
+		"fixed": {
+			"rotation": [0, 0, -45],
+			"translation": [0, 0, -1.75],
+			"scale": [0.80664, 0.80664, 0.80664]
+		}
+	},
+	"groups": [
+		{
+			"name": "javelin",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

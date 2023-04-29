@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:alder_planks",
+    "dndmod:ash_planks",
+    "dndmod:balsa_planks"
+  ]
+}

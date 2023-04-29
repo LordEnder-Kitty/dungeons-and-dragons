@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dndmod:item/cloak_chestplate",
+    "layer1": "dndmod:item/cloak_chestplate_overlay"
+  }
+}

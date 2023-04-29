@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "dndmod:balsa_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "dndmod:balsa_planks"
+  }
+}

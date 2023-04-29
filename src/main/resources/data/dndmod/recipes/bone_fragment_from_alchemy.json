@@ -1,0 +1,11 @@
+{
+  "type": "dndmod:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:bone"
+    }
+  ],
+  "output": {
+    "item": "dndmod:sharpened_bone_fragment"
+  }
+}

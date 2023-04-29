@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "electrum_ingot",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "dndmod:endstone_electrum_ore"
+  },
+  "result": "dndmod:electrum_ingot"
+}

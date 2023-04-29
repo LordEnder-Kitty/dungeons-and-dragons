@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dndmod:block/ash_slab"
+    },
+    "type=double": {
+      "model": "dndmod:block/ash_planks"
+    },
+    "type=top": {
+      "model": "dndmod:block/ash_slab_top"
+    }
+  }
+}

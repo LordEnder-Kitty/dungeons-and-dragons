@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:alder_log",
+    "dndmod:alder_wood",
+    "dndmod:stripped_alder_log",
+    "dndmod:stripped_alder_wood",
+    "dndmod:ash_log",
+    "dndmod:ash_wood",
+    "dndmod:stripped_ash_log",
+    "dndmod:stripped_ash_wood",
+    "dndmod:balsa_log",
+    "dndmod:balsa_wood",
+    "dndmod:stripped_balsa_log",
+    "dndmod:stripped_balsa_wood"
+  ]
+}

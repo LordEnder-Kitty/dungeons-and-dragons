@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:alder_leaves",
+    "dndmod:ash_leaves",
+    "dndmod:balsa_leaves"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:ash_fence",
+    "dndmod:alder_fence",
+    "dndmod:balsa_fence"
+  ]
+}

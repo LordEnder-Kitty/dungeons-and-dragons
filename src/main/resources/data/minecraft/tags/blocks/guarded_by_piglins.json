@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:platinum_block",
+    "dndmod:raw_platinum_block",
+    "dndmod:platinum_ore",
+    "dndmod:deepslate_platinum_ore"
+  ]
+}

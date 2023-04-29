@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dndmod:block/skeleton_prone_head_half"
+    },
+    "facing=south": {
+      "model": "dndmod:block/skeleton_prone_head_half",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dndmod:block/skeleton_prone_head_half",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "dndmod:block/skeleton_prone_head_half",
+      "y": 90
+    }
+  }
+}

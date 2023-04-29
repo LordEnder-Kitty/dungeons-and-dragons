@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "dndmod:block/electrum_block",
+    "side": "dndmod:block/electrum_block",
+    "top": "dndmod:block/electrum_block"
+  }
+}

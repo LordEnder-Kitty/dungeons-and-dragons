@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "dndmod:block/balsa_sapling"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dndmod:item/cloak_boots",
+    "layer1": "dndmod:item/cloak_boots_overlay"
+  }
+}

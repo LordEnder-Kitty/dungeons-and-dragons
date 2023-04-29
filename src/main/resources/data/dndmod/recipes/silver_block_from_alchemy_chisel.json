@@ -1,0 +1,11 @@
+{
+  "type": "dndmod:alchemy",
+  "ingredients": [
+    {
+      "item": "dndmod:chiseled_silver_block"
+    }
+  ],
+  "output": {
+    "item": "dndmod:silver_block"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:ash_trapdoor",
+    "dndmod:alder_trapdoor",
+    "dndmod:balsa_trapdoor"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dndmod:block/alchemy_table"
+    },
+    "facing=south": {
+      "model": "dndmod:block/alchemy_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dndmod:block/alchemy_table",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "dndmod:block/alchemy_table",
+      "y": 90
+    }
+  }
+}

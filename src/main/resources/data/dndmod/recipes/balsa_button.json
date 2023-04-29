@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "dndmod:balsa_planks"
+    }
+  ],
+  "result": {
+    "item": "dndmod:balsa_button"
+  }
+}

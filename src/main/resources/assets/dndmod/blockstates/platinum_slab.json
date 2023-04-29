@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dndmod:block/platinum_slab"
+    },
+    "type=double": {
+      "model": "dndmod:block/platinum_block"
+    },
+    "type=top": {
+      "model": "dndmod:block/platinum_slab_top"
+    }
+  }
+}

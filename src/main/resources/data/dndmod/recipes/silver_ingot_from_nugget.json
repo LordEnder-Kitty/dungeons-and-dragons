@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "silver_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "dndmod:silver_nugget"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "dndmod:silver_ingot"
+  }
+}

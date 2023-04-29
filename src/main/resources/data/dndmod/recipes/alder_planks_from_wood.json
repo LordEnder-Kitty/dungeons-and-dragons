@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "dndmod:alder_wood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "dndmod:alder_planks"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "dndmod:item/sling",
+    "textures": {
+        "layer0": "dndmod:item/sling_pulling_2"
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "dndmod:silver_ingot"
+  },
+  "base": {
+    "item": "dndmod:shortsword"
+  },
+  "result": {
+    "item": "dndmod:silvered_shortsword"
+  }
+}

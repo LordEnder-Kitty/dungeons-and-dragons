@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "dndmod:wheat_mixture"
+    }
+  },
+  "result": {
+    "count": 2,
+    "item": "dndmod:small_bread"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:ash_slab",
+    "dndmod:alder_slab",
+    "dndmod:balsa_slab",
+    "dndmod:platinum_slab",
+    "dndmod:electrum_slab",
+    "dndmod:silver_slab"
+  ]
+}

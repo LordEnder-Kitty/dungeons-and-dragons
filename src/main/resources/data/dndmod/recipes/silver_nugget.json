@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dndmod:silver_ingot"
+    }
+  ],
+  "result": {
+    "item": "dndmod:silver_nugget",
+    "count": 9
+  }
+}

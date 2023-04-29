@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dndmod:electrum_ingot"
+    }
+  ],
+  "result": {
+    "item": "dndmod:electrum_nugget",
+    "count": 9
+  }
+}

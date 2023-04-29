@@ -1,0 +1,18 @@
+{
+
+  "stop_eating_metal": {
+    "subtitle": "sound.dndmod.stop_eating_metal",
+    "sounds": [
+      "dndmod:stop_eating_metal"
+    ]
+  },
+  "rick_roll": {
+    "sounds": [
+      {
+        "name": "dndmod:rick_roll",
+        "stream": true
+      }
+    ]
+  }
+
+}

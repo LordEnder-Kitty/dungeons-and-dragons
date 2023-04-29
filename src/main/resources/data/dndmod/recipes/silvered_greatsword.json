@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "dndmod:silver_ingot"
+  },
+  "base": {
+    "item": "dndmod:greatsword"
+  },
+  "result": {
+    "item": "dndmod:silvered_greatsword"
+  }
+}

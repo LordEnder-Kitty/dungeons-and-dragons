@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:alchemy_table",
+    "dndmod:silvered_blackstone",
+    "dndmod:silver_block",
+    "dndmod:raw_silver_block",
+    "dndmod:silver_ore",
+    "dndmod:deepslate_silver_ore",
+    "dndmod:endstone_silver_ore",
+    "dndmod:chiseled_silver_block",
+    "dndmod:cracked_silver_block",
+    "dndmod:electrum_block",
+    "dndmod:raw_electrum_block",
+    "dndmod:electrum_ore",
+    "dndmod:deepslate_electrum_ore",
+    "dndmod:endstone_electrum_ore",
+    "dndmod:netherrack_electrum_ore",
+    "dndmod:platinum_block",
+    "dndmod:raw_platinum_block",
+    "dndmod:platinum_ore",
+    "dndmod:deepslate_platinum_ore",
+    "dndmod:sculk_platinum_ore",
+    "dndmod:stone_statue",
+    "dndmod:prone_skeleton",
+    "dndmod:sitting_skeleton",
+    "dndmod:wall_skeleton",
+    "dndmod:headless_skeleton",
+    "dndmod:skeleton_prone_head_half"
+  ]
+}

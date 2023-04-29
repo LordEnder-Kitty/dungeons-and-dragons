@@ -1,0 +1,6 @@
+{
+    "parent": "dndmod:item/ancient_bow",
+    "textures": {
+        "layer0": "dndmod:item/ancient_bow_pulling_2"
+    }
+}

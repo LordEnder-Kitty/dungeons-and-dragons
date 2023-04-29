@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:silver_block",
+    "dndmod:raw_silver_block",
+    "dndmod:silver_ore",
+    "dndmod:deepslate_silver_ore",
+    "dndmod:endstone_silver_ore",
+    "dndmod:chiseled_silver_block",
+    "dndmod:cracked_silver_block",
+    "dndmod:stone_statue",
+    "dndmod:prone_skeleton",
+    "dndmod:sitting_skeleton",
+    "dndmod:wall_skeleton",
+    "dndmod:headless_skeleton",
+    "dndmod:skeleton_prone_head_half"
+  ]
+}
