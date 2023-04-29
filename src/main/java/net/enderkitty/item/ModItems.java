@@ -13,18 +13,23 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
-    //Player Items
+    //Marked For Deprecation
     public static final Item RICK_ROLL_MUSIC_DISC = registerItem("rick_roll_music_disc", new MusicDiscItem(7, ModSounds.RICK_ROLL,
             new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC).group(ModItemGroup.ADVENTURING_GEAR), 333));
-
     public static final Item BLUE_DRAGON_BREATH_WEAPON = registerItem("blue_dragon_breath_weapon",
             new BlueDragonBreathWeaponItem(ToolMaterials.DIAMOND, 4, -1f, new FabricItemSettings().rarity(Rarity.EPIC).maxDamage(-1).group(ModItemGroup.WEAPONS)));
+    public static final Item RED_WINE = registerItem("red_wine", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
+    public static final Item WHITE_WINE = registerItem("white_wine", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
+    public static final Item VAMPIRE_FIST = registerItem("vampire_fist", new VampireFistItem(ToolMaterials.STONE, 4, -1f,
+            new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(-1).rarity(Rarity.EPIC)));
 
+
+
+    //Player Items
     public static final Item WIZARD_STAFF = registerItem("wizard_staff", new WizardStaffItem(ToolMaterials.WOOD, 3, -2f,
             new FabricItemSettings().maxDamage(-1).rarity(Rarity.RARE).group(ModItemGroup.WEAPONS)));
     public static final Item WIZARD_STAFF_ICE = registerItem("wizard_staff_ice", new WizardStaffIceItem(ToolMaterials.WOOD, 3, -2f,
             new FabricItemSettings().maxDamage(-1).rarity(Rarity.RARE).group(ModItemGroup.WEAPONS)));
-
 
     public static final Item PLATINUM_PIECE = registerItem("platinum_piece", new PlatinumPieceItem(new FabricItemSettings().group(ModItemGroup.ADVENTURING_GEAR).food(ModFoodComponents.PLATINUM)));
     public static final Item ELECTRUM_PIECE = registerItem("electrum_piece", new Item(new FabricItemSettings().group(ModItemGroup.ADVENTURING_GEAR)));
@@ -37,16 +42,12 @@ public class ModItems {
     public static final Item MUG = registerItem("mug", new MugItem(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
     public static final Item MUG_OF_WATER = registerItem("mug_of_water", new MugOfWaterItem(new FabricItemSettings().maxCount(16).group(ModItemGroup.THE_TAVERN).food(ModFoodComponents.MUG_OF_WATER)));
     public static final Item MUG_OF_ALE = registerItem("mug_of_ale", new MugOfAleItem(new FabricItemSettings().maxCount(16).group(ModItemGroup.THE_TAVERN).food(ModFoodComponents.ALE)));
-    public static final Item RED_WINE = registerItem("red_wine", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
-    public static final Item WHITE_WINE = registerItem("white_wine", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
 
     public static final Item WHEAT_MIXTURE = registerItem("wheat_mixture", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
     public static final Item SMALL_BREAD = registerItem("small_bread", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN).food(ModFoodComponents.SMALL_BREAD)));
 
 
     //Other
-    public static final Item VAMPIRE_FIST = registerItem("vampire_fist", new VampireFistItem(ToolMaterials.STONE, 4, -1f,
-            new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(-1).rarity(Rarity.EPIC)));
     public static final Item LEATHER_RINGING = registerItem("leather_ringing", new Item(new FabricItemSettings().group(ModItemGroup.ADVENTURING_GEAR)));
     public static final Item SHARPENED_BONE_FRAGMENT = registerItem("sharpened_bone_fragment", new Item(new FabricItemSettings().group(ModItemGroup.ADVENTURING_GEAR)));
     public static final Item BOTTLE_OF_BLOOD = registerItem("bottle_of_blood", new BottleOfBloodItem(new FabricItemSettings().group(ModItemGroup.ADVENTURING_GEAR).food(ModFoodComponents.BOTTLE_OF_BLOOD)));
