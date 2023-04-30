@@ -29,6 +29,6 @@ public class ModFluids {
         BLOOD_BLOCK = Registry.register(Registry.BLOCK, new Identifier(DndMod.MOD_ID, "blood_block"),
                 new FluidBlock(ModFluids.STILL_BLOOD, FabricBlockSettings.copyOf(Blocks.WATER)){ });
         BLOOD_BUCKET = Registry.register(Registry.ITEM, new Identifier(DndMod.MOD_ID, "blood_bucket"),
-                new BucketItem(ModFluids.STILL_BLOOD, new FabricItemSettings().group(ModItemGroup.ADVENTURING_GEAR).recipeRemainder(Items.BUCKET).maxCount(1)));
+                new BucketItem(ModFluids.STILL_BLOOD, new FabricItemSettings().group(ModItemGroup.MISC).recipeRemainder(Items.BUCKET).maxCount(1)));
     }
 }

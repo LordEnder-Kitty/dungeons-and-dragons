@@ -1,6 +1,7 @@
 {
-  "itemGroup.dndmod.weapons": "Weapons",
+  "itemGroup.dndmod.misc": "Misc D&D",
   "itemGroup.dndmod.armor": "Armor",
+  "itemGroup.dndmod.weapons": "Weapons",
   "itemGroup.dndmod.adventuring_gear": "Adventuring Gear",
   "itemGroup.dndmod.the_tavern": "The Tavern",
 
@@ -308,5 +309,7 @@
   "block.dndmod.balsa_stairs": "Balsa Stairs",
   "block.dndmod.balsa_door": "Balsa Door",
   "block.dndmod.balsa_trapdoor": "Balsa Trapdoor",
-  "block.dndmod.potted_balsa_sapling": "Potted Balsa Sapling"
+  "block.dndmod.potted_balsa_sapling": "Potted Balsa Sapling",
+
+  "item.dndmod.abacus": "Abacus"
 }
