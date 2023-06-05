@@ -39,4 +39,10 @@ public class ModEntities {
             Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "death_knight"),
             FabricEntityTypeBuilder.create(SpawnGroup.MISC, DeathKnightEntity::new)
                     .dimensions(EntityDimensions.fixed(0.8f, 1.8f)).build());
+
+    public static final EntityType<DaggerEntity> DAGGER = Registry.register(
+            Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "dagger"),
+            FabricEntityTypeBuilder.<DaggerEntity>create(SpawnGroup.MISC, DaggerEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5F, 0.5F)).trackRangeBlocks(4).trackedUpdateRate(10).build()
+    );
 }

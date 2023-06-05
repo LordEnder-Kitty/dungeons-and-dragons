@@ -178,7 +178,7 @@ public class ModItems {
     public static final Item WOODEN_DAGGER = registerItem("wooden_dagger", new WoodenDaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(148)));
     public static final Item STONE_DAGGER = registerItem("stone_dagger", new StoneDaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(246)));
     public static final Item GOLDEN_DAGGER = registerItem("golden_dagger", new StoneDaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(140)));
-    public static final Item IRON_DAGGER = registerItem("iron_dagger", new ThrowableItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(678)));
+    public static final Item IRON_DAGGER = registerItem("iron_dagger", new DaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(678)));
     public static final Item DIAMOND_DAGGER = registerItem("diamond_dagger", new DiamondDaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(1056)));
     public static final Item NETHERITE_DAGGER = registerItem("netherite_dagger", new NetheriteDaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(2068)));
     public static final Item SILVERED_IRON_DAGGER = registerItem("silvered_iron_dagger", new SilveredThrowableItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(678).rarity(Rarity.UNCOMMON)));

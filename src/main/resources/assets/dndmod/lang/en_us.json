@@ -311,5 +311,9 @@
   "block.dndmod.balsa_trapdoor": "Balsa Trapdoor",
   "block.dndmod.potted_balsa_sapling": "Potted Balsa Sapling",
 
-  "item.dndmod.abacus": "Abacus"
+  "item.dndmod.abacus": "Abacus",
+
+
+  "death.attack.dagger": "%1$s was fucked up by %2$s's dagger",
+  "death.attack.dagger.item": "%1$s was FUCKING MURDERED by %2$s with %3$s"
 }

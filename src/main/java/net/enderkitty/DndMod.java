@@ -11,6 +11,7 @@ import net.enderkitty.potion.RegisterModPotions;
 import net.enderkitty.recipe.ModRecipes;
 import net.enderkitty.screen.ModScreenHandlers;
 import net.enderkitty.sound.ModSounds;
+import net.enderkitty.util.ModDamageSources;
 import net.enderkitty.util.ModFlammableBlocks;
 import net.enderkitty.util.ModLootTableModifiers;
 import net.enderkitty.util.ModStrippableBlocks;
@@ -55,6 +56,8 @@ public class DndMod implements ModInitializer {
 
         ModVillagers.registerVillagers();
         ModVillagers.registerTrades();
+
+        ModDamageSources.registerDamageSources();
 
         FabricDefaultAttributeRegistry.register(ModEntities.HOUND, HoundEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.VAMPIRE_SPAWN, VampireSpawnEntity.setAttributes());

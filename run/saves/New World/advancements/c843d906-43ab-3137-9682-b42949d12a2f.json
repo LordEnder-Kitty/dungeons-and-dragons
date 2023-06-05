@@ -1,0 +1,29 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2023-06-05 06:13:50 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "minecraft:husk": "2023-06-05 06:13:50 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:husk": "2023-06-05 06:13:50 -0500"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:beach": "2023-06-05 06:13:15 -0500",
+      "minecraft:river": "2023-06-05 06:14:30 -0500",
+      "minecraft:savanna": "2023-06-05 06:14:32 -0500"
+    },
+    "done": false
+  },
+  "DataVersion": 3120
+}
