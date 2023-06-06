@@ -1,0 +1,33 @@
+{
+  "minecraft:story/enchant_item": {
+    "criteria": {
+      "enchanted_item": "2023-06-05 22:49:11 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2023-06-05 22:49:05 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lapis_block": {
+    "criteria": {
+      "has_lapis_lazuli": "2023-06-05 22:48:56 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/blue_dye": {
+    "criteria": {
+      "has_lapis_lazuli": "2023-06-05 22:48:56 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:beach": "2023-06-05 22:48:27 -0500"
+    },
+    "done": false
+  },
+  "DataVersion": 3120
+}

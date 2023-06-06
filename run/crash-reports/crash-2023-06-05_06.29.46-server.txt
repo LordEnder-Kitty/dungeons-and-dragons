@@ -5,10 +5,10 @@ Time: 2023-06-05 06:29:46
 Description: Ticking entity
 
 java.lang.ClassCastException: class net.minecraft.entity.damage.ProjectileDamageSource cannot be cast to class net.enderkitty.util.ModDamageSources (net.minecraft.entity.damage.ProjectileDamageSource and net.enderkitty.util.ModDamageSources are in unnamed module of loader net.fabricmc.loader.impl.launch.knot.KnotClassLoader @553f17c)
-	at net.enderkitty.entity.custom.DaggerEntity.onEntityHit(DaggerEntity.java:124)
+	at net.enderkitty.entity.custom.DaggerEntityIron.onEntityHit(DaggerEntity.java:124)
 	at net.minecraft.entity.projectile.ProjectileEntity.onCollision(ProjectileEntity.java:149)
 	at net.minecraft.entity.projectile.PersistentProjectileEntity.tick(PersistentProjectileEntity.java:226)
-	at net.enderkitty.entity.custom.DaggerEntity.tick(DaggerEntity.java:85)
+	at net.enderkitty.entity.custom.DaggerEntityIron.tick(DaggerEntity.java:85)
 	at net.minecraft.server.world.ServerWorld.tickEntity(ServerWorld.java:712)
 	at net.minecraft.world.World.tickEntity(World.java:466)
 	at net.minecraft.server.world.ServerWorld.method_31420(ServerWorld.java:371)
@@ -28,10 +28,10 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Server thread
 Stacktrace:
-	at net.enderkitty.entity.custom.DaggerEntity.onEntityHit(DaggerEntity.java:124)
+	at net.enderkitty.entity.custom.DaggerEntityIron.onEntityHit(DaggerEntity.java:124)
 	at net.minecraft.entity.projectile.ProjectileEntity.onCollision(ProjectileEntity.java:149)
 	at net.minecraft.entity.projectile.PersistentProjectileEntity.tick(PersistentProjectileEntity.java:226)
-	at net.enderkitty.entity.custom.DaggerEntity.tick(DaggerEntity.java:85)
+	at net.enderkitty.entity.custom.DaggerEntityIron.tick(DaggerEntity.java:85)
 	at net.minecraft.server.world.ServerWorld.tickEntity(ServerWorld.java:712)
 	at net.minecraft.world.World.tickEntity(World.java:466)
 	at net.minecraft.server.world.ServerWorld.method_31420(ServerWorld.java:371)
@@ -40,7 +40,7 @@ Stacktrace:
 
 -- Entity being ticked --
 Details:
-	Entity Type: dndmod:dagger (net.enderkitty.entity.custom.DaggerEntity)
+	Entity Type: dndmod:dagger (net.enderkitty.entity.custom.DaggerEntityIron)
 	Entity ID: 341
 	Entity Name: Dagger
 	Entity's Exact location: -202.92, 72.43, -44.91

@@ -4,7 +4,6 @@ import net.enderkitty.block.ModBlocks;
 import net.enderkitty.entity.ModEntities;
 import net.enderkitty.entity.client.*;
 import net.enderkitty.entity.client.armor.HalfPlateArmorRenderer;
-import net.enderkitty.entity.custom.DaggerEntity;
 import net.enderkitty.fluid.ModFluids;
 import net.enderkitty.item.ModItems;
 import net.enderkitty.screen.AlchemyScreen;
@@ -17,9 +16,6 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.entity.ArrowEntityRenderer;
-import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
-import net.minecraft.client.render.entity.TridentEntityRenderer;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
@@ -70,7 +66,13 @@ public class DndModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.HOSTILE_VILLAGER, HostileVillagerRenderer::new);
         EntityRendererRegistry.register(ModEntities.PRIEST, PriestRenderer::new);
         EntityRendererRegistry.register(ModEntities.DEATH_KNIGHT, DeathKnightRenderer::new);
-        EntityRendererRegistry.register(ModEntities.DAGGER, DaggerRenderer::new);
+
+        EntityRendererRegistry.register(ModEntities.DAGGER_WOOD, DaggerRendererWood::new);
+        EntityRendererRegistry.register(ModEntities.DAGGER_STONE, DaggerRendererStone::new);
+        EntityRendererRegistry.register(ModEntities.DAGGER_GOLD, DaggerRendererGold::new);
+        EntityRendererRegistry.register(ModEntities.DAGGER_IRON, DaggerRendererIron::new);
+        EntityRendererRegistry.register(ModEntities.DAGGER_DIAMOND, DaggerRendererDiamond::new);
+        EntityRendererRegistry.register(ModEntities.DAGGER_NETHERITE, DaggerRendererNetherite::new);
 
 
     }

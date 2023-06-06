@@ -1,7 +1,7 @@
 package net.enderkitty.entity.client;
 
 import net.enderkitty.DndMod;
-import net.enderkitty.entity.custom.DaggerEntity;
+import net.enderkitty.entity.custom.DaggerEntityStone;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;
@@ -10,18 +10,18 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.renderers.geo.GeoProjectilesRenderer;
 
-public class DaggerRenderer extends GeoProjectilesRenderer<DaggerEntity> {
-    public DaggerRenderer(EntityRendererFactory.Context ctx) {
-        super(ctx, new DaggerModel());
+public class DaggerRendererStone extends GeoProjectilesRenderer<DaggerEntityStone> {
+    public DaggerRendererStone(EntityRendererFactory.Context ctx) {
+        super(ctx, new DaggerModelStone());
     }
 
     @Override
-    public Identifier getTextureLocation(DaggerEntity entity) {
-        return new Identifier(DndMod.MOD_ID, "textures/item/iron_dagger.png");
+    public Identifier getTextureLocation(DaggerEntityStone entity) {
+        return new Identifier(DndMod.MOD_ID, "textures/item/stone_dagger.png");
     }
 
     @Override
-    public RenderLayer getRenderType(DaggerEntity animatable, float partialTicks, MatrixStack stack,
+    public RenderLayer getRenderType(DaggerEntityStone animatable, float partialTicks, MatrixStack stack,
                                      VertexConsumerProvider renderTypeBuffer, VertexConsumer vertexBuilder,
                                      int packedLightIn, Identifier textureLocation) {
         stack.scale(0.75f, 0.75f, 0.75f);

@@ -39,7 +39,7 @@ Stacktrace:
 
 -- Entity being rendered --
 Details:
-	Entity Type: dndmod:dagger (net.enderkitty.entity.custom.DaggerEntity)
+	Entity Type: dndmod:dagger (net.enderkitty.entity.custom.DaggerEntityIron)
 	Entity ID: 425
 	Entity Name: Dagger
 	Entity's Exact location: -206.44, 70.52, -43.78
@@ -64,7 +64,7 @@ Stacktrace:
 
 -- Renderer details --
 Details:
-	Assigned renderer: net.enderkitty.entity.client.DaggerRenderer@5b266c00
+	Assigned renderer: net.enderkitty.entity.client.DaggerRendererIron@5b266c00
 	Location: 0.00,-0.10,0.00 - World: (0,-1,0), Section: (at 0,15,0 in 0,-1,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
 	Rotation: 99.03938
 	Delta: 0.41998962

@@ -40,9 +40,28 @@ public class ModEntities {
             FabricEntityTypeBuilder.create(SpawnGroup.MISC, DeathKnightEntity::new)
                     .dimensions(EntityDimensions.fixed(0.8f, 1.8f)).build());
 
-    public static final EntityType<DaggerEntity> DAGGER = Registry.register(
-            Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "dagger"),
-            FabricEntityTypeBuilder.<DaggerEntity>create(SpawnGroup.MISC, DaggerEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.4F, 0.4F)).trackRangeBlocks(4).trackedUpdateRate(10).build()
-    );
+    public static final EntityType<DaggerEntityIron> DAGGER_IRON = Registry.register(
+            Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "dagger_iron"),
+            FabricEntityTypeBuilder.<DaggerEntityIron>create(SpawnGroup.MISC, DaggerEntityIron::new)
+                    .dimensions(EntityDimensions.fixed(0.4F, 0.4F)).trackRangeBlocks(4).trackedUpdateRate(10).build());
+    public static final EntityType<DaggerEntityWood> DAGGER_WOOD = Registry.register(
+            Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "dagger_wood"),
+            FabricEntityTypeBuilder.<DaggerEntityWood>create(SpawnGroup.MISC, DaggerEntityWood::new)
+                    .dimensions(EntityDimensions.fixed(0.4F, 0.4F)).trackRangeBlocks(4).trackedUpdateRate(10).build());
+    public static final EntityType<DaggerEntityStone> DAGGER_STONE = Registry.register(
+            Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "dagger_stone"),
+            FabricEntityTypeBuilder.<DaggerEntityStone>create(SpawnGroup.MISC, DaggerEntityStone::new)
+                    .dimensions(EntityDimensions.fixed(0.4F, 0.4F)).trackRangeBlocks(4).trackedUpdateRate(10).build());
+    public static final EntityType<DaggerEntityGold> DAGGER_GOLD = Registry.register(
+            Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "dagger_gold"),
+            FabricEntityTypeBuilder.<DaggerEntityGold>create(SpawnGroup.MISC, DaggerEntityGold::new)
+                    .dimensions(EntityDimensions.fixed(0.4F, 0.4F)).trackRangeBlocks(4).trackedUpdateRate(10).build());
+    public static final EntityType<DaggerEntityDiamond> DAGGER_DIAMOND = Registry.register(
+            Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "dagger_diamond"),
+            FabricEntityTypeBuilder.<DaggerEntityDiamond>create(SpawnGroup.MISC, DaggerEntityDiamond::new)
+                    .dimensions(EntityDimensions.fixed(0.4F, 0.4F)).trackRangeBlocks(4).trackedUpdateRate(10).build());
+    public static final EntityType<DaggerEntityNetherite> DAGGER_NETHERITE = Registry.register(
+            Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "dagger_netherite"),
+            FabricEntityTypeBuilder.<DaggerEntityNetherite>create(SpawnGroup.MISC, DaggerEntityNetherite::new)
+                    .dimensions(EntityDimensions.fixed(0.4F, 0.4F)).trackRangeBlocks(4).trackedUpdateRate(10).build());
 }

@@ -175,12 +175,12 @@ public class ModItems {
     public static final Item NETHERITE_CLUB = registerItem("netherite_club", new BluntItem((ToolMaterial) ToolMaterials.NETHERITE, (int) 5.5f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(954)));
     public static final Item SILVERED_IRON_CLUB = registerItem("silvered_iron_club", new BluntItem((ToolMaterial) ToolMaterials.IRON, (int) 6f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(216)));
 
-    public static final Item WOODEN_DAGGER = registerItem("wooden_dagger", new WoodenDaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(148)));
-    public static final Item STONE_DAGGER = registerItem("stone_dagger", new StoneDaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(246)));
-    public static final Item GOLDEN_DAGGER = registerItem("golden_dagger", new StoneDaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(140)));
-    public static final Item IRON_DAGGER = registerItem("iron_dagger", new DaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(678)));
-    public static final Item DIAMOND_DAGGER = registerItem("diamond_dagger", new DiamondDaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(1056)));
-    public static final Item NETHERITE_DAGGER = registerItem("netherite_dagger", new NetheriteDaggerItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(2068)));
+    public static final Item WOODEN_DAGGER = registerItem("wooden_dagger", new DaggerWoodItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(148)));
+    public static final Item STONE_DAGGER = registerItem("stone_dagger", new DaggerStoneItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(246)));
+    public static final Item GOLDEN_DAGGER = registerItem("golden_dagger", new DaggerGoldItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(140)));
+    public static final Item IRON_DAGGER = registerItem("iron_dagger", new DaggerIronItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(678)));
+    public static final Item DIAMOND_DAGGER = registerItem("diamond_dagger", new DaggerDiamondItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(1056)));
+    public static final Item NETHERITE_DAGGER = registerItem("netherite_dagger", new DaggerNetheriteItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(2068)));
     public static final Item SILVERED_IRON_DAGGER = registerItem("silvered_iron_dagger", new SilveredThrowableItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(678).rarity(Rarity.UNCOMMON)));
 
     public static final Item GREATCLUB = registerItem("greatclub", new BluntItem((ToolMaterial) ToolMaterials.WOOD, (int) 3.6f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(70)));

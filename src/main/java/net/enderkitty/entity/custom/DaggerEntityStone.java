@@ -31,21 +31,21 @@ import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class DaggerEntity extends PersistentProjectileEntity implements IAnimatable {
+public class DaggerEntityStone extends PersistentProjectileEntity implements IAnimatable {
     private static final TrackedData<Byte> LOYALTY = DataTracker.registerData(TridentEntity.class, TrackedDataHandlerRegistry.BYTE);
     private static final TrackedData<Boolean> ENCHANTED = DataTracker.registerData(TridentEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
-    private ItemStack daggerStack = new ItemStack(ModItems.IRON_DAGGER);
+    private ItemStack daggerStack = new ItemStack(ModItems.STONE_DAGGER);
     private boolean dealtDamage;
     public int returnTimer;
 
     private AnimationFactory factory = new AnimationFactory(this);
 
-    public DaggerEntity(EntityType<? extends DaggerEntity> entityType, World world) {
+    public DaggerEntityStone(EntityType<? extends DaggerEntityStone> entityType, World world) {
         super((EntityType<? extends PersistentProjectileEntity>)entityType, world);
     }
 
-    public DaggerEntity(World world, LivingEntity owner, ItemStack stack) {
-        super(ModEntities.DAGGER, owner, world);
+    public DaggerEntityStone(World world, LivingEntity owner, ItemStack stack) {
+        super(ModEntities.DAGGER_STONE, owner, world);
         this.daggerStack = stack.copy();
         this.dataTracker.set(LOYALTY, (byte) EnchantmentHelper.getLoyalty(stack));
         this.dataTracker.set(ENCHANTED, stack.hasGlint());
@@ -68,7 +68,7 @@ public class DaggerEntity extends PersistentProjectileEntity implements IAnimata
         byte i = this.dataTracker.get(LOYALTY);
         if (i > 0 && (this.dealtDamage || this.isNoClip()) && entity != null) {
             if (!this.isOwnerAlive()) {
-                if (!this.world.isClient && this.pickupType == PersistentProjectileEntity.PickupPermission.ALLOWED) {
+                if (!this.world.isClient && this.pickupType == PickupPermission.ALLOWED) {
                     this.dropStack(this.asItemStack(), 0.1f);
                 }
                 this.discard();
@@ -196,14 +196,9 @@ public class DaggerEntity extends PersistentProjectileEntity implements IAnimata
     @Override
     public void age() {
         byte i = this.dataTracker.get(LOYALTY);
-        if (this.pickupType != PersistentProjectileEntity.PickupPermission.ALLOWED || i <= 0) {
+        if (this.pickupType != PickupPermission.ALLOWED || i <= 0) {
             super.age();
         }
-    }
-
-    @Override
-    protected float getDragInWater() {
-        return 0.99f;
     }
 
     @Override

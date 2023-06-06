@@ -1,11 +1,8 @@
-/*
- * Decompiled with CFR 0.2.0 (FabricMC d28b102d).
- */
 package net.enderkitty.item.custom;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import net.enderkitty.entity.custom.DaggerEntity;
+import net.enderkitty.entity.custom.DaggerEntityNetherite;
 import net.minecraft.block.BlockState;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EquipmentSlot;
@@ -16,7 +13,6 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
-import net.minecraft.entity.projectile.TridentEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Vanishable;
@@ -32,13 +28,13 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-public class DaggerItem extends Item implements Vanishable {
+public class DaggerNetheriteItem extends Item implements Vanishable {
     public static final int field_30926 = 10;
     public static final float ATTACK_DAMAGE = 8.0f;
     public static final float field_30928 = 2.5f;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
-    public DaggerItem(Item.Settings settings) {
+    public DaggerNetheriteItem(Settings settings) {
         super(settings);
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
         builder.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_ID, "Tool modifier", 8.0, EntityAttributeModifier.Operation.ADDITION));
@@ -78,13 +74,13 @@ public class DaggerItem extends Item implements Vanishable {
         if (!world.isClient) {
             stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(user.getActiveHand()));
             if (j == 0) {
-                DaggerEntity daggerEntity = new DaggerEntity(world, (LivingEntity)playerEntity, stack);
-                daggerEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, 2.5f + (float)j * 0.5f, 1.0f);
+                DaggerEntityNetherite daggerEntityNetherite = new DaggerEntityNetherite(world, (LivingEntity)playerEntity, stack);
+                daggerEntityNetherite.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, 2.5f + (float)j * 0.5f, 1.0f);
                 if (playerEntity.getAbilities().creativeMode) {
-                    daggerEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
+                    daggerEntityNetherite.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
                 }
-                world.spawnEntity(daggerEntity);
-                world.playSoundFromEntity(null, daggerEntity, SoundEvents.ITEM_TRIDENT_THROW, SoundCategory.PLAYERS, 1.0f, 1.0f);
+                world.spawnEntity(daggerEntityNetherite);
+                world.playSoundFromEntity(null, daggerEntityNetherite, SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0f, 1.0f);
                 if (!playerEntity.getAbilities().creativeMode) {
                     playerEntity.getInventory().removeOne(stack);
                 }
@@ -146,8 +142,6 @@ public class DaggerItem extends Item implements Vanishable {
     }
 
     @Override
-    public int getEnchantability() {
-        return 1;
-    }
+    public int getEnchantability() {return 3;}
 }
 
