@@ -3,6 +3,7 @@ package net.enderkitty;
 import net.enderkitty.block.ModBlocks;
 import net.enderkitty.effect.ModEffects;
 import net.enderkitty.enchantment.ModEnchantments;
+import net.enderkitty.entity.ModBoatEntities;
 import net.enderkitty.entity.ModEntities;
 import net.enderkitty.entity.custom.*;
 import net.enderkitty.fluid.ModFluids;
@@ -58,6 +59,8 @@ public class DndMod implements ModInitializer {
         ModVillagers.registerTrades();
 
         ModDamageSources.registerDamageSources();
+
+        ModBoatEntities.registerBoatEntities();
 
         FabricDefaultAttributeRegistry.register(ModEntities.HOUND, HoundEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.VAMPIRE_SPAWN, VampireSpawnEntity.setAttributes());

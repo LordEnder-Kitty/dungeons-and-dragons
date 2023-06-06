@@ -240,12 +240,19 @@
   "entity.dndmod.hostile_villager": "Hostile Villager",
   "entity.dndmod.priest": "Priest",
   "entity.dndmod.death_knight": "Death Knight",
+
   "entity.dndmod.dagger_wood": "Wooden Dagger",
   "entity.dndmod.dagger_stone": "Stone Dagger",
   "entity.dndmod.dagger_gold": "Golden Dagger",
   "entity.dndmod.dagger_iron": "Iron Dagger",
   "entity.dndmod.dagger_diamond": "Diamond Dagger",
   "entity.dndmod.dagger_netherite": "Netherite Dagger",
+
+  "entity.dndmod.boat": "Boat",
+  "entity.dndmod.chest_boat": "Boat With Chest",
+  "item.dndmod.alder_boat": "Alder Boat",
+  "item.dndmod.alder_chest_boat": "Alder Boat With Chest",
+
 
   "entity.minecraft.villager.alchemist": "Alchemist",
   "entity.minecraft.villager.adventurer": "Adventurer",

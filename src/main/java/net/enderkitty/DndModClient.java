@@ -1,9 +1,12 @@
 package net.enderkitty;
 
 import net.enderkitty.block.ModBlocks;
+import net.enderkitty.entity.ModBoatEntities;
+import net.enderkitty.entity.ModBoatModelLayer;
 import net.enderkitty.entity.ModEntities;
-import net.enderkitty.entity.client.*;
 import net.enderkitty.entity.client.armor.HalfPlateArmorRenderer;
+import net.enderkitty.entity.client.models.ModBoatModel;
+import net.enderkitty.entity.client.renderers.*;
 import net.enderkitty.fluid.ModFluids;
 import net.enderkitty.item.ModItems;
 import net.enderkitty.screen.AlchemyScreen;
@@ -74,6 +77,9 @@ public class DndModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.DAGGER_DIAMOND, DaggerRendererDiamond::new);
         EntityRendererRegistry.register(ModEntities.DAGGER_NETHERITE, DaggerRendererNetherite::new);
 
+        EntityRendererRegistry.register(ModBoatEntities.BOAT.get(), context -> new ModBoatRenderer<>(context,false));
+        EntityRendererRegistry.register(ModBoatEntities.CHEST_BOAT.get(), context -> new ModBoatRenderer<>(context, true));
+        ModBoatModel.registerLayers();
 
     }
 }

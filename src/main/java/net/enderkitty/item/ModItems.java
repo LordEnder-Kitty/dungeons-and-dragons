@@ -1,6 +1,8 @@
 package net.enderkitty.item;
 
 import net.enderkitty.DndMod;
+import net.enderkitty.entity.ModBoatEntity;
+import net.enderkitty.entity.ModChestBoatEntity;
 import net.enderkitty.entity.ModEntities;
 import net.enderkitty.item.custom.*;
 import net.enderkitty.sound.ModSounds;
@@ -10,6 +12,8 @@ import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
+
+import java.util.function.Supplier;
 
 public class ModItems {
 
@@ -224,7 +228,11 @@ public class ModItems {
     public static final Item ABACUS = registerItem("abacus", new Item(new FabricItemSettings().group(ModItemGroup.ADVENTURING_GEAR)));
 
 
+    public static final Supplier<Item> ALDER_BOAT = registerBoatItem("alder_boat", () ->
+            new ModBoatItem(false, ModBoatEntity.Type.ALDER, new FabricItemSettings().group(ModItemGroup.MISC)));
 
+    public static final Supplier<Item> ALDER_CHEST_BOAT = registerBoatItem("alder_chest_boat", () ->
+            new ModBoatItem(true, ModChestBoatEntity.Type.ALDER, new FabricItemSettings().group(ModItemGroup.MISC)));
 
 
 
@@ -240,7 +248,10 @@ public class ModItems {
 
 
 
-
+    public static <T extends Item> Supplier<T> registerBoatItem(String name, Supplier<T> item) {
+        var register = Registry.register(Registry.ITEM, new Identifier(DndMod.MOD_ID, name), item.get());
+        return () -> register;
+    }
 
     private static Item registerItem(String name, Item item) {return Registry.register(Registry.ITEM, new Identifier(DndMod.MOD_ID, name), item);}
     public static void registerModItems() {DndMod.LOGGER.debug("Registering D&D Items");}
