@@ -1,8 +1,7 @@
 package net.enderkitty.entity.client.models;
 
 import net.enderkitty.DndMod;
-import net.enderkitty.entity.custom.DaggerEntityIron;
-import net.enderkitty.entity.custom.DaggerEntityNetherite;
+import net.enderkitty.entity.entities.DaggerEntityNetherite;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 

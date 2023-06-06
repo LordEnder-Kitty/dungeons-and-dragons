@@ -1,7 +1,7 @@
 package net.enderkitty.entity.client.models;
 
 import net.enderkitty.DndMod;
-import net.enderkitty.entity.ModBoatModelLayer;
+import net.enderkitty.entity.entities.boats.ModBoatModelLayer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.model.TexturedModelData;

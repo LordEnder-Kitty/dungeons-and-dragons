@@ -2,8 +2,8 @@ package net.enderkitty.entity.client.renderers;
 
 import com.google.common.collect.Maps;
 import net.enderkitty.DndMod;
-import net.enderkitty.entity.ModBoatEntity;
-import net.enderkitty.entity.ModBoatModelLayer;
+import net.enderkitty.entity.entities.boats.ModBoatEntity;
+import net.enderkitty.entity.entities.boats.ModBoatModelLayer;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;

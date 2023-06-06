@@ -1,7 +1,7 @@
 package net.enderkitty.entity.client.models;
 
 import net.enderkitty.DndMod;
-import net.enderkitty.entity.custom.DeathKnightEntity;
+import net.enderkitty.entity.entities.DeathKnightEntity;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 

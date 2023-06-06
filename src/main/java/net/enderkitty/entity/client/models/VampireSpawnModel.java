@@ -1,7 +1,7 @@
 package net.enderkitty.entity.client.models;
 
 import net.enderkitty.DndMod;
-import net.enderkitty.entity.custom.VampireSpawnEntity;
+import net.enderkitty.entity.entities.VampireSpawnEntity;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 

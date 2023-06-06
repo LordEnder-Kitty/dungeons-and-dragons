@@ -2,7 +2,7 @@ package net.enderkitty.entity.client.renderers;
 
 import net.enderkitty.DndMod;
 import net.enderkitty.entity.client.models.VampireSpawnModel;
-import net.enderkitty.entity.custom.VampireSpawnEntity;
+import net.enderkitty.entity.entities.VampireSpawnEntity;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;

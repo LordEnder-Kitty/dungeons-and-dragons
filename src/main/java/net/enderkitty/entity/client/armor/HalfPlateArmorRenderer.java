@@ -1,7 +1,6 @@
 package net.enderkitty.entity.client.armor;
 
-import net.enderkitty.item.custom.HalfPlateArmorItem;
-import software.bernie.geckolib3.model.AnimatedGeoModel;
+import net.enderkitty.item.items.HalfPlateArmorItem;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class HalfPlateArmorRenderer extends GeoArmorRenderer<HalfPlateArmorItem> {

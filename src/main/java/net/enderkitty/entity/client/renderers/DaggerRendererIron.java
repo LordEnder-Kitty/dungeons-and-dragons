@@ -2,7 +2,7 @@ package net.enderkitty.entity.client.renderers;
 
 import net.enderkitty.DndMod;
 import net.enderkitty.entity.client.models.DaggerModelIron;
-import net.enderkitty.entity.custom.DaggerEntityIron;
+import net.enderkitty.entity.entities.DaggerEntityIron;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;

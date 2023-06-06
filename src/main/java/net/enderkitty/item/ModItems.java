@@ -1,10 +1,11 @@
 package net.enderkitty.item;
 
 import net.enderkitty.DndMod;
-import net.enderkitty.entity.ModBoatEntity;
-import net.enderkitty.entity.ModChestBoatEntity;
+import net.enderkitty.entity.entities.boats.ModBoatEntity;
+import net.enderkitty.entity.entities.boats.ModChestBoatEntity;
 import net.enderkitty.entity.ModEntities;
-import net.enderkitty.item.custom.*;
+import net.enderkitty.item.items.*;
+import net.enderkitty.item.items.daggers.*;
 import net.enderkitty.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;

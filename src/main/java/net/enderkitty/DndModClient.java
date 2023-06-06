@@ -1,8 +1,7 @@
 package net.enderkitty;
 
 import net.enderkitty.block.ModBlocks;
-import net.enderkitty.entity.ModBoatEntities;
-import net.enderkitty.entity.ModBoatModelLayer;
+import net.enderkitty.entity.entities.boats.ModBoatEntities;
 import net.enderkitty.entity.ModEntities;
 import net.enderkitty.entity.client.armor.HalfPlateArmorRenderer;
 import net.enderkitty.entity.client.models.ModBoatModel;

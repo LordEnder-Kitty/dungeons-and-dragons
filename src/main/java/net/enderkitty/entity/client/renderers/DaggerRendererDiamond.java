@@ -2,7 +2,7 @@ package net.enderkitty.entity.client.renderers;
 
 import net.enderkitty.DndMod;
 import net.enderkitty.entity.client.models.DaggerModelDiamond;
-import net.enderkitty.entity.custom.DaggerEntityDiamond;
+import net.enderkitty.entity.entities.DaggerEntityDiamond;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;

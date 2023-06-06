@@ -1,7 +1,7 @@
 package net.enderkitty.entity.client.armor;
 
 import net.enderkitty.DndMod;
-import net.enderkitty.item.custom.HalfPlateArmorItem;
+import net.enderkitty.item.items.HalfPlateArmorItem;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 

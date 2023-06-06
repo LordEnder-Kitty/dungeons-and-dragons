@@ -1,8 +1,8 @@
 package net.enderkitty.entity;
 
 import net.enderkitty.DndMod;
-import net.enderkitty.entity.custom.*;
-import net.enderkitty.entity.custom.HoundEntity;
+import net.enderkitty.entity.entities.*;
+import net.enderkitty.entity.entities.HoundEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
