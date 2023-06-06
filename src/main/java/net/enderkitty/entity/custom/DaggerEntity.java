@@ -27,13 +27,18 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib3.core.IAnimatable;
+import software.bernie.geckolib3.core.manager.AnimationData;
+import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class DaggerEntity extends PersistentProjectileEntity {
+public class DaggerEntity extends PersistentProjectileEntity implements IAnimatable {
     private static final TrackedData<Byte> LOYALTY = DataTracker.registerData(TridentEntity.class, TrackedDataHandlerRegistry.BYTE);
     private static final TrackedData<Boolean> ENCHANTED = DataTracker.registerData(TridentEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
     private ItemStack daggerStack = new ItemStack(ModItems.IRON_DAGGER);
     private boolean dealtDamage;
     public int returnTimer;
+
+    private AnimationFactory factory = new AnimationFactory(this);
 
     public DaggerEntity(EntityType<? extends DaggerEntity> entityType, World world) {
         super((EntityType<? extends PersistentProjectileEntity>)entityType, world);
@@ -204,5 +209,15 @@ public class DaggerEntity extends PersistentProjectileEntity {
     @Override
     public boolean shouldRender(double cameraX, double cameraY, double cameraZ) {
         return true;
+    }
+
+    @Override
+    public void registerControllers(AnimationData animationData) {
+
+    }
+
+    @Override
+    public AnimationFactory getFactory() {
+        return factory;
     }
 }
