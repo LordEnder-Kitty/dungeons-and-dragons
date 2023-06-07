@@ -1,34 +1,27 @@
-package net.enderkitty.block.custom;
+package net.enderkitty.block.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.DirectionProperty;
-import net.minecraft.state.property.Properties;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
-import net.minecraft.util.function.BooleanBiFunction;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.stream.Stream;
+public class BodyHeadlessBlock extends ShulkerBoxBlock {
+    private static VoxelShape SHAPE = Block.createCuboidShape(-8, 0, -8, 24, 8, 24);
 
-public class AdventuringTableBlock extends HorizontalFacingBlock {
-    public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
-
-    public AdventuringTableBlock(Settings settings) {
-        super(settings);
+    public BodyHeadlessBlock(@Nullable DyeColor color, Settings settings) {
+        super(color, settings);
     }
 
-    private static final VoxelShape SHAPE = Stream.of(
-            Block.createCuboidShape(0, 0, 0, 16, 15, 16)
-    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
+    @Override
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
+    }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {

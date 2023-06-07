@@ -1,4 +1,4 @@
-package net.enderkitty.block.custom;
+package net.enderkitty.block.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;

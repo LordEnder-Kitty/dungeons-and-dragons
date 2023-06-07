@@ -1,4 +1,4 @@
-package net.enderkitty.block.custom;
+package net.enderkitty.block.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.item.ItemPlacementContext;
@@ -6,9 +6,6 @@ import net.minecraft.state.StateManager;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.DyeColor;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
 public class BodySittingBlock extends ShulkerBoxBlock {

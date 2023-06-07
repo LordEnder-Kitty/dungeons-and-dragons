@@ -1,26 +1,21 @@
-package net.enderkitty.block.custom;
+package net.enderkitty.block.blocks;
 
+//import net.enderkitty.dndmod.block.entity.ModBlockEntities;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
-import net.minecraft.util.BlockMirror;
-import net.minecraft.util.BlockRotation;
-import net.minecraft.util.DyeColor;
+import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
-public class BodyHeadlessBlock extends ShulkerBoxBlock {
-    private static VoxelShape SHAPE = Block.createCuboidShape(-8, 0, -8, 24, 8, 24);
+public class SkeletonProneHeadHalfBlock extends HorizontalFacingBlock {
+    private static VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 8, 16);
 
-    public BodyHeadlessBlock(@Nullable DyeColor color, Settings settings) {
-        super(color, settings);
-    }
-
-    @Override
-    public BlockRenderType getRenderType(BlockState state) {
-        return BlockRenderType.MODEL;
+    public SkeletonProneHeadHalfBlock(Settings settings) {
+        super(settings);
     }
 
     @Override
@@ -47,5 +42,10 @@ public class BodyHeadlessBlock extends ShulkerBoxBlock {
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING);
+    }
+
+    @Override
+    public PistonBehavior getPistonBehavior(BlockState state) {
+        return PistonBehavior.BLOCK;
     }
 }
