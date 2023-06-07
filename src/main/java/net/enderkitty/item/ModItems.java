@@ -246,7 +246,7 @@ public class ModItems {
 
 
 
-    //Spawn Eggs
+//Spawn Eggs
     public static final Item HOUND_SPAWN_EGG = registerItem("hound_spawn_egg", new SpawnEggItem(ModEntities.HOUND, 0x000000, 0x8b0000, new FabricItemSettings().group(ModItemGroup.MISC)));
     public static final Item VAMPIRE_SPAWN_SPAWN_EGG = registerItem("vampire_spawn_spawn_egg", new SpawnEggItem(ModEntities.VAMPIRE_SPAWN, 0xF8F0E3, 0x8b0000, new FabricItemSettings().group(ModItemGroup.MISC)));
     public static final Item SHAMBLING_MOUND_SPAWN_EGG = registerItem("shambling_mound_spawn_egg", new SpawnEggItem(ModEntities.SHAMBLING_MOUND, 0x006400, 0x5C4033, new FabricItemSettings().group(ModItemGroup.MISC)));
