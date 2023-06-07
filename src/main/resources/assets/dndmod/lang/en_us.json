@@ -252,6 +252,10 @@
   "entity.dndmod.chest_boat": "Boat With Chest",
   "item.dndmod.alder_boat": "Alder Boat",
   "item.dndmod.alder_chest_boat": "Alder Boat With Chest",
+  "item.dndmod.ash_boat": "Ash Boat",
+  "item.dndmod.ash_chest_boat": "Ash Boat With Chest",
+  "item.dndmod.balsa_boat": "Balsa Boat",
+  "item.dndmod.balsa_chest_boat": "Balsa Boat With Chest",
 
 
   "entity.minecraft.villager.alchemist": "Alchemist",

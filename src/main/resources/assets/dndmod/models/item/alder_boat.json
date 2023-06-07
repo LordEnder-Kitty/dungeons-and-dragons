@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "dndmod:item/mug_of_ale"
+    "layer0": "dndmod:item/alder_boat"
   }
 }

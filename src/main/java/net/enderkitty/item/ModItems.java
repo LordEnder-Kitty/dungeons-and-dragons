@@ -229,11 +229,19 @@ public class ModItems {
     public static final Item ABACUS = registerItem("abacus", new Item(new FabricItemSettings().group(ModItemGroup.ADVENTURING_GEAR)));
 
 
+//Boats
     public static final Supplier<Item> ALDER_BOAT = registerBoatItem("alder_boat", () ->
-            new ModBoatItem(false, ModBoatEntity.Type.ALDER, new FabricItemSettings().group(ModItemGroup.MISC)));
-
+            new ModBoatItem(false, ModBoatEntity.Type.ALDER, new FabricItemSettings().maxCount(1).group(ModItemGroup.MISC)));
     public static final Supplier<Item> ALDER_CHEST_BOAT = registerBoatItem("alder_chest_boat", () ->
-            new ModBoatItem(true, ModChestBoatEntity.Type.ALDER, new FabricItemSettings().group(ModItemGroup.MISC)));
+            new ModBoatItem(true, ModChestBoatEntity.Type.ALDER, new FabricItemSettings().maxCount(1).group(ModItemGroup.MISC)));
+    public static final Supplier<Item> ASH_BOAT = registerBoatItem("ash_boat", () ->
+            new ModBoatItem(false, ModBoatEntity.Type.ASH, new FabricItemSettings().maxCount(1).group(ModItemGroup.MISC)));
+    public static final Supplier<Item> ASH_CHEST_BOAT = registerBoatItem("ash_chest_boat", () ->
+            new ModBoatItem(true, ModChestBoatEntity.Type.ASH, new FabricItemSettings().maxCount(1).group(ModItemGroup.MISC)));
+    public static final Supplier<Item> BALSA_BOAT = registerBoatItem("balsa_boat", () ->
+            new ModBoatItem(false, ModBoatEntity.Type.BALSA, new FabricItemSettings().maxCount(1).group(ModItemGroup.MISC)));
+    public static final Supplier<Item> BALSA_CHEST_BOAT = registerBoatItem("balsa_chest_boat", () ->
+            new ModBoatItem(true, ModChestBoatEntity.Type.BALSA, new FabricItemSettings().maxCount(1).group(ModItemGroup.MISC)));
 
 
 

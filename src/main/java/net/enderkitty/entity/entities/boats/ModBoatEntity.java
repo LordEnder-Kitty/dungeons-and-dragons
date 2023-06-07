@@ -68,7 +68,9 @@ public class ModBoatEntity extends BoatEntity {
     }
 
     public enum Type {
-        ALDER("alder", () -> ModItems.ALDER_BOAT.get(), () -> ModItems.ALDER_CHEST_BOAT.get());
+        ALDER("alder", () -> ModItems.ALDER_BOAT.get(), () -> ModItems.ALDER_CHEST_BOAT.get()),
+        ASH("ash", () -> ModItems.ASH_BOAT.get(), () -> ModItems.ASH_CHEST_BOAT.get()),
+        BALSA("balsa", () -> ModItems.BALSA_BOAT.get(), () -> ModItems.BALSA_CHEST_BOAT.get());
 
         private final String name;
         private final Supplier<Item> item;
