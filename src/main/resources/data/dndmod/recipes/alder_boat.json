@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "dndmod:alder_planks"
+    }
+  },
+  "result": {
+    "item": "dndmod:alder_boat"
+  }
+}

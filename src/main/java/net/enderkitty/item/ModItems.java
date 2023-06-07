@@ -1,6 +1,7 @@
 package net.enderkitty.item;
 
 import net.enderkitty.DndMod;
+import net.enderkitty.block.ModBlocks;
 import net.enderkitty.entity.entities.boats.ModBoatEntity;
 import net.enderkitty.entity.entities.boats.ModChestBoatEntity;
 import net.enderkitty.entity.ModEntities;
@@ -242,6 +243,9 @@ public class ModItems {
             new ModBoatItem(false, ModBoatEntity.Type.BALSA, new FabricItemSettings().maxCount(1).group(ModItemGroup.MISC)));
     public static final Supplier<Item> BALSA_CHEST_BOAT = registerBoatItem("balsa_chest_boat", () ->
             new ModBoatItem(true, ModChestBoatEntity.Type.BALSA, new FabricItemSettings().maxCount(1).group(ModItemGroup.MISC)));
+
+//Signs
+    public static final Item ALDER_SIGN = registerItem("alder_sign", new ModSignItem(new FabricItemSettings().maxCount(16).group(ModItemGroup.MISC), ModBlocks.ALDER_SIGN, ModBlocks.ALDER_WALL_SIGN));
 
 
 

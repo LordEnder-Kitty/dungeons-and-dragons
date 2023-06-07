@@ -4,7 +4,9 @@
 	"package": "net.enderkitty.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"BrewingRecipeRegistryMixin"
+		"BrewingRecipeRegistryMixin",
+		"BlockEntityTypeMixin",
+		"SignTypeAccessor"
 	],
 	"client": [
 		"DndModMixin"

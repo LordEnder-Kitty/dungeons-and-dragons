@@ -151,7 +151,11 @@ public class ModBlocks {
     public static final Block ALDER_TRAPDOOR = registerBlock("alder_trapdoor", new TrapdoorBlock(FabricBlockSettings.of(Material.WOOD)
             .strength(2.0f, 3.0f).requiresTool().nonOpaque().sounds(BlockSoundGroup.WOOD)), ModItemGroup.MISC);
     public static final Block POTTED_ALDER_SAPLING = registerBlockWithoutBlockItem("potted_alder_sapling",
-            new FlowerPotBlock(ModBlocks.ALDER_SAPLING, FabricBlockSettings.copy(Blocks.POTTED_BIRCH_SAPLING)), ModItemGroup.MISC);
+            new FlowerPotBlock(ModBlocks.ALDER_SAPLING, FabricBlockSettings.copy(Blocks.POTTED_BIRCH_SAPLING)));
+    public static final Block ALDER_WALL_SIGN = registerBlockWithoutBlockItem("alder_wall_sign", new WallSignBlock(FabricBlockSettings.of(Material.WOOD)
+            .strength(1.0f).noCollision().sounds(BlockSoundGroup.WOOD), ModSignTypes.ALDER));
+    public static final Block ALDER_SIGN = registerBlockWithoutBlockItem("alder_sign", new SignBlock(FabricBlockSettings.of(Material.WOOD)
+            .strength(1.0f).noCollision().sounds(BlockSoundGroup.WOOD), ModSignTypes.ALDER));
 
 
     public static final Block ASH_LEAVES = registerBlock("ash_leaves", new LeavesBlock(FabricBlockSettings.copy(Blocks.BIRCH_LEAVES)), ModItemGroup.MISC);
@@ -178,7 +182,7 @@ public class ModBlocks {
     public static final Block ASH_TRAPDOOR = registerBlock("ash_trapdoor", new TrapdoorBlock(FabricBlockSettings.of(Material.WOOD)
             .strength(2.0f, 3.0f).requiresTool().nonOpaque().sounds(BlockSoundGroup.WOOD)), ModItemGroup.MISC);
     public static final Block POTTED_ASH_SAPLING = registerBlockWithoutBlockItem("potted_ash_sapling",
-            new FlowerPotBlock(ModBlocks.ASH_SAPLING, FabricBlockSettings.copy(Blocks.POTTED_BIRCH_SAPLING)), ModItemGroup.MISC);
+            new FlowerPotBlock(ModBlocks.ASH_SAPLING, FabricBlockSettings.copy(Blocks.POTTED_BIRCH_SAPLING)));
 
 
     public static final Block BALSA_LEAVES = registerBlock("balsa_leaves", new LeavesBlock(FabricBlockSettings.copy(Blocks.BIRCH_LEAVES)), ModItemGroup.MISC);
@@ -205,7 +209,7 @@ public class ModBlocks {
     public static final Block BALSA_TRAPDOOR = registerBlock("balsa_trapdoor", new TrapdoorBlock(FabricBlockSettings.of(Material.WOOD)
             .strength(2.0f, 3.0f).requiresTool().nonOpaque().sounds(BlockSoundGroup.WOOD)), ModItemGroup.MISC);
     public static final Block POTTED_BALSA_SAPLING = registerBlockWithoutBlockItem("potted_balsa_sapling",
-            new FlowerPotBlock(ModBlocks.BALSA_SAPLING, FabricBlockSettings.copy(Blocks.POTTED_BIRCH_SAPLING)), ModItemGroup.MISC);
+            new FlowerPotBlock(ModBlocks.BALSA_SAPLING, FabricBlockSettings.copy(Blocks.POTTED_BIRCH_SAPLING)));
 
 
 
@@ -256,7 +260,7 @@ public class ModBlocks {
         return Registry.register(Registry.BLOCK, new Identifier(DndMod.MOD_ID, name), block);
     }
 
-    private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group) {
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(DndMod.MOD_ID, name), block);
     }
 
