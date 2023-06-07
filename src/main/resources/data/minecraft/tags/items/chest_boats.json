@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "dndmod:alder_chest_boat",
+    "dndmod:ash_chest_boat",
+    "dndmod:balsa_chest_boat"
+  ]
+}
