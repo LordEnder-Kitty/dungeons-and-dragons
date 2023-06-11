@@ -1,0 +1,23 @@
+{
+  "values": [
+    "dndmod:battleaxe",
+    "dndmod:flail",
+    "dndmod:glaive",
+    "dndmod:greataxe",
+    "dndmod:greatsword",
+    "dndmod:halberd",
+    "dndmod:lance",
+    "dndmod:longsword",
+    "dndmod:maul",
+    "dndmod:morning_star",
+    "dndmod:pike",
+    "dndmod:rapier",
+    "dndmod:scimitar",
+    "dndmod:shortsword",
+    "dndmod:war_pick",
+    "dndmod:warhammer",
+    "dndmod:whip",
+
+    "dndmod:blowgun"
+  ]
+}

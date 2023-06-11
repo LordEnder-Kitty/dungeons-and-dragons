@@ -1,0 +1,16 @@
+{
+  "values": [
+    "dndmod:hide_helmet",
+    "dndmod:hide_chestplate",
+    "dndmod:hide_leggings",
+    "dndmod:hide_boots",
+    "dndmod:scale_helmet",
+    "dndmod:scale_chestplate",
+    "dndmod:scale_leggings",
+    "dndmod:scale_boots",
+    "dndmod:half_plate_helmet",
+    "dndmod:half_plate_chestplate",
+    "dndmod:half_plate_leggings",
+    "dndmod:half_plate_boots"
+  ]
+}

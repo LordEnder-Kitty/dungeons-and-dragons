@@ -1,0 +1,31 @@
+{
+  "values": [
+    "dndmod:wooden_club",
+    "dndmod:stone_club",
+    "dndmod:golden_club",
+    "dndmod:iron_club",
+    "dndmod:diamond_club",
+    "dndmod:netherite_club",
+    "dndmod:silvered_iron_club",
+
+    "dndmod:wooden_dagger",
+    "dndmod:stone_dagger",
+    "dndmod:golden_dagger",
+    "dndmod:iron_dagger",
+    "dndmod:diamond_dagger",
+    "dndmod:netherite_dagger",
+    "dndmod:silvered_iron_dagger",
+
+    "dndmod:greatclub",
+    "dndmod:handaxe",
+    "dndmod:javelin",
+    "dndmod:light_hammer",
+    "dndmod:mace",
+    "dndmod:quarterstaff",
+    "dndmod:sickle",
+    "dndmod:spear",
+
+    "dndmod:sling",
+    "dndmod:dart"
+  ]
+}

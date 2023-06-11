@@ -1,0 +1,69 @@
+{
+  "values": [
+    "minecraft:wooden_sword",
+    "minecraft:wooden_axe",
+    "minecraft:stone_sword",
+    "minecraft:stone_axe",
+    "minecraft:golden_sword",
+    "minecraft:golden_axe",
+    "minecraft:iron_sword",
+    "minecraft:iron_axe",
+    "minecraft:diamond_sword",
+    "minecraft:diamond_axe",
+    "minecraft:netherite_sword",
+    "minecraft:netherite_axe",
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "minecraft:trident",
+
+
+    "dndmod:wooden_club",
+    "dndmod:stone_club",
+    "dndmod:golden_club",
+    "dndmod:iron_club",
+    "dndmod:diamond_club",
+    "dndmod:netherite_club",
+    "dndmod:silvered_iron_club",
+
+    "dndmod:wooden_dagger",
+    "dndmod:stone_dagger",
+    "dndmod:golden_dagger",
+    "dndmod:iron_dagger",
+    "dndmod:diamond_dagger",
+    "dndmod:netherite_dagger",
+    "dndmod:silvered_iron_dagger",
+
+    "dndmod:greatclub",
+    "dndmod:handaxe",
+    "dndmod:javelin",
+    "dndmod:light_hammer",
+    "dndmod:mace",
+    "dndmod:quarterstaff",
+    "dndmod:sickle",
+    "dndmod:spear",
+
+    "dndmod:sling",
+    "dndmod:dart",
+
+
+    "dndmod:battleaxe",
+    "dndmod:flail",
+    "dndmod:glaive",
+    "dndmod:greataxe",
+    "dndmod:greatsword",
+    "dndmod:halberd",
+    "dndmod:lance",
+    "dndmod:longsword",
+    "dndmod:maul",
+    "dndmod:morning_star",
+    "dndmod:pike",
+    "dndmod:rapier",
+    "dndmod:scimitar",
+    "dndmod:shortsword",
+    "dndmod:war_pick",
+    "dndmod:warhammer",
+    "dndmod:whip",
+
+    "dndmod:blowgun"
+  ]
+}

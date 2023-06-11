@@ -1,0 +1,12 @@
+{
+  "values": [
+    "dndmod:padded_helmet",
+    "dndmod:padded_chestplate",
+    "dndmod:padded_leggings",
+    "dndmod:padded_boots",
+    "dndmod:studded_leather_helmet",
+    "dndmod:studded_leather_chestplate",
+    "dndmod:studded_leather_leggings",
+    "dndmod:studded_leather_boots"
+  ]
+}

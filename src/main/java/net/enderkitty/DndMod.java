@@ -3,6 +3,7 @@ package net.enderkitty;
 import net.enderkitty.block.ModBlocks;
 import net.enderkitty.effect.ModEffects;
 import net.enderkitty.enchantment.ModEnchantments;
+import net.enderkitty.entity.ModBlockEntities;
 import net.enderkitty.entity.entities.boats.ModBoatEntities;
 import net.enderkitty.entity.ModEntities;
 import net.enderkitty.entity.entities.*;
@@ -37,6 +38,8 @@ public class DndMod implements ModInitializer {
 
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+
+        ModBlockEntities.registerBlockEntities();
 
         RegisterModPotions.registerPotions();
 

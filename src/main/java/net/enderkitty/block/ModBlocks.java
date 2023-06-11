@@ -101,10 +101,9 @@ public class ModBlocks {
 
     //The Tavern
     public static final Block BAR_TABLE = registerBlock("bar_table", new BarTableBlock(FabricBlockSettings.of(Material.WOOD).strength(2.8f).requiresTool().nonOpaque().sounds(BlockSoundGroup.WOOD)), ModItemGroup.THE_TAVERN);
-//    public static final Block KEG = registerBlock("keg",
-//            new KegBlock(FabricBlockSettings.of(Material.WOOD).strength(2.8f).requiresTool()), ModItemGroup.THE_TAVERN);
-//    public static final Block ALE_KEG = registerBlock("ale_keg",
-//            new AleKegBlock(FabricBlockSettings.copyOf(ModBlocks.KEG)), ModItemGroup.THE_TAVERN);
+
+    public static final Block KEG = registerBlock("keg", new KegBlock(FabricBlockSettings.of(Material.WOOD).strength(1.0f, 1.5f).nonOpaque().sounds(BlockSoundGroup.WOOD)), ModItemGroup.MISC);
+
 
 
 

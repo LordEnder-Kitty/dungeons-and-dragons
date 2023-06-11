@@ -1,0 +1,17 @@
+{
+  "values": [
+    "minecraft:bow",
+    "minecraft:crossbow",
+
+    "minecraft:trident",
+
+    "dndmod:handaxe",
+    "dndmod:javelin",
+    "dndmod:light_hammer",
+    "dndmod:spear",
+    "dndmod:sling",
+    "dndmod:dart",
+
+    "dndmod:blowgun"
+  ]
+}
