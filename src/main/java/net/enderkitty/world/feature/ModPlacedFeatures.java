@@ -40,13 +40,17 @@ public class ModPlacedFeatures {
     //Trees
     public static final RegistryEntry<PlacedFeature> ALDER_PLACED = PlacedFeatures.register("alder_placed",
             ModConfiguredFeatures.ALDER_SPAWN, VegetationPlacedFeatures.modifiers
-                    (PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
+                    (PlacedFeatures.createCountExtraModifier(0, 0.1f, 1)));
     public static final RegistryEntry<PlacedFeature> ASH_PLACED = PlacedFeatures.register("ash_placed",
             ModConfiguredFeatures.ASH_SPAWN, VegetationPlacedFeatures.modifiers
-                    (PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
+                    (PlacedFeatures.createCountExtraModifier(0, 0.1f, 1)));
     public static final RegistryEntry<PlacedFeature> BALSA_PLACED = PlacedFeatures.register("balsa_placed",
             ModConfiguredFeatures.BALSA_SPAWN, VegetationPlacedFeatures.modifiers
-                    (PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
+                    (PlacedFeatures.createCountExtraModifier(0, 0.1f, 1)));
+
+
+    public static final RegistryEntry<PlacedFeature> YEAST_PLACED = PlacedFeatures.register("yeast_placed", ModConfiguredFeatures.YEAST_PLANT,
+            RarityFilterPlacementModifier.of(1), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
 
 

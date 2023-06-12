@@ -24,8 +24,6 @@ public class ModItems {
             new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC).group(ModItemGroup.MISC), 333));
     public static final Item BLUE_DRAGON_BREATH_WEAPON = registerItem("blue_dragon_breath_weapon",
             new BlueDragonBreathWeaponItem(ToolMaterials.DIAMOND, 4, -1f, new FabricItemSettings().rarity(Rarity.EPIC).maxDamage(-1).group(ModItemGroup.WEAPONS)));
-    public static final Item RED_WINE = registerItem("red_wine", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
-    public static final Item WHITE_WINE = registerItem("white_wine", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
     public static final Item VAMPIRE_FIST = registerItem("vampire_fist", new VampireFistItem(ToolMaterials.STONE, 4, -1f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(-1).rarity(Rarity.EPIC)));
 
@@ -36,18 +34,18 @@ public class ModItems {
     public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
     public static final Item SILVER_NUGGET = registerItem("silver_nugget", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
     public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
-    public static final Item SILVER_CARROT = registerItem("silver_carrot", new Item(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoodComponents.SILVER_CARROT)));
-    public static final Item SILVER_MELON = registerItem("silver_melon", new Item(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoodComponents.SILVER_MELON)));
+    public static final Item SILVER_CARROT = registerItem("silver_carrot", new Item(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoods.SILVER_CARROT)));
+    public static final Item SILVER_MELON = registerItem("silver_melon", new Item(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoods.SILVER_MELON)));
 
     public static final Item ELECTRUM_NUGGET = registerItem("electrum_nugget", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
     public static final Item ELECTRUM_INGOT = registerItem("electrum_ingot", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
     public static final Item RAW_ELECTRUM = registerItem("raw_electrum", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
 
-    public static final Item PLATINUM_INGOT = registerItem("platinum_ingot", new PlatinumIngotItem(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoodComponents.PLATINUM)));
-    public static final Item RAW_PLATINUM = registerItem("raw_platinum", new RawPlatinumItem(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoodComponents.PLATINUM)));
-    public static final Item PLATINUM_NUGGET = registerItem("platinum_nugget", new PlatinumNuggetItem(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoodComponents.PLATINUM)));
+    public static final Item PLATINUM_INGOT = registerItem("platinum_ingot", new PlatinumIngotItem(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoods.PLATINUM)));
+    public static final Item RAW_PLATINUM = registerItem("raw_platinum", new RawPlatinumItem(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoods.PLATINUM)));
+    public static final Item PLATINUM_NUGGET = registerItem("platinum_nugget", new PlatinumNuggetItem(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoods.PLATINUM)));
 
-    public static final Item PLATINUM_PIECE = registerItem("platinum_piece", new PlatinumPieceItem(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoodComponents.PLATINUM)));
+    public static final Item PLATINUM_PIECE = registerItem("platinum_piece", new PlatinumPieceItem(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoods.PLATINUM)));
     public static final Item ELECTRUM_PIECE = registerItem("electrum_piece", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
     public static final Item GOLD_PIECE = registerItem("gold_piece", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
     public static final Item SILVER_PIECE = registerItem("silver_piece", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
@@ -57,7 +55,7 @@ public class ModItems {
     //Other
     public static final Item LEATHER_RINGING = registerItem("leather_ringing", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
     public static final Item SHARPENED_BONE_FRAGMENT = registerItem("sharpened_bone_fragment", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
-    public static final Item BOTTLE_OF_BLOOD = registerItem("bottle_of_blood", new BottleOfBloodItem(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoodComponents.BOTTLE_OF_BLOOD)));
+    public static final Item BOTTLE_OF_BLOOD = registerItem("bottle_of_blood", new BottleOfBloodItem(new FabricItemSettings().group(ModItemGroup.MISC).food(ModFoods.BOTTLE_OF_BLOOD)));
     public static final Item SCAB = registerItem("scab", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
 
     public static final Item MAP1 = registerItem("map1", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
@@ -75,12 +73,15 @@ public class ModItems {
 
     //You meet in a tavern
     public static final Item MUG = registerItem("mug", new MugItem(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
-    public static final Item MUG_OF_WATER = registerItem("mug_of_water", new MugOfWaterItem(new FabricItemSettings().maxCount(16).group(ModItemGroup.THE_TAVERN).food(ModFoodComponents.MUG_OF_WATER)));
-    public static final Item MUG_OF_ALE = registerItem("mug_of_ale", new MugOfAleItem(new FabricItemSettings().maxCount(16).group(ModItemGroup.THE_TAVERN).food(ModFoodComponents.ALE)));
+    public static final Item MUG_OF_WATER = registerItem("mug_of_water", new MugOfWaterItem(new FabricItemSettings().maxCount(16).group(ModItemGroup.THE_TAVERN).food(ModFoods.MUG_OF_WATER)));
+    public static final Item MUG_OF_ALE = registerItem("mug_of_ale", new MugOfAleItem(new FabricItemSettings().maxCount(16).group(ModItemGroup.THE_TAVERN).food(ModFoods.ALE)));
 
-    public static final Item WHEAT_MIXTURE = registerItem("wheat_mixture", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
-    public static final Item SMALL_BREAD = registerItem("small_bread", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN).food(ModFoodComponents.SMALL_BREAD)));
+    public static final Item HARVESTED_YEAST = registerItem("harvested_yeast", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
+    public static final Item YEAST = registerItem("yeast", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
+    public static final Item BOWL_OF_YEAST = registerItem("bowl_of_yeast", new StewItem(new FabricItemSettings().maxCount(1).food(ModFoods.YEAST).recipeRemainder(Items.BOWL).group(ModItemGroup.THE_TAVERN)));
+    public static final Item HOP = registerItem("hop", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
 
+    public static final Item BUCKET_OF_ALE = registerItem("ale_bucket", new BucketRemainderFoodItem(new FabricItemSettings().maxCount(1).recipeRemainder(Items.BUCKET).food(ModFoods.ALE_BUCKET).group(ModItemGroup.THE_TAVERN)));
 
 
 

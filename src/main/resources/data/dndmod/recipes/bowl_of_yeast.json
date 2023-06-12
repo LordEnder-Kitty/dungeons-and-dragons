@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "X"
+  ],
+  "key": {
+    "#": {"item": "dndmod:yeast"},
+    "X": {"item": "minecraft:bowl"}
+  },
+  "result": {
+    "item": "dndmod:bowl_of_yeast"
+  }
+}

@@ -6,7 +6,7 @@ Description: Unexpected error
 
 java.lang.ExceptionInInitializerError
 	at net.enderkitty.entity.blocks.KegBlockEntity.<init>(KegBlockEntity.java:21)
-	at net.enderkitty.block.blocks.KegBlock.createBlockEntity(KegBlock.java:23)
+	at net.enderkitty.block.blocks.AleKegBlock.createBlockEntity(KegBlock.java:23)
 	at net.minecraft.world.chunk.WorldChunk.setBlockState(WorldChunk.java:268)
 	at net.minecraft.world.World.setBlockState(World.java:221)
 	at net.minecraft.client.world.ClientWorld.setBlockState(ClientWorld.java:156)
@@ -48,7 +48,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Thread: Render thread
 Stacktrace:
 	at net.enderkitty.entity.blocks.KegBlockEntity.<init>(KegBlockEntity.java:21)
-	at net.enderkitty.block.blocks.KegBlock.createBlockEntity(KegBlock.java:23)
+	at net.enderkitty.block.blocks.AleKegBlock.createBlockEntity(KegBlock.java:23)
 	at net.minecraft.world.chunk.WorldChunk.setBlockState(WorldChunk.java:268)
 	at net.minecraft.world.World.setBlockState(World.java:221)
 	at net.minecraft.client.world.ClientWorld.setBlockState(ClientWorld.java:156)

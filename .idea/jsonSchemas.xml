@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="Minecraft Data Pack Loot Table">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="Minecraft Data Pack Loot Table" />
+              <option name="relativePathToSchema" value="https://json.schemastore.org/minecraft-loot-table.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/dndmod/loot_tables/blocks/keg.json" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/dndmod/loot_tables/blocks/hop_plant.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="Minecraft Data Pack Recipe">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="Minecraft Data Pack Recipe" />
+              <option name="relativePathToSchema" value="https://json.schemastore.org/minecraft-recipe.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/dndmod/recipes/keg.json" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/dndmod/recipes/bowl_of_yeast.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="Minecraft Data Pack Tag">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="Minecraft Data Pack Tag" />
+              <option name="relativePathToSchema" value="https://json.schemastore.org/minecraft-tag.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/fabric/tags/mineable/shears.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="Minecraft Resourcepack Sounds">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="Minecraft Resourcepack Sounds" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/AxoCode/json-schema/master/minecraft/sounds.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="src/main/resources/assets/dndmod/sounds.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>

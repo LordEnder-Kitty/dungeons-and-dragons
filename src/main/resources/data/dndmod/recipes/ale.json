@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "dndmod:bowl_of_yeast"},
+    {"item": "dndmod:hop"},
+    {"item": "minecraft:wheat"},
+    {"item": "minecraft:water_bucket"},
+    {"item": "minecraft:bucket"}
+  ],
+  "result": {"item": "dndmod:ale_bucket"}
+}

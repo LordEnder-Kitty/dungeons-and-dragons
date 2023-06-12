@@ -95,7 +95,12 @@ public class ModConfiguredFeatures {
             ModConfiguredFeatures.BALSA_TREE, List.of(PlacedFeatures.wouldSurvive(ModBlocks.BALSA_SAPLING)));
     public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> BALSA_SPAWN =
             ConfiguredFeatures.register("balsa_spawn", Feature.RANDOM_SELECTOR,
-                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(BALSA_CHECKED, 0.5f)), BALSA_CHECKED));
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(BALSA_CHECKED, 0.1f)), BALSA_CHECKED));
+
+
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> YEAST_PLANT = ConfiguredFeatures.register("yeast_plant", Feature.FLOWER,
+            ConfiguredFeatures.createRandomPatchFeatureConfig(18, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                    new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.YEAST_PLANT)))));
 
 
 

@@ -7,19 +7,13 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.BlockPos;
 
 public class KegBlockEntity extends BlockEntity {
+    public KegBlockEntity(BlockPos pos, BlockState state) {super(ModBlockEntities.KEG_BLOCK_ENTITY, pos, state);}
+
     int aleAmount = 20;
 
-    public int getAleAmount() {
-        return aleAmount;
-    }
+    public int getAleAmount() {return aleAmount;}
+    public void setAleAmount(int amount) {this.aleAmount = amount;}
 
-    public void setAleAmount(int amount) {
-        this.aleAmount = amount;
-    }
-
-    public KegBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.KEG_BLOCK_ENTITY, pos, state);
-    }
 
     @Override
     public void writeNbt(NbtCompound nbt) {
@@ -28,7 +22,6 @@ public class KegBlockEntity extends BlockEntity {
     }
     @Override
     public void readNbt(NbtCompound nbt) {
-        super.readNbt(nbt);
-        aleAmount = nbt.getInt("number");
+        super.readNbt(nbt); aleAmount = nbt.getInt("number");
     }
 }

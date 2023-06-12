@@ -13,6 +13,15 @@
         "stream": true
       }
     ]
+  },
+  "doom": {
+    "sounds": [
+      {
+        "name": "dndmod:doom",
+        "stream": true
+      }
+    ],
+    "subtitle": "sound.dndmod.doom"
   }
 
 }

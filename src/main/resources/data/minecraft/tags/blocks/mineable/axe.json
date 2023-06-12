@@ -41,6 +41,10 @@
     "dndmod:balsa_slab",
     "dndmod:balsa_stairs",
     "dndmod:balsa_door",
-    "dndmod:balsa_trapdoor"
+    "dndmod:balsa_trapdoor",
+
+
+    "dndmod:keg",
+    "dndmod:keg_of_ale"
   ]
 }

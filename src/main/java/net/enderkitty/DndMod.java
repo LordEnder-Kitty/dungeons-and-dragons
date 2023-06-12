@@ -1,12 +1,14 @@
 package net.enderkitty;
 
 import net.enderkitty.block.ModBlocks;
+import net.enderkitty.commands.StopDoomCommand;
+import net.enderkitty.commands.DoomCommand;
 import net.enderkitty.effect.ModEffects;
 import net.enderkitty.enchantment.ModEnchantments;
 import net.enderkitty.entity.ModBlockEntities;
-import net.enderkitty.entity.entities.boats.ModBoatEntities;
 import net.enderkitty.entity.ModEntities;
 import net.enderkitty.entity.entities.*;
+import net.enderkitty.entity.entities.boats.ModBoatEntities;
 import net.enderkitty.fluid.ModFluids;
 import net.enderkitty.item.ModItems;
 import net.enderkitty.potion.RegisterModPotions;
@@ -21,7 +23,7 @@ import net.enderkitty.villager.ModVillagers;
 import net.enderkitty.world.feature.ModConfiguredFeatures;
 import net.enderkitty.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
-
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -75,5 +77,10 @@ public class DndMod implements ModInitializer {
 
         ModScreenHandlers.registerAllScreenHandlers();
         ModRecipes.registerRecipes();
+
+        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
+            DoomCommand.register(dispatcher);
+            StopDoomCommand.register(dispatcher);
+        });
     }
 }

@@ -5,22 +5,16 @@
   "itemGroup.dndmod.adventuring_gear": "Adventuring Gear",
   "itemGroup.dndmod.the_tavern": "The Tavern",
 
+  "sound.dndmod.doom": "A Player Has Gone On A Rampage",
+
   "item.minecraft.emerald": "Gold Piece",
 
   "container.skeleton": "Skeleton Body",
   "container.skeleton.more": "and %s more...",
-  "container.ballista": "Ballista",
 
   "sound.dndmod.stop_eating_metal": "STOP EATING METAL!",
   "item.dndmod.rick_roll_music_disc": "Rick Roll Music Disc",
   "item.dndmod.rick_roll_music_disc.desc": "Rick Astley - Never Gonna Give You Up",
-
-  "item.dndmod.lordender_kitty": "LordEnder_Kitty",
-  "item.dndmod.netherparrotgame": "netherparrotgame",
-  "item.dndmod.turkey": "WhysoSirius101",
-  "item.dndmod.mebe1": "MeBe1",
-  "item.dndmod.silasyyy": "silasyyy123",
-  "item.dndmod.theepiclord2008": "theepiclord2008",
 
 
   "item.minecraft.potion.effect.blood_loss_potion": "Potion of Blood Loss",
@@ -33,12 +27,17 @@
   "item.dndmod.mug": "Mug",
   "item.dndmod.mug_of_water": "Mug of Water",
   "item.dndmod.mug_of_ale": "Mug of Ale",
-  "item.dndmod.wheat_mixture": "Wheat Mixture",
-  "item.dndmod.small_bread": "Small Bread",
-  "item.dndmod.red_wine": "Mug of Red Wine",
-  "item.dndmod.white_wine": "Mug of White Wine",
 
+  "block.dndmod.yeast_plant": "Yeast Plant",
+  "item.dndmod.harvested_yeast": "Harvested Yeast",
+  "item.dndmod.yeast": "Yeast",
+  "item.dndmod.bowl_of_yeast": "Bowl of Yeast",
+  "block.dndmod.hop_plant": "Hop Plant",
+  "item.dndmod.hop": "Hop",
+
+  "block.dndmod.keg_of_ale": "Keg of Ale",
   "block.dndmod.keg": "Keg",
+  "item.dndmod.ale_bucket": "Bucket of Ale",
 
 
   "item.dndmod.vampire_fist": "Vampire Claws",
@@ -178,7 +177,6 @@
   "tooltip.dndmod.ball_bearings": "§c!DISCLAIMER!§7 may have issues.",
   "block.dndmod.blood_block": "Blood",
   "block.dndmod.alchemy_table": "Alchemy Table",
-  "block.dndmod.ballista": "Ballista",
   "block.dndmod.bar_table": "Bar Table",
   "block.dndmod.adventuring_table": "Adventuring Table",
   "tooltip.dndmod.adventuring_table": "§7Doesn't do shit, I needed a block for the villager.",

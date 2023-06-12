@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [{"item": "dndmod:harvested_yeast"}],
+  "result": {"item": "dndmod:yeast"}
+}

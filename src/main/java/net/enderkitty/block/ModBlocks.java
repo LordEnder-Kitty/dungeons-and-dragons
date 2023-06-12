@@ -29,11 +29,9 @@ import java.util.List;
 
 public class ModBlocks {
 
-    public static final Block BALL_BEARINGS = registerBlock("ball_bearings",
-            new BallBearingsBlock(FabricBlockSettings.of(Material.METAL).slipperiness(1F).strength(0.6f).nonOpaque().sounds(BlockSoundGroup.METAL)),
-            ModItemGroup.MISC, "tooltip.dndmod.ball_bearings");
-    public static final Block ALCHEMY_TABLE = registerBlock("alchemy_table", new AlchemyTableBlock(FabricBlockSettings.of(Material.STONE)
-            .strength(2f).requiresTool().nonOpaque()), ModItemGroup.MISC);
+    public static final Block BALL_BEARINGS = registerBlock("ball_bearings", new BallBearingsBlock(FabricBlockSettings.of(Material.METAL)
+            .strength(0.6f).slipperiness(1F).nonOpaque().sounds(BlockSoundGroup.METAL)), ModItemGroup.MISC, "tooltip.dndmod.ball_bearings");
+    public static final Block ALCHEMY_TABLE = registerBlock("alchemy_table", new AlchemyTableBlock(FabricBlockSettings.of(Material.STONE).strength(2f).nonOpaque()), ModItemGroup.MISC);
     public static final Block ADVENTURING_TABLE = registerBlock("adventuring_table", new AdventuringTableBlock(FabricBlockSettings.of(Material.WOOD)
             .strength(2f).requiresTool().nonOpaque().sounds(BlockSoundGroup.WOOD)), ModItemGroup.MISC, "tooltip.dndmod.adventuring_table");
 
@@ -95,16 +93,17 @@ public class ModBlocks {
 
     public static final Block STONE_STATUE = registerBlock("stone_statue", new StoneStatueBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool().nonOpaque()), ModItemGroup.MISC);
 
-//    public static final Block BALLISTA = registerBlock("ballista",
-//            new BallistaBlock(FabricBlockSettings.of(Material.WOOD).strength(3f).requiresTool().nonOpaque()
-//                    .sounds(BlockSoundGroup.WOOD)), ModItemGroup.WEAPONS);
+
 
     //The Tavern
     public static final Block BAR_TABLE = registerBlock("bar_table", new BarTableBlock(FabricBlockSettings.of(Material.WOOD).strength(2.8f).requiresTool().nonOpaque().sounds(BlockSoundGroup.WOOD)), ModItemGroup.THE_TAVERN);
 
-    public static final Block KEG = registerBlock("keg", new KegBlock(FabricBlockSettings.of(Material.WOOD).strength(1.0f, 1.5f).nonOpaque().sounds(BlockSoundGroup.WOOD)), ModItemGroup.MISC);
+    public static final Block KEG_OF_ALE = registerBlock("keg_of_ale", new AleKegBlock(FabricBlockSettings.of(Material.WOOD).strength(1.0f, 1.5f).nonOpaque().sounds(BlockSoundGroup.WOOD)), ModItemGroup.THE_TAVERN);
+    public static final Block KEG = registerBlock("keg", new KegBlock(FabricBlockSettings.of(Material.WOOD).strength(1.0f, 1.5f).nonOpaque().sounds(BlockSoundGroup.WOOD)), ModItemGroup.THE_TAVERN);
 
+    public static final Block YEAST_PLANT = registerBlock("yeast_plant", new YeastPlantBlock(FabricBlockSettings.of(Material.PLANT).strength(0.5f).nonOpaque().noCollision().sounds(BlockSoundGroup.GRASS)), ModItemGroup.THE_TAVERN);
 
+    public static final Block HOP_PLANT = registerBlock("hop_plant", new TallFlowerBlock(FabricBlockSettings.of(Material.PLANT).breakInstantly().nonOpaque().noCollision().sounds(BlockSoundGroup.AZALEA_LEAVES)), ModItemGroup.THE_TAVERN);
 
 
     //Dungeon Decorations

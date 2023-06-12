@@ -12,7 +12,7 @@ public class ModBlockEntities {
     public static final BlockEntityType<KegBlockEntity> KEG_BLOCK_ENTITY = Registry.register(
             Registry.BLOCK_ENTITY_TYPE,
             new Identifier(DndMod.MOD_ID, "keg_block_entity"),
-            FabricBlockEntityTypeBuilder.create(KegBlockEntity::new, ModBlocks.KEG).build()
+            FabricBlockEntityTypeBuilder.create(KegBlockEntity::new, ModBlocks.KEG_OF_ALE).build()
     );
 
     public static void registerBlockEntities() {DndMod.LOGGER.debug("Registering block entities for DndMod");}

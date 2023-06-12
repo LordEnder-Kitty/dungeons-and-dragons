@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "dndmod:block/keg" },
+    "facing=south": { "model": "dndmod:block/keg", "y": 180 },
+    "facing=west": { "model": "dndmod:block/keg", "y": 270 },
+    "facing=east": { "model": "dndmod:block/keg", "y": 90 },
+    "facing=up": { "model": "dndmod:block/keg_vertical" },
+    "facing=down": { "model": "dndmod:block/keg_vertical", "x": 180 }
+  }
+}
