@@ -17,8 +17,7 @@ public class KegBlockEntity extends BlockEntity {
 
     @Override
     public void writeNbt(NbtCompound nbt) {
-        nbt.putInt("number", aleAmount);
-        super.writeNbt(nbt);
+        nbt.putInt("number", aleAmount); super.writeNbt(nbt);
     }
     @Override
     public void readNbt(NbtCompound nbt) {
