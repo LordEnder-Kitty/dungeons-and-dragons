@@ -79,26 +79,11 @@ public class AleKegBlock extends FacingBlock implements BlockEntityProvider {
     public void onPlaced(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack itemStack) {
         super.onPlaced(world, pos, state, placer, itemStack);
         BlockEntity blockEntity = world.getBlockEntity(pos);
-        if (blockEntity instanceof KegBlockEntity) {
-            KegBlockEntity kegBlockEntity = (KegBlockEntity) blockEntity;
+        if (blockEntity instanceof KegBlockEntity kegBlockEntity) {
             NbtCompound nbtCompound = itemStack.getSubNbt("BlockEntityTag");
             if (nbtCompound != null) {
                 kegBlockEntity.setAleAmount(nbtCompound.getInt("aleAmount"));
             }
         }
     }
-
-
-
-
-//    @Override
-//    public void onPlaced(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack itemStack) {
-//        super.onPlaced(world, pos, state, placer, itemStack);
-//        if (itemStack.hasNbt() && itemStack.getNbt().contains("BlockEntityTag")) {
-//            KegBlockEntity kegBlockEntity = (KegBlockEntity) world.getBlockEntity(pos);
-//            if (kegBlockEntity != null) {
-//                kegBlockEntity.setAleAmount(itemStack.getNbt().getInt("aleAmount"));
-//            }
-//        }
-//    }
 }
