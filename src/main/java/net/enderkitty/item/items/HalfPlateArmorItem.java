@@ -22,9 +22,7 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class HalfPlateArmorItem extends ArmorItem implements IAnimatable {
     private final AnimationFactory factory = new AnimationFactory(this);
@@ -37,7 +35,7 @@ public class HalfPlateArmorItem extends ArmorItem implements IAnimatable {
     private <P extends IAnimatable> PlayState predicate(AnimationEvent<P> event) {
         LivingEntity livingEntity = event.getExtraDataOfType(LivingEntity.class).get(0);
 
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.tunic", true));
 
         if (livingEntity instanceof ArmorStandEntity) {
             return PlayState.CONTINUE;
@@ -52,23 +50,10 @@ public class HalfPlateArmorItem extends ArmorItem implements IAnimatable {
             }
         }
 
-        boolean isWearingAll = armorList.containsAll(Arrays.asList(ModItems.HALF_PLATE_BOOTS,
-                ModItems.HALF_PLATE_LEGGINGS, ModItems.HALF_PLATE_CHESTPLATE, ModItems.HALF_PLATE_HELMET));
+        boolean isWearingAll = new HashSet<>(armorList).contains(ModItems.HALF_PLATE_CHESTPLATE);
         return isWearingAll ? PlayState.CONTINUE : PlayState.STOP;
     }
 
-    @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        if (Screen.hasShiftDown()) {
-            tooltip.add(Text.literal("This took to damn long to make.").formatted(Formatting.AQUA));
-        } else {
-            tooltip.add(Text.literal("Press SHIFT").formatted(Formatting.YELLOW));
-        }
-
-        super.appendTooltip(stack, world, tooltip, context);
-    }
-
-    @SuppressWarnings({ "rawtypes", "unchecked" })
     @Override
     public void registerControllers(AnimationData data) {
         data.addAnimationController(new AnimationController(this, "controller", 20, this::predicate));
