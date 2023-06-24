@@ -35,7 +35,15 @@ public class HalfPlateArmorItem extends ArmorItem implements IAnimatable {
     private <P extends IAnimatable> PlayState predicate(AnimationEvent<P> event) {
         LivingEntity livingEntity = event.getExtraDataOfType(LivingEntity.class).get(0);
 
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.tunic", true));
+
+        if (livingEntity.isSprinting() && !livingEntity.isSneaking()) {
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.running", true));
+        } else if (livingEntity.isSneaking()) {
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.crouching", true));
+        } else if (!livingEntity.isSprinting() && !livingEntity.isSneaking()) {
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.normal", true));
+            return PlayState.CONTINUE;
+        }
 
         if (livingEntity instanceof ArmorStandEntity) {
             return PlayState.CONTINUE;

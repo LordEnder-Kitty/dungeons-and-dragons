@@ -1,5 +1,5 @@
-[06:02:14] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.19.2 with Fabric Loader 0.14.19
-[06:02:14] [main/INFO] (FabricLoader) Loading 55 mods:
+[07:35:40] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.19.2 with Fabric Loader 0.14.19
+[07:35:40] [main/INFO] (FabricLoader) Loading 55 mods:
 	- architectury 6.5.85
 	- bettertags 1.19.2-Fabric-1.2
 	- cloth-config 8.2.88
@@ -55,13 +55,13 @@
 	- modmenu 4.2.0-beta.2
 	- roughlyenoughitems 9.1.619
 	   \-- error_notifier 1.0.9
-[06:02:19] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/home/lordender_kitty/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.4+mixin.0.8.5/e13b4069fe3555969811d4474f78576c707bbe1c/sponge-mixin-0.12.4+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
-[06:02:19] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[06:02:19] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
-[06:02:19] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[06:02:23] [main/INFO] (Minecraft) Building optimized datafixer
-[06:02:27] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[06:02:27] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+[07:35:45] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/home/lordender_kitty/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.4+mixin.0.8.5/e13b4069fe3555969811d4474f78576c707bbe1c/sponge-mixin-0.12.4+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[07:35:45] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[07:35:45] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
+[07:35:45] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[07:35:49] [main/INFO] (Minecraft) Building optimized datafixer
+[07:35:53] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[07:35:54] [Render thread/ERROR] (Minecraft) Failed to verify authentication
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-3.11.49.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:155) ~[authlib-3.11.49.jar:?]
@@ -80,42 +80,42 @@ Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 4
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:48) ~[authlib-3.11.49.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:129) ~[authlib-3.11.49.jar:?]
 	... 10 more
-[06:02:27] [Render thread/INFO] (Minecraft) Setting user: Player379
-[06:02:28] [Render thread/INFO] (REI) [REI] Config loaded
-[06:02:28] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id roughlyenoughitems:request_tags_s2c
-[06:02:28] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:request_tags_c2s
-[06:02:28] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIPlugin
-[06:02:28] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIPlugin
-[06:02:28] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultClientPlugin [roughlyenoughitems] for REIPlugin
-[06:02:29] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultClientRuntimePlugin [roughlyenoughitems] for REIPlugin
-[06:02:29] [Render thread/INFO] (REI) [REI] Registered plugin provider HideIngredientsFromTagsPlugin [roughlyenoughitems] for REIPlugin
-[06:02:29] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIServerPlugin
-[06:02:29] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIServerPlugin
-[06:02:29] [Render thread/INFO] (REI) [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIServerPlugin
-[06:02:29] [Render thread/INFO] (REI) [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIPlugin
-[06:02:29] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:delete_item
-[06:02:29] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:create_item
-[06:02:29] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:create_item_grab
-[06:02:29] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:create_item_hotbar
-[06:02:29] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:move_items
-[06:02:29] [Render thread/ERROR] (Minecraft) No data fixer registered for geoexampleentity
-[06:02:29] [Render thread/ERROR] (Minecraft) No data fixer registered for bikeentity
-[06:02:29] [Render thread/ERROR] (Minecraft) No data fixer registered for carentity
-[06:02:29] [Render thread/ERROR] (Minecraft) No data fixer registered for extendedrendererentity
-[06:02:29] [Render thread/ERROR] (Minecraft) No data fixer registered for textureperbonetestentity
-[06:02:29] [Render thread/ERROR] (Minecraft) No data fixer registered for leentity
-[06:02:29] [Render thread/ERROR] (Minecraft) No data fixer registered for rocketprojectile
-[06:02:29] [Render thread/INFO] (Minecraft) [STDOUT]: Registering Enchantments for dndmod
-[06:02:29] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultClientPlugin [roughlyenoughitems] for REIClientPlugin
-[06:02:29] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultClientRuntimePlugin [roughlyenoughitems] for REIClientPlugin
-[06:02:29] [Render thread/INFO] (REI) [REI] Registered plugin provider HideIngredientsFromTagsPlugin [roughlyenoughitems] for REIClientPlugin
-[06:02:29] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id roughlyenoughitems:ci_msg
-[06:02:29] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id roughlyenoughitems:og_not_enough
-[06:02:30] [Worker-Main-8/INFO] (Mod Menu/Update Checker) Checking mod updates...
-[06:02:30] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id architectury:spawn_entity_packet
-[06:02:30] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[06:02:31] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.1 SNAPSHOT
-[06:02:33] [Worker-Main-9/ERROR] (Minecraft) Failed to retrieve profile key pair
+[07:35:54] [Render thread/INFO] (Minecraft) Setting user: Player439
+[07:35:55] [Render thread/INFO] (REI) [REI] Config loaded
+[07:35:55] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id roughlyenoughitems:request_tags_s2c
+[07:35:55] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:request_tags_c2s
+[07:35:55] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIPlugin
+[07:35:55] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIPlugin
+[07:35:55] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultClientPlugin [roughlyenoughitems] for REIPlugin
+[07:35:55] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultClientRuntimePlugin [roughlyenoughitems] for REIPlugin
+[07:35:55] [Render thread/INFO] (REI) [REI] Registered plugin provider HideIngredientsFromTagsPlugin [roughlyenoughitems] for REIPlugin
+[07:35:55] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIServerPlugin
+[07:35:55] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIServerPlugin
+[07:35:55] [Render thread/INFO] (REI) [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIServerPlugin
+[07:35:55] [Render thread/INFO] (REI) [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIPlugin
+[07:35:55] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:delete_item
+[07:35:55] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:create_item
+[07:35:55] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:create_item_grab
+[07:35:55] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:create_item_hotbar
+[07:35:55] [Render thread/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:move_items
+[07:35:56] [Render thread/INFO] (Minecraft) [STDOUT]: Registering Enchantments for dndmod
+[07:35:56] [Render thread/ERROR] (Minecraft) No data fixer registered for geoexampleentity
+[07:35:56] [Render thread/ERROR] (Minecraft) No data fixer registered for bikeentity
+[07:35:56] [Render thread/ERROR] (Minecraft) No data fixer registered for carentity
+[07:35:56] [Render thread/ERROR] (Minecraft) No data fixer registered for extendedrendererentity
+[07:35:56] [Render thread/ERROR] (Minecraft) No data fixer registered for textureperbonetestentity
+[07:35:56] [Render thread/ERROR] (Minecraft) No data fixer registered for leentity
+[07:35:56] [Render thread/ERROR] (Minecraft) No data fixer registered for rocketprojectile
+[07:35:56] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultClientPlugin [roughlyenoughitems] for REIClientPlugin
+[07:35:56] [Render thread/INFO] (REI) [REI] Registered plugin provider DefaultClientRuntimePlugin [roughlyenoughitems] for REIClientPlugin
+[07:35:56] [Render thread/INFO] (REI) [REI] Registered plugin provider HideIngredientsFromTagsPlugin [roughlyenoughitems] for REIClientPlugin
+[07:35:56] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id roughlyenoughitems:ci_msg
+[07:35:56] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id roughlyenoughitems:og_not_enough
+[07:35:56] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[07:35:56] [Render thread/INFO] (NetworkManagerImpl) Registering S2C receiver with id architectury:spawn_entity_packet
+[07:35:57] [Worker-Main-8/INFO] (Mod Menu/Update Checker) Checking mod updates...
+[07:35:57] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.1 SNAPSHOT
+[07:36:00] [Worker-Main-9/ERROR] (Minecraft) Failed to retrieve profile key pair
 java.io.IOException: Could not retrieve profile key pair
 	at net.minecraft.client.util.ProfileKeys.fetchKeyPair(ProfileKeys.java:130) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.util.ProfileKeys.method_44291(ProfileKeys.java:69) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
@@ -126,166 +126,166 @@ java.io.IOException: Could not retrieve profile key pair
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) [?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) [?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) [?:?]
-[06:02:33] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric API Base, Fabric Models (v0), Fabric Crash Report Info (v1), Fabric Message API (v1), Roughly Enough Items, Fabric Game Test API (v1), Fabric Registry Sync (v0), Fabric Screen Handler API (v1), Fabric Transitive Access Wideners (v1), Fabric API Lookup API (v1), Fabric Block API (v1), Fabric Particles (v1), Fabric Item API (v1), Fabric BlockRenderLayer Registration (v1), Fabric Convention Tags, Fabric Textures (v0), Better Tags, Fabric API, Fabric Renderer API (v1), Mod Menu, Fabric Game Rule API (v1), Fabric Key Binding API (v1), Fabric Content Registries (v0), Fabric Dimensions API (v1), Fabric Mining Level API (v1), Fabric Rendering Data Attachment (v1), Fabric Loot API (v2), Fabric Item Groups (v0), Cloth Config v8, Fabric Resource Loader (v0), Fabric Resource Conditions API (v1), Fabric Entity Events (v1), Fabric Renderer - Indigo, Fabric Recipe API (v1), Fabric Rendering Fluids (v1), Fabric Lifecycle Events (v1), Fabric Sound API (v1), Fabric Biome API (v1), Fabric Client Tags, Fabric Events Interaction (v0), Fabric Transfer API (v1), Fabric Loader, Fabric Command API (v2), Fabric Rendering (v1), Fabric Object Builder API (v1), Fabric Data Generation API (v1), Fabric Screen API (v1), Fabric Networking API (v1), Geckolib, Dungeons & Dragons)
-[06:02:34] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.ArrayList$SubList.get(ArrayList.java:1149)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:306)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:282)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.createFunction(MathBuilder.java:439)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:266)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:308)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:283)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseSymbolsMolang(MolangParser.java:228)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseOneLine(MolangParser.java:216)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseExpression(MolangParser.java:174)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseJson(MolangParser.java:154)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.parseExpression(JsonKeyFrameUtils.java:179)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.convertJson(JsonKeyFrameUtils.java:57)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.convertJsonToRotationKeyFrames(JsonKeyFrameUtils.java:173)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonAnimationUtils.deserializeJsonToAnimation(JsonAnimationUtils.java:278)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.file.AnimationFileLoader.loadAllAnimations(AnimationFileLoader.java:32)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$reload$0(GeckoLibCache.java:73)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$loadResources$5(GeckoLibCache.java:91)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.ArrayList$SubList.get(ArrayList.java:1149)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:306)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:282)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.createFunction(MathBuilder.java:439)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:266)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:308)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:283)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseSymbolsMolang(MolangParser.java:228)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseOneLine(MolangParser.java:216)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseExpression(MolangParser.java:174)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseJson(MolangParser.java:154)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.parseExpression(JsonKeyFrameUtils.java:179)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.convertJson(JsonKeyFrameUtils.java:57)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.convertJsonToRotationKeyFrames(JsonKeyFrameUtils.java:173)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonAnimationUtils.deserializeJsonToAnimation(JsonAnimationUtils.java:278)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.file.AnimationFileLoader.loadAllAnimations(AnimationFileLoader.java:32)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$reload$0(GeckoLibCache.java:73)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$loadResources$5(GeckoLibCache.java:91)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
-[06:02:34] [Worker-Main-11/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/prone_skeleton.json' missing model for variant: 'dndmod:prone_skeleton#facing=up'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/prone_skeleton.json' missing model for variant: 'dndmod:prone_skeleton#facing=down'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/sitting_skeleton.json' missing model for variant: 'dndmod:sitting_skeleton#facing=down'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/sitting_skeleton.json' missing model for variant: 'dndmod:sitting_skeleton#facing=up'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/wall_skeleton.json' missing model for variant: 'dndmod:wall_skeleton#facing=down'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/wall_skeleton.json' missing model for variant: 'dndmod:wall_skeleton#facing=up'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/headless_skeleton.json' missing model for variant: 'dndmod:headless_skeleton#facing=up'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/headless_skeleton.json' missing model for variant: 'dndmod:headless_skeleton#facing=down'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=east,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=south,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=north,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=west,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=north,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=east,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=south,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=west,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=7,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=13,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=12,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=13,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=3,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=10,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=3,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=9,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=6,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=0,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=8,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=4,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=1,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=0,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=10,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=12,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=7,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=15,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=9,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=4,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=5,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=1,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=14,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=6,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=14,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=11,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=2,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=11,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=5,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=2,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=15,waterlogged=true'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=8,waterlogged=false'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=14'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=15'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=9'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=10'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=11'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=12'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=13'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=4'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=3'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=2'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=1'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=8'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=7'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=6'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=5'
-[06:02:36] [Worker-Main-13/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=0'
-[06:02:37] [Worker-Main-13/WARN] (Minecraft) Unable to load model: 'dndmod:silvered_iron_sickle#inventory' referenced from: dndmod:silvered_iron_sickle#inventory: java.io.FileNotFoundException: dndmod:models/item/silvered_iron_sickle.json
-[06:02:37] [Worker-Main-13/WARN] (Minecraft) Unable to resolve texture reference: #missing in dndmod:item/alchemy_table
-[06:02:37] [Worker-Main-13/WARN] (Minecraft) Unable to resolve texture reference: #missing in dndmod:block/adventuring_table
-[06:02:37] [Worker-Main-13/WARN] (Minecraft) Unable to resolve texture reference: #missing in dndmod:block/alchemy_table
-[06:02:37] [Worker-Main-13/WARN] (Minecraft) Unable to resolve texture reference: #missing in dndmod:item/mace
-[06:02:37] [Worker-Main-13/WARN] (Minecraft) Unable to resolve texture reference: #missing in dndmod:item/adventuring_table
-[06:02:37] [Worker-Main-10/ERROR] (Minecraft) Using missing texture, file dndmod:textures/item/abacus.png not found
-[06:02:37] [Worker-Main-12/ERROR] (Minecraft) Using missing texture, file dndmod:textures/mug.png not found
-[06:02:37] [Worker-Main-12/ERROR] (Minecraft) Using missing texture, file dndmod:textures/mug_of_ale.png not found
-[06:02:37] [Worker-Main-10/ERROR] (Minecraft) Using missing texture, file dndmod:textures/block/water_drink.png not found
-[06:02:37] [Worker-Main-11/ERROR] (Minecraft) Using missing texture, file dndmod:textures/mug_of_water.png not found
-[06:02:38] [Worker-Main-13/WARN] (Minecraft) Texture dndmod:item/longsword with size 20x20 limits mip level from 4 to 2
-[06:02:38] [Worker-Main-13/WARN] (Minecraft) Texture dndmod:item/map1 with size 1141x1141 limits mip level from 2 to 0
-[06:02:38] [Worker-Main-13/WARN] (Minecraft) minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 0, because of minimum power of two: 1
-[06:02:38] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[06:02:38] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[06:02:38] [Render thread/INFO] (Minecraft) OpenAL initialized on device HyperX Cloud Stinger Core Wireless DTS Analog Stereo
-[06:02:38] [Render thread/INFO] (Minecraft) Sound engine started
-[06:02:38] [Render thread/INFO] (Minecraft) Created: 4096x4096x0 minecraft:textures/atlas/blocks.png-atlas
-[06:02:39] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[06:02:39] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[06:02:39] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[06:02:39] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[06:02:39] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[06:02:39] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[06:02:41] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[06:02:41] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[06:02:41] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[06:02:41] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[06:02:50] [Render thread/WARN] (Minecraft) dndmod:slow_hunger missing from registry, but requested!
-[06:02:50] [Render thread/WARN] (Minecraft) dndmod:slow_health missing from registry, but requested!
-[06:02:50] [Render thread/WARN] (Minecraft) dndmod:fuck_you missing from registry, but requested!
-[06:02:50] [Render thread/INFO] (FabricRegistrySync) [fabric-registry-sync] Loaded registry data [file 1/4]
-[06:02:52] [Render thread/ERROR] (Minecraft) Parsing error loading recipe dndmod:adventuring_table
+[07:36:00] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Roughly Enough Items, Fabric Resource Loader (v0), Fabric Resource Conditions API (v1), Fabric Particles (v1), Fabric Rendering Fluids (v1), Fabric Events Interaction (v0), Fabric Game Rule API (v1), Fabric Item Groups (v0), Fabric Object Builder API (v1), Fabric Networking API (v1), Fabric Renderer - Indigo, Fabric Dimensions API (v1), Fabric Sound API (v1), Fabric Recipe API (v1), Fabric Key Binding API (v1), Fabric Lifecycle Events (v1), Fabric Registry Sync (v0), Fabric Client Tags, Fabric API Base, Fabric Entity Events (v1), Fabric Game Test API (v1), Fabric Block API (v1), Fabric Item API (v1), Fabric Screen API (v1), Fabric Textures (v0), Fabric Screen Handler API (v1), Fabric Mining Level API (v1), Fabric API, Fabric Rendering (v1), Fabric Loot API (v2), Fabric Convention Tags, Fabric Transitive Access Wideners (v1), Fabric Biome API (v1), Fabric BlockRenderLayer Registration (v1), Dungeons & Dragons, Fabric Content Registries (v0), Fabric API Lookup API (v1), Fabric Models (v0), Fabric Command API (v2), Fabric Transfer API (v1), Fabric Crash Report Info (v1), Fabric Data Generation API (v1), Fabric Message API (v1), Fabric Loader, Mod Menu, Better Tags, Cloth Config v8, Geckolib, Fabric Renderer API (v1), Fabric Rendering Data Attachment (v1))
+[07:36:00] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.ArrayList$SubList.get(ArrayList.java:1149)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:306)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:282)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.createFunction(MathBuilder.java:439)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:266)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:308)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:283)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseSymbolsMolang(MolangParser.java:228)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseOneLine(MolangParser.java:216)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseExpression(MolangParser.java:174)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseJson(MolangParser.java:154)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.parseExpression(JsonKeyFrameUtils.java:179)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.convertJson(JsonKeyFrameUtils.java:57)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.convertJsonToRotationKeyFrames(JsonKeyFrameUtils.java:173)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonAnimationUtils.deserializeJsonToAnimation(JsonAnimationUtils.java:278)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.file.AnimationFileLoader.loadAllAnimations(AnimationFileLoader.java:32)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$reload$0(GeckoLibCache.java:73)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$loadResources$5(GeckoLibCache.java:91)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.ArrayList$SubList.get(ArrayList.java:1149)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:306)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:282)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.createFunction(MathBuilder.java:439)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:266)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:308)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.shadowed.eliotlash.mclib.math.MathBuilder.parseSymbols(MathBuilder.java:283)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseSymbolsMolang(MolangParser.java:228)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseOneLine(MolangParser.java:216)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseExpression(MolangParser.java:174)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.core.molang.MolangParser.parseJson(MolangParser.java:154)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.parseExpression(JsonKeyFrameUtils.java:179)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.convertJson(JsonKeyFrameUtils.java:57)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonKeyFrameUtils.convertJsonToRotationKeyFrames(JsonKeyFrameUtils.java:173)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.util.json.JsonAnimationUtils.deserializeJsonToAnimation(JsonAnimationUtils.java:278)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.file.AnimationFileLoader.loadAllAnimations(AnimationFileLoader.java:32)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$reload$0(GeckoLibCache.java:73)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$loadResources$5(GeckoLibCache.java:91)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+[07:36:01] [Worker-Main-13/INFO] (Minecraft) [STDERR]: 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/prone_skeleton.json' missing model for variant: 'dndmod:prone_skeleton#facing=up'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/prone_skeleton.json' missing model for variant: 'dndmod:prone_skeleton#facing=down'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/sitting_skeleton.json' missing model for variant: 'dndmod:sitting_skeleton#facing=down'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/sitting_skeleton.json' missing model for variant: 'dndmod:sitting_skeleton#facing=up'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/wall_skeleton.json' missing model for variant: 'dndmod:wall_skeleton#facing=down'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/wall_skeleton.json' missing model for variant: 'dndmod:wall_skeleton#facing=up'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/headless_skeleton.json' missing model for variant: 'dndmod:headless_skeleton#facing=up'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/headless_skeleton.json' missing model for variant: 'dndmod:headless_skeleton#facing=down'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=east,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=south,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=north,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=west,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=north,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=east,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=south,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_wall_sign.json' missing model for variant: 'dndmod:alder_wall_sign#facing=west,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=7,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=13,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=12,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=13,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=3,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=10,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=3,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=9,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=6,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=0,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=8,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=4,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=1,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=0,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=10,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=12,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=7,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=15,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=9,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=4,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=5,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=1,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=14,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=6,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=14,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=11,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=2,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=11,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=5,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=2,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=15,waterlogged=true'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/alder_sign.json' missing model for variant: 'dndmod:alder_sign#rotation=8,waterlogged=false'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=14'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=15'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=9'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=10'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=11'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=12'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=13'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=4'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=3'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=2'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=1'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=8'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=7'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=6'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=5'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Exception loading blockstate definition: 'dndmod:blockstates/blood_block.json' missing model for variant: 'dndmod:blood_block#level=0'
+[07:36:03] [Worker-Main-14/WARN] (Minecraft) Unable to load model: 'dndmod:silvered_iron_sickle#inventory' referenced from: dndmod:silvered_iron_sickle#inventory: java.io.FileNotFoundException: dndmod:models/item/silvered_iron_sickle.json
+[07:36:04] [Worker-Main-14/WARN] (Minecraft) Unable to resolve texture reference: #missing in dndmod:item/alchemy_table
+[07:36:04] [Worker-Main-14/WARN] (Minecraft) Unable to resolve texture reference: #missing in dndmod:block/adventuring_table
+[07:36:04] [Worker-Main-14/WARN] (Minecraft) Unable to resolve texture reference: #missing in dndmod:block/alchemy_table
+[07:36:04] [Worker-Main-14/WARN] (Minecraft) Unable to resolve texture reference: #missing in dndmod:item/mace
+[07:36:04] [Worker-Main-14/WARN] (Minecraft) Unable to resolve texture reference: #missing in dndmod:item/adventuring_table
+[07:36:04] [Worker-Main-12/ERROR] (Minecraft) Using missing texture, file dndmod:textures/item/abacus.png not found
+[07:36:04] [Worker-Main-13/ERROR] (Minecraft) Using missing texture, file dndmod:textures/mug.png not found
+[07:36:04] [Worker-Main-13/ERROR] (Minecraft) Using missing texture, file dndmod:textures/mug_of_ale.png not found
+[07:36:04] [Worker-Main-8/ERROR] (Minecraft) Using missing texture, file dndmod:textures/block/water_drink.png not found
+[07:36:04] [Worker-Main-10/ERROR] (Minecraft) Using missing texture, file dndmod:textures/mug_of_water.png not found
+[07:36:04] [Worker-Main-14/WARN] (Minecraft) Texture dndmod:item/longsword with size 20x20 limits mip level from 4 to 2
+[07:36:04] [Worker-Main-14/WARN] (Minecraft) Texture dndmod:item/map1 with size 1141x1141 limits mip level from 2 to 0
+[07:36:04] [Worker-Main-14/WARN] (Minecraft) minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 0, because of minimum power of two: 1
+[07:36:04] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[07:36:04] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[07:36:05] [Render thread/INFO] (Minecraft) OpenAL initialized on device HyperX Cloud Stinger Core Wireless DTS Analog Stereo
+[07:36:05] [Render thread/INFO] (Minecraft) Sound engine started
+[07:36:05] [Render thread/INFO] (Minecraft) Created: 4096x4096x0 minecraft:textures/atlas/blocks.png-atlas
+[07:36:05] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[07:36:05] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[07:36:05] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[07:36:05] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[07:36:05] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[07:36:05] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[07:36:07] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[07:36:07] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[07:36:07] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[07:36:07] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[07:36:13] [Render thread/WARN] (Minecraft) dndmod:slow_hunger missing from registry, but requested!
+[07:36:13] [Render thread/WARN] (Minecraft) dndmod:slow_health missing from registry, but requested!
+[07:36:13] [Render thread/WARN] (Minecraft) dndmod:fuck_you missing from registry, but requested!
+[07:36:13] [Render thread/INFO] (FabricRegistrySync) [fabric-registry-sync] Loaded registry data [file 1/4]
+[07:36:14] [Render thread/ERROR] (Minecraft) Parsing error loading recipe dndmod:adventuring_table
 com.google.gson.JsonSyntaxException: Unknown item 'dndmod:sdventuring_table'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -321,9 +321,10 @@ com.google.gson.JsonSyntaxException: Unknown item 'dndmod:sdventuring_table'
 	at net.minecraft.client.Mouse.method_22684(Mouse.java:165) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) [lwjgl-glfw-3.3.1.jar:?]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:?]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) [lwjgl-glfw-3.3.1.jar:?]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:222) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1208) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) [lwjgl-glfw-3.3.1.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:197) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at net.minecraft.client.util.Window.swapBuffers(Window.java:315) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1205) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:768) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:244) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:51) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
@@ -331,7 +332,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'dndmod:sdventuring_table'
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[06:02:52] [Render thread/ERROR] (Minecraft) Parsing error loading recipe dndmod:small_bread
+[07:36:14] [Render thread/ERROR] (Minecraft) Parsing error loading recipe dndmod:small_bread
 com.google.gson.JsonSyntaxException: Unknown item 'dndmod:wheat_mixture'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -369,9 +370,10 @@ com.google.gson.JsonSyntaxException: Unknown item 'dndmod:wheat_mixture'
 	at net.minecraft.client.Mouse.method_22684(Mouse.java:165) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) [lwjgl-glfw-3.3.1.jar:?]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:?]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) [lwjgl-glfw-3.3.1.jar:?]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:222) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1208) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) [lwjgl-glfw-3.3.1.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:197) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at net.minecraft.client.util.Window.swapBuffers(Window.java:315) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1205) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:768) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:244) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:51) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
@@ -379,7 +381,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'dndmod:wheat_mixture'
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[06:02:52] [Render thread/ERROR] (Minecraft) Parsing error loading recipe dndmod:keg
+[07:36:14] [Render thread/ERROR] (Minecraft) Parsing error loading recipe dndmod:keg
 com.google.gson.JsonSyntaxException: Missing result, expected to find a JsonObject
 	at net.minecraft.util.JsonHelper.getObject(JsonHelper.java:413) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.recipe.ShapedRecipe$Serializer.read(ShapedRecipe.java:273) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
@@ -412,9 +414,10 @@ com.google.gson.JsonSyntaxException: Missing result, expected to find a JsonObje
 	at net.minecraft.client.Mouse.method_22684(Mouse.java:165) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) [lwjgl-glfw-3.3.1.jar:?]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:?]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) [lwjgl-glfw-3.3.1.jar:?]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:222) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1208) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) [lwjgl-glfw-3.3.1.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:197) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at net.minecraft.client.util.Window.swapBuffers(Window.java:315) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1205) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:768) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:244) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:51) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
@@ -422,7 +425,7 @@ com.google.gson.JsonSyntaxException: Missing result, expected to find a JsonObje
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[06:02:52] [Render thread/ERROR] (Minecraft) Parsing error loading recipe dndmod:silvered_dagger
+[07:36:14] [Render thread/ERROR] (Minecraft) Parsing error loading recipe dndmod:silvered_dagger
 com.google.gson.JsonSyntaxException: Unknown item 'dndmod:dagger'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -459,9 +462,10 @@ com.google.gson.JsonSyntaxException: Unknown item 'dndmod:dagger'
 	at net.minecraft.client.Mouse.method_22684(Mouse.java:165) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) [lwjgl-glfw-3.3.1.jar:?]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:?]
-	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) [lwjgl-glfw-3.3.1.jar:?]
-	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:222) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1208) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) [lwjgl-glfw-3.3.1.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:197) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at net.minecraft.client.util.Window.swapBuffers(Window.java:315) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1205) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:768) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:244) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:51) [minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
@@ -469,9 +473,9 @@ com.google.gson.JsonSyntaxException: Unknown item 'dndmod:dagger'
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[06:02:52] [Render thread/INFO] (Minecraft) Loaded 8 recipes
-[06:02:52] [Render thread/INFO] (Minecraft) Loaded 1179 advancements
-[06:02:55] [Worker-Main-10/ERROR] (Minecraft) Failed to retrieve profile key pair
+[07:36:14] [Render thread/INFO] (Minecraft) Loaded 8 recipes
+[07:36:15] [Render thread/INFO] (Minecraft) Loaded 1179 advancements
+[07:36:17] [Worker-Main-10/ERROR] (Minecraft) Failed to retrieve profile key pair
 java.io.IOException: Could not retrieve profile key pair
 	at net.minecraft.client.util.ProfileKeys.fetchKeyPair(ProfileKeys.java:130) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
 	at net.minecraft.client.util.ProfileKeys.method_44291(ProfileKeys.java:69) ~[minecraft-merged-project-root-1.19.2-net.fabricmc.yarn.1_19_2.1.19.2+build.28-v2.jar:?]
@@ -482,144 +486,147 @@ java.io.IOException: Could not retrieve profile key pair
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) [?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) [?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) [?:?]
-[06:02:55] [Render thread/INFO] (BiomeModificationImpl) Applied 185 biome modifications to 62 of 63 new biomes in 62.78 ms
-[06:02:55] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.19.2
-[06:02:55] [Server thread/INFO] (Minecraft) Generating keypair
-[06:02:56] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[06:03:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 7%
-[06:03:07] [Render thread/INFO] (Minecraft) Preparing spawn area: 40%
-[06:03:08] [Render thread/INFO] (Minecraft) Time elapsed: 11612 ms
-[06:03:08] [Server thread/INFO] (Minecraft) Changing view distance to 8, from 10
-[06:03:08] [Server thread/INFO] (Minecraft) Changing simulation distance to 8, from 0
-[06:03:09] [Server thread/INFO] (Minecraft) Player379[local:E:08049c35] logged in with entity id 153 at (-206.02804902609313, 69.0, -43.30452890202849)
-[06:03:09] [Server thread/INFO] (Minecraft) Player379 joined the game
-[06:03:10] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2178ms or 43 ticks behind
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI] ----------------------------------------
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI] REIPlugin starting main-reload for START.
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (6):
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultClientPlugin of DefaultClientPlugin [roughlyenoughitems]
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) FabricFluidAPISupportPlugin
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) HideIngredientsFromTagsPlugin of HideIngredientsFromTagsPlugin [roughlyenoughitems]
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultClientRuntimePlugin of DefaultClientRuntimePlugin [roughlyenoughitems]
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems]
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI] ----------------------------------------
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI] ----------------------------------------
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI] REIClientPlugin starting main-reload for START.
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (3):
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultClientPlugin of DefaultClientPlugin [roughlyenoughitems]
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) HideIngredientsFromTagsPlugin of HideIngredientsFromTagsPlugin [roughlyenoughitems]
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultClientRuntimePlugin of DefaultClientRuntimePlugin [roughlyenoughitems]
-[06:03:11] [REI-ReloadPlugins/INFO] (REI) [REI] ----------------------------------------
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] REIServerPlugin starting main-reload for START.
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (3):
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) FabricFluidAPISupportPlugin
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems]
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] REIPlugin finished post-reload for START in 1.261 ms, totaling 115.8 ms.
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] REIClientPlugin finished post-reload for START in 409.6 μs, totaling 864.4 ms.
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] REIServerPlugin finished post-reload for START in 391.7 μs, totaling 4.407 ms.
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] REIPlugin starting main-reload for END.
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (6):
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultClientPlugin of DefaultClientPlugin [roughlyenoughitems]
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) FabricFluidAPISupportPlugin
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) HideIngredientsFromTagsPlugin of HideIngredientsFromTagsPlugin [roughlyenoughitems]
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultClientRuntimePlugin of DefaultClientRuntimePlugin [roughlyenoughitems]
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems]
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] ----------------------------------------
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] REIClientPlugin starting main-reload for END.
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (3):
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultClientPlugin of DefaultClientPlugin [roughlyenoughitems]
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) HideIngredientsFromTagsPlugin of HideIngredientsFromTagsPlugin [roughlyenoughitems]
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultClientRuntimePlugin of DefaultClientRuntimePlugin [roughlyenoughitems]
-[06:03:12] [REI-ReloadPlugins/INFO] (REI) [REI] ----------------------------------------
-[06:03:13] [Render thread/INFO] (Minecraft) Loaded 0 advancements
-[06:03:13] [REI-ReloadPlugins/INFO] (REI) [REI] ----------------------------------------
-[06:03:13] [REI-ReloadPlugins/INFO] (REI) [REI] REIServerPlugin starting main-reload for END.
-[06:03:13] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (3):
-[06:03:13] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[06:03:13] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) FabricFluidAPISupportPlugin
-[06:03:13] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems]
-[06:03:13] [REI-ReloadPlugins/INFO] (REI) [REI] ----------------------------------------
-[06:03:13] [REI-ReloadPlugins/INFO] (REI) [REI] REIPlugin finished post-reload for END in 644.3 μs, totaling 41.96 ms.
-[06:03:13] [REI-ReloadPlugins/INFO] (REI) [REI] REIClientPlugin finished post-reload for END in 441.8 μs, totaling 1.107 s.
-[06:03:13] [REI-ReloadPlugins/INFO] (REI) [REI] REIServerPlugin finished post-reload for END in 425.3 μs, totaling 13.78 ms.
-[06:03:16] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[06:03:16] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[06:03:19] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[06:03:19] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[06:03:22] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[06:03:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[06:03:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[06:03:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[06:03:31] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2014ms or 40 ticks behind
-[06:03:41] [Worker-Bootstrap-1/INFO] (Minecraft) 4283 Datafixer optimizations took 77809 milliseconds
-[06:04:37] [Server thread/INFO] (Minecraft) [Player379: Set own game mode to Creative Mode]
-[06:04:37] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
-[06:04:45] [Server thread/INFO] (Minecraft) [Player379: Set own game mode to Survival Mode]
-[06:04:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Survival Mode
-[06:04:47] [Render thread/INFO] (Minecraft) Loaded 17 advancements
-[06:04:48] [Server thread/INFO] (Minecraft) [Player379: Set own game mode to Creative Mode]
-[06:04:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
-[06:05:06] [Server thread/INFO] (Minecraft) [Player379: Set own game mode to Survival Mode]
-[06:05:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Survival Mode
-[06:06:39] [Netty Local Client IO #0/INFO] (Minecraft) [System] [CHAT] Gave [Armor Stand§f] x1 to Player379.
-[06:07:00] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[06:07:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[06:07:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[06:07:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[06:07:28] [Render thread/INFO] (Minecraft) Loaded 36 advancements
-[06:07:54] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[06:07:54] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[06:07:54] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[06:07:54] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[06:08:21] [Server thread/INFO] (Minecraft) [Player379: Set own game mode to Creative Mode]
-[06:08:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
-[06:08:27] [Server thread/INFO] (Minecraft) [Player379: Set own game mode to Survival Mode]
-[06:08:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Survival Mode
-[06:08:54] [Server thread/INFO] (Minecraft) [Player379: Set own game mode to Creative Mode]
-[06:08:54] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
-[06:08:55] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[06:08:55] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[06:08:55] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[06:08:55] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[06:08:55] [Server thread/INFO] (Minecraft) Player379 lost connection: Disconnected
-[06:08:55] [Server thread/INFO] (Minecraft) Player379 left the game
-[06:08:55] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[06:08:55] [Server thread/INFO] (Minecraft) Stopping server
-[06:08:55] [Server thread/INFO] (Minecraft) Saving players
-[06:08:55] [Server thread/INFO] (Minecraft) Saving worlds
-[06:08:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[06:08:57] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[06:08:57] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[06:08:57] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
-[06:08:57] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[06:08:57] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[06:08:57] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[06:08:57] [Render thread/INFO] (Minecraft) Stopping!
+[07:36:17] [Render thread/INFO] (BiomeModificationImpl) Applied 185 biome modifications to 62 of 63 new biomes in 54.11 ms
+[07:36:17] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.19.2
+[07:36:17] [Server thread/INFO] (Minecraft) Generating keypair
+[07:36:18] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:27] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[07:36:27] [Render thread/INFO] (Minecraft) Preparing spawn area: 13%
+[07:36:28] [Render thread/INFO] (Minecraft) Preparing spawn area: 84%
+[07:36:28] [Render thread/INFO] (Minecraft) Time elapsed: 9662 ms
+[07:36:28] [Server thread/INFO] (Minecraft) Changing view distance to 8, from 10
+[07:36:28] [Server thread/INFO] (Minecraft) Changing simulation distance to 8, from 0
+[07:36:30] [Server thread/INFO] (Minecraft) Player439[local:E:0f0825e8] logged in with entity id 160 at (-208.56020405829196, 69.0, -43.98468563706675)
+[07:36:30] [Server thread/INFO] (Minecraft) Player439 joined the game
+[07:36:31] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2311ms or 46 ticks behind
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI] ****************************************
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI] REIPlugin starting main-reload for START.
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (6):
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultClientPlugin of DefaultClientPlugin [roughlyenoughitems]
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) FabricFluidAPISupportPlugin
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) HideIngredientsFromTagsPlugin of HideIngredientsFromTagsPlugin [roughlyenoughitems]
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultClientRuntimePlugin of DefaultClientRuntimePlugin [roughlyenoughitems]
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems]
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI] ****************************************
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI] @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI] REIClientPlugin starting main-reload for START.
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (3):
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultClientPlugin of DefaultClientPlugin [roughlyenoughitems]
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) HideIngredientsFromTagsPlugin of HideIngredientsFromTagsPlugin [roughlyenoughitems]
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultClientRuntimePlugin of DefaultClientRuntimePlugin [roughlyenoughitems]
+[07:36:32] [REI-ReloadPlugins/INFO] (REI) [REI] @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] REIServerPlugin starting main-reload for START.
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (3):
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) FabricFluidAPISupportPlugin
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems]
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] REIPlugin finished post-reload for START in 1.328 ms, totaling 167.7 ms.
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] REIClientPlugin finished post-reload for START in 417.6 μs, totaling 803.6 ms.
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] REIServerPlugin finished post-reload for START in 432.9 μs, totaling 20.25 ms.
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] ----------------------------------------
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] REIPlugin starting main-reload for END.
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (6):
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultClientPlugin of DefaultClientPlugin [roughlyenoughitems]
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) FabricFluidAPISupportPlugin
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) HideIngredientsFromTagsPlugin of HideIngredientsFromTagsPlugin [roughlyenoughitems]
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultClientRuntimePlugin of DefaultClientRuntimePlugin [roughlyenoughitems]
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems]
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] ----------------------------------------
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] ****************************************
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] REIClientPlugin starting main-reload for END.
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (3):
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultClientPlugin of DefaultClientPlugin [roughlyenoughitems]
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) HideIngredientsFromTagsPlugin of HideIngredientsFromTagsPlugin [roughlyenoughitems]
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultClientRuntimePlugin of DefaultClientRuntimePlugin [roughlyenoughitems]
+[07:36:33] [REI-ReloadPlugins/INFO] (REI) [REI] ****************************************
+[07:36:34] [Render thread/INFO] (Minecraft) Loaded 0 advancements
+[07:36:34] [REI-ReloadPlugins/INFO] (REI) [REI] ########################################
+[07:36:34] [REI-ReloadPlugins/INFO] (REI) [REI] REIServerPlugin starting main-reload for END.
+[07:36:34] [REI-ReloadPlugins/INFO] (REI) [REI] Plugins (3):
+[07:36:34] [REI-ReloadPlugins/INFO] (REI) [REI]  - (-100.00) DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[07:36:34] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) FabricFluidAPISupportPlugin
+[07:36:34] [REI-ReloadPlugins/INFO] (REI) [REI]  - (0.00) DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems]
+[07:36:34] [REI-ReloadPlugins/INFO] (REI) [REI] ########################################
+[07:36:34] [REI-ReloadPlugins/INFO] (REI) [REI] REIPlugin finished post-reload for END in 482.4 μs, totaling 94.18 ms.
+[07:36:34] [REI-ReloadPlugins/INFO] (REI) [REI] REIClientPlugin finished post-reload for END in 340.2 μs, totaling 1.059 s.
+[07:36:34] [REI-ReloadPlugins/INFO] (REI) [REI] REIServerPlugin finished post-reload for END in 286.6 μs, totaling 23.81 ms.
+[07:36:37] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[07:36:37] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[07:36:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[07:36:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[07:36:40] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[07:36:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[07:36:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[07:36:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[07:36:42] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[07:36:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[07:36:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[07:36:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[07:37:04] [Worker-Bootstrap-4/INFO] (Minecraft) 4283 Datafixer optimizations took 74428 milliseconds
+[07:41:18] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[07:41:18] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[07:41:18] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[07:41:18] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[07:41:27] [Server thread/INFO] (Minecraft) [Player439: Set own game mode to Creative Mode]
+[07:41:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
+[07:41:32] [Server thread/INFO] (Minecraft) [Player439: Set own game mode to Survival Mode]
+[07:41:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Survival Mode
+[07:41:34] [Render thread/INFO] (Minecraft) Loaded 17 advancements
+[07:41:36] [Server thread/INFO] (Minecraft) [Player439: Set own game mode to Creative Mode]
+[07:41:36] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
+[07:41:48] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[07:41:48] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[07:41:48] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[07:41:48] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[07:42:52] [Render thread/INFO] (Minecraft) Loaded 25 advancements
+[07:43:11] [Render thread/INFO] (Minecraft) Loaded 43 advancements
+[07:43:15] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[07:43:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[07:43:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[07:43:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[07:44:30] [Render thread/WARN] (Minecraft) Unable to play empty soundEvent: minecraft:entity.cod.ambient
+[07:44:36] [Render thread/WARN] (Minecraft) Unable to play empty soundEvent: minecraft:entity.tropical_fish.ambient
+[07:44:44] [Render thread/INFO] (Minecraft) Loaded 50 advancements
+[07:46:41] [Server thread/INFO] (Minecraft) [Player439: Set own game mode to Survival Mode]
+[07:46:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Survival Mode
+[07:46:45] [Server thread/INFO] (Minecraft) [Player439: Set own game mode to Creative Mode]
+[07:46:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
+[07:49:52] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[07:49:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[07:49:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[07:49:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[07:49:52] [Server thread/INFO] (Minecraft) Player439 lost connection: Disconnected
+[07:49:52] [Server thread/INFO] (Minecraft) Player439 left the game
+[07:49:52] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[07:49:52] [Server thread/INFO] (Minecraft) Stopping server
+[07:49:52] [Server thread/INFO] (Minecraft) Saving players
+[07:49:52] [Server thread/INFO] (Minecraft) Saving worlds
+[07:49:53] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[07:49:54] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[07:49:54] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[07:49:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
+[07:49:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[07:49:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[07:49:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[07:49:55] [Render thread/INFO] (Minecraft) Stopping!
