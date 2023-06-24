@@ -105,9 +105,9 @@ public class ModBlocks {
 
     public static final Block HOP_PLANT = registerBlock("hop_plant", new TallFlowerBlock(FabricBlockSettings.of(Material.PLANT).breakInstantly().nonOpaque().noCollision().sounds(BlockSoundGroup.AZALEA_LEAVES)), ModItemGroup.THE_TAVERN);
 
-    public static final Block MUG = registerGrouplessBlock("mug", new MugBlock(FabricBlockSettings.of(Material.WOOD).breakInstantly().nonOpaque()));
-    public static final Block MUG_OF_WATER = registerGrouplessBlock("mug_of_water", new MugOfWaterBlock(FabricBlockSettings.of(Material.WOOD).breakInstantly().nonOpaque()));
-    public static final Block MUG_OF_ALE = registerGrouplessBlock("mug_of_ale", new MugOfAleBlock(FabricBlockSettings.of(Material.WOOD).breakInstantly().nonOpaque()));
+    public static final Block MUG = registerGrouplessBlock("mug", new MugBlock(FabricBlockSettings.of(Material.WOOD).breakInstantly().nonOpaque().sounds(BlockSoundGroup.WOOD)));
+    public static final Block MUG_OF_WATER = registerGrouplessBlock("mug_of_water", new MugOfWaterBlock(FabricBlockSettings.of(Material.WOOD).breakInstantly().nonOpaque().sounds(BlockSoundGroup.WOOD)));
+    public static final Block MUG_OF_ALE = registerGrouplessBlock("mug_of_ale", new MugOfAleBlock(FabricBlockSettings.of(Material.WOOD).breakInstantly().nonOpaque().sounds(BlockSoundGroup.WOOD)));
 
 
 
