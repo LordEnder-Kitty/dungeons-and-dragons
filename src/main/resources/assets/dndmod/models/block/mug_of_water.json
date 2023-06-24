@@ -3,6 +3,6 @@
   "textures": {
     "mug": "dndmod:block/mug_block",
     "drink": "dndmod:block/water_drink",
-    "particle": "dndmod:block/mug_block"
+    "particle": "dndmod:item/mug_of_water"
   }
 }
