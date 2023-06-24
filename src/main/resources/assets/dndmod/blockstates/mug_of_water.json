@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dndmod:block/mug_of_water"
+    },
+    "facing=south": {
+      "model": "dndmod:block/mug_of_water",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dndmod:block/mug_of_water",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "dndmod:block/mug_of_water",
+      "y": 90
+    }
+  }
+}

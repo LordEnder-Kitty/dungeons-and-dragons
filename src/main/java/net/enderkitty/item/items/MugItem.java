@@ -1,6 +1,7 @@
 package net.enderkitty.item.items;
 
 import net.enderkitty.item.ModItems;
+import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
@@ -17,9 +18,9 @@ import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 
-public class MugItem extends Item {
-    public MugItem(Settings settings) {
-        super(settings);
+public class MugItem extends BlockItem {
+    public MugItem(Block block, Settings settings) {
+        super(block, settings);
     }
 
     @Override

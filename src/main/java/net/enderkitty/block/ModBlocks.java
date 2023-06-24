@@ -105,6 +105,11 @@ public class ModBlocks {
 
     public static final Block HOP_PLANT = registerBlock("hop_plant", new TallFlowerBlock(FabricBlockSettings.of(Material.PLANT).breakInstantly().nonOpaque().noCollision().sounds(BlockSoundGroup.AZALEA_LEAVES)), ModItemGroup.THE_TAVERN);
 
+    public static final Block MUG = registerGrouplessBlock("mug", new MugBlock(FabricBlockSettings.of(Material.WOOD).breakInstantly().nonOpaque()));
+    public static final Block MUG_OF_WATER = registerGrouplessBlock("mug_of_water", new MugOfWaterBlock(FabricBlockSettings.of(Material.WOOD).breakInstantly().nonOpaque()));
+    public static final Block MUG_OF_ALE = registerGrouplessBlock("mug_of_ale", new MugOfAleBlock(FabricBlockSettings.of(Material.WOOD).breakInstantly().nonOpaque()));
+
+
 
     //Dungeon Decorations
     public static final Block PRONE_SKELETON = registerBlock("prone_skeleton", new BodyProneBlock(null, FabricBlockSettings.of(Material.STONE)
@@ -255,6 +260,9 @@ public class ModBlocks {
     }
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
+        return Registry.register(Registry.BLOCK, new Identifier(DndMod.MOD_ID, name), block);
+    }
+    private static Block registerGrouplessBlock(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(DndMod.MOD_ID, name), block);
     }
 

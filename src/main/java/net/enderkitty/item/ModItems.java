@@ -2,9 +2,9 @@ package net.enderkitty.item;
 
 import net.enderkitty.DndMod;
 import net.enderkitty.block.ModBlocks;
+import net.enderkitty.entity.ModEntities;
 import net.enderkitty.entity.entities.boats.ModBoatEntity;
 import net.enderkitty.entity.entities.boats.ModChestBoatEntity;
-import net.enderkitty.entity.ModEntities;
 import net.enderkitty.item.items.*;
 import net.enderkitty.item.items.daggers.*;
 import net.enderkitty.sound.ModSounds;
@@ -72,9 +72,9 @@ public class ModItems {
 
 
     //You meet in a tavern
-    public static final Item MUG = registerItem("mug", new MugItem(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
-    public static final Item MUG_OF_WATER = registerItem("mug_of_water", new MugOfWaterItem(new FabricItemSettings().maxCount(16).group(ModItemGroup.THE_TAVERN).food(ModFoods.MUG_OF_WATER)));
-    public static final Item MUG_OF_ALE = registerItem("mug_of_ale", new MugOfAleItem(new FabricItemSettings().maxCount(16).group(ModItemGroup.THE_TAVERN).food(ModFoods.ALE)));
+    public static final Item MUG = registerItem("mug", new MugItem(ModBlocks.MUG, new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
+    public static final Item MUG_OF_WATER = registerItem("mug_of_water", new MugOfWaterItem(ModBlocks.MUG_OF_WATER, new FabricItemSettings().maxCount(16).group(ModItemGroup.THE_TAVERN).food(ModFoods.MUG_OF_WATER)));
+    public static final Item MUG_OF_ALE = registerItem("mug_of_ale", new MugOfAleItem(ModBlocks.MUG_OF_ALE, new FabricItemSettings().maxCount(16).group(ModItemGroup.THE_TAVERN).food(ModFoods.ALE)));
 
     public static final Item HARVESTED_YEAST = registerItem("harvested_yeast", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
     public static final Item YEAST = registerItem("yeast", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
@@ -82,7 +82,6 @@ public class ModItems {
     public static final Item HOP = registerItem("hop", new Item(new FabricItemSettings().group(ModItemGroup.THE_TAVERN)));
 
     public static final Item BUCKET_OF_ALE = registerItem("ale_bucket", new BucketRemainderFoodItem(new FabricItemSettings().maxCount(1).recipeRemainder(Items.BUCKET).food(ModFoods.ALE_BUCKET).group(ModItemGroup.THE_TAVERN)));
-
 
 
 
@@ -262,11 +261,8 @@ public class ModItems {
 
 
 
-    public static <T extends Item> Supplier<T> registerBoatItem(String name, Supplier<T> item) {
-        var register = Registry.register(Registry.ITEM, new Identifier(DndMod.MOD_ID, name), item.get());
-        return () -> register;
-    }
-
+    public static <T extends Item> Supplier<T> registerBoatItem(String name, Supplier<T> item) {var register = Registry.register(Registry.ITEM, new Identifier(DndMod.MOD_ID, name), item.get()); return () -> register;}
     private static Item registerItem(String name, Item item) {return Registry.register(Registry.ITEM, new Identifier(DndMod.MOD_ID, name), item);}
+
     public static void registerModItems() {DndMod.LOGGER.debug("Registering D&D Items");}
 }

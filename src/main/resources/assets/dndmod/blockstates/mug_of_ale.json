@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dndmod:block/mug_of_ale"
+    },
+    "facing=south": {
+      "model": "dndmod:block/mug_of_ale",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dndmod:block/mug_of_ale",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "dndmod:block/mug_of_ale",
+      "y": 90
+    }
+  }
+}

@@ -27,6 +27,9 @@
   "item.dndmod.mug": "Mug",
   "item.dndmod.mug_of_water": "Mug of Water",
   "item.dndmod.mug_of_ale": "Mug of Ale",
+  "block.dndmod.mug": "Mug",
+  "block.dndmod.mug_of_water": "Mug of Water",
+  "block.dndmod.mug_of_ale": "Mug of Ale",
 
   "block.dndmod.yeast_plant": "Yeast Plant",
   "item.dndmod.harvested_yeast": "Harvested Yeast",

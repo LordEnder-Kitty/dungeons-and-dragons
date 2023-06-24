@@ -3,6 +3,7 @@ package net.enderkitty.entity.entities;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityGroup;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.ai.pathing.EntityNavigation;
 import net.minecraft.entity.ai.pathing.SpiderNavigation;
@@ -17,6 +18,7 @@ import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
@@ -39,6 +41,8 @@ public class VampireEntity extends HostileEntity implements IAnimatable {
     public VampireEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
+
+    protected boolean burnsInDaylight() {return true;}
 
     public static DefaultAttributeContainer.Builder setAttributes() {
         return HostileEntity.createMobAttributes()
@@ -121,6 +125,31 @@ public class VampireEntity extends HostileEntity implements IAnimatable {
         if (!this.world.isClient) {
             this.setClimbingWall(this.horizontalCollision);
         }
+    }
+
+    @Override
+    public void tickMovement() {
+        if (this.isAlive()) {
+            boolean bl;
+            boolean bl2 = bl = this.burnsInDaylight() && this.isAffectedByDaylight();
+            if (bl) {
+                ItemStack itemStack = this.getEquippedStack(EquipmentSlot.HEAD);
+                if (!itemStack.isEmpty()) {
+                    if (itemStack.isDamageable()) {
+                        itemStack.setDamage(itemStack.getDamage() + this.random.nextInt(2));
+                        if (itemStack.getDamage() >= itemStack.getMaxDamage()) {
+                            this.sendEquipmentBreakStatus(EquipmentSlot.HEAD);
+                            this.equipStack(EquipmentSlot.HEAD, ItemStack.EMPTY);
+                        }
+                    }
+                    bl = false;
+                }
+                if (bl) {
+                    this.setOnFireFor(8);
+                }
+            }
+        }
+        super.tickMovement();
     }
 
     public void setClimbingWall(boolean climbing) {

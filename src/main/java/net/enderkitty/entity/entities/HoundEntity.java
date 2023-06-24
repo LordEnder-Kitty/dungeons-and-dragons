@@ -2,6 +2,7 @@ package net.enderkitty.entity.entities;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -9,6 +10,7 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.passive.*;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
@@ -26,9 +28,10 @@ import software.bernie.geckolib3.core.manager.AnimationFactory;
 public class HoundEntity extends HostileEntity implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
 
-    public HoundEntity(EntityType<? extends HostileEntity> entityType, World world) {
-        super(entityType, world);
-    }
+    public HoundEntity(EntityType<? extends HostileEntity> entityType, World world) {super(entityType, world);}
+
+    protected boolean burnsInDaylight() {return true;}
+
 
     public static DefaultAttributeContainer.Builder setAttributes() {
         return HostileEntity.createMobAttributes()
@@ -81,6 +84,17 @@ public class HoundEntity extends HostileEntity implements IAnimatable {
                 0, this::attackPredicate));
     }
 
+    @Override
+    public void tickMovement() {
+        if (this.isAlive()) {
+            boolean bl;
+            boolean bl2 = bl = this.burnsInDaylight() && this.isAffectedByDaylight();
+            if (bl) {
+                this.setOnFireFor(8);
+            }
+        }
+        super.tickMovement();
+    }
 
     @Override
     public AnimationFactory getFactory() {
