@@ -175,6 +175,11 @@
   "item.dndmod.splint_leggings": "Splint Leggings",
   "item.dndmod.splint_boots": "Splint Boots",
 
+  "item.dndmod.vampire_helmet": "Vampire Armor Helmet",
+  "item.dndmod.vampire_chestplate": "Vampire Armor Chestplate",
+  "item.dndmod.vampire_leggings": "Vampire Armor Leggings",
+  "item.dndmod.vampire_boots": "Vampire Armor Boots",
+
 
   "block.dndmod.ball_bearings": "Ball Bearings",
   "tooltip.dndmod.ball_bearings": "§c!DISCLAIMER!§7 may have issues.",

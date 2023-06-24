@@ -1,6 +1,7 @@
 package net.enderkitty;
 
 import net.enderkitty.block.ModBlocks;
+import net.enderkitty.entity.client.armor.VampireArmorRenderer;
 import net.enderkitty.entity.entities.boats.ModBoatEntities;
 import net.enderkitty.entity.ModEntities;
 import net.enderkitty.entity.client.armor.HalfPlateArmorRenderer;
@@ -42,6 +43,8 @@ public class DndModClient implements ClientModInitializer {
 
         GeoArmorRenderer.registerArmorRenderer(new HalfPlateArmorRenderer(), ModItems.HALF_PLATE_BOOTS,
                 ModItems.HALF_PLATE_LEGGINGS, ModItems.HALF_PLATE_CHESTPLATE, ModItems.HALF_PLATE_HELMET);
+        GeoArmorRenderer.registerArmorRenderer(new VampireArmorRenderer(), ModItems.VAMPIRE_BOOTS,
+                ModItems.VAMPIRE_LEGGINGS, ModItems.VAMPIRE_CHESTPLATE, ModItems.VAMPIRE_HELMET);
 
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BALL_BEARINGS, RenderLayer.getCutout());

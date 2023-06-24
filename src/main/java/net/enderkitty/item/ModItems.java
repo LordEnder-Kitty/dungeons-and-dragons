@@ -92,6 +92,11 @@ public class ModItems {
 //Armor
 
     //Misc
+    public static final Item VAMPIRE_HELMET = registerItem("vampire_helmet", new VampireArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.ARMOR)));
+    public static final Item VAMPIRE_CHESTPLATE = registerItem("vampire_chestplate", new VampireArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.ARMOR)));
+    public static final Item VAMPIRE_LEGGINGS = registerItem("vampire_leggings", new VampireArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.ARMOR)));
+    public static final Item VAMPIRE_BOOTS = registerItem("vampire_boots", new VampireArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.ARMOR)));
+
     public static final Item CLOAK_HELMET = registerItem("cloak_helmet", new DyeableArmorItem(ModArmorMaterials.CLOAK, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.ARMOR)));
     public static final Item CLOAK_CHESTPLATE = registerItem("cloak_chestplate", new DyeableArmorItem(ModArmorMaterials.CLOAK, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.ARMOR)));
     public static final Item CLOAK_LEGGINGS = registerItem("cloak_leggings", new DyeableArmorItem(ModArmorMaterials.CLOAK, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.ARMOR)));

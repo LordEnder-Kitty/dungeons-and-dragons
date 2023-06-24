@@ -26,7 +26,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     SCALE("scale", 10, new int[]{2, 2, 3, 1}, 12,
             SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(ModItems.LEATHER_RINGING);}),
-    HALF_PLATE("half_plate", 15, new int[]{2, 2, 6, 2}, 10,
+    HALF_PLATE("half_plate", 15, new int[]{4, 4, 6, 4}, 10,
     SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(Items.IRON_INGOT);}),
 
