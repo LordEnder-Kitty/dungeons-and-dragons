@@ -41,6 +41,8 @@ public class DndModClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ADVENTURING_TABLE, RenderLayer.getTranslucent());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STONE_STATUE, RenderLayer.getCutout());
+
         GeoArmorRenderer.registerArmorRenderer(new HalfPlateArmorRenderer(), ModItems.HALF_PLATE_BOOTS,
                 ModItems.HALF_PLATE_LEGGINGS, ModItems.HALF_PLATE_CHESTPLATE, ModItems.HALF_PLATE_HELMET);
         GeoArmorRenderer.registerArmorRenderer(new VampireArmorRenderer(), ModItems.VAMPIRE_BOOTS,
@@ -64,6 +66,8 @@ public class DndModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HOP_PLANT, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FOG_BLOCK, RenderLayer.getTranslucent());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MUG_OF_WATER, RenderLayer.getTranslucent());
 
 
         EntityRendererRegistry.register(ModEntities.HOUND, HoundRenderer::new);

@@ -26,9 +26,7 @@ public class AdventuringTableBlock extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static final VoxelShape SHAPE = Stream.of(
-            Block.createCuboidShape(0, 0, 0, 16, 15, 16)
-    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
+    private static final VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 15, 16);
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {

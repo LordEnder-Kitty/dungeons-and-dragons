@@ -194,7 +194,15 @@ public class ModItems {
     public static final Item NETHERITE_DAGGER = registerItem("netherite_dagger", new DaggerNetheriteItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(2068)));
     public static final Item SILVERED_IRON_DAGGER = registerItem("silvered_iron_dagger", new SilveredThrowableItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(678).rarity(Rarity.UNCOMMON)));
 
-    public static final Item GREATCLUB = registerItem("greatclub", new BluntItem((ToolMaterial) ToolMaterials.WOOD, (int) 3.6f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(70)));
+    public static final Item WOODEN_GREATCLUB = registerItem("wooden_greatclub", new BluntItem(ToolMaterials.WOOD, 4f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(70)));
+    public static final Item STONE_GREATCLUB = registerItem("stone_greatclub", new BluntItem(ToolMaterials.STONE, 4.5f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(70)));
+    public static final Item GOLDEN_GREATCLUB = registerItem("golden_greatclub", new BluntItem(ToolMaterials.GOLD, 5f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(70)));
+    public static final Item IRON_GREATCLUB = registerItem("iron_greatclub", new BluntItem(ToolMaterials.IRON, 5.5f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(70)));
+    public static final Item DIAMOND_GREATCLUB = registerItem("diamond_greatclub", new BluntItem(ToolMaterials.DIAMOND, 6f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(70)));
+    public static final Item NETHERITE_GREATCLUB = registerItem("netherite_greatclub", new BluntItem(ToolMaterials.NETHERITE, 6.5f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(70)));
+
+
+
     public static final Item HANDAXE = registerItem("handaxe", new ThrowableItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(94)));
     public static final Item JAVELIN = registerItem("javelin", new TridentItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(128)));
     public static final Item LIGHT_HAMMER = registerItem("light_hammer", new ThrowableItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(110)));

@@ -1,19 +1,11 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "dndmod:block/stone_statue"
-    },
-    "facing=south": {
-      "model": "dndmod:block/stone_statue",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "dndmod:block/stone_statue",
-      "y": 270
-    },
-    "facing=east": {
-      "model": "dndmod:block/stone_statue",
-      "y": 90
-    }
+    "half=lower,facing=north": { "model": "dndmod:block/stone_statue" },
+    "half=lower,facing=east": { "model": "dndmod:block/stone_statue", "y": 90 },
+    "half=lower,facing=south": { "model": "dndmod:block/stone_statue", "y": 180 },
+    "half=lower,facing=west": { "model": "dndmod:block/stone_statue", "y": 270 },
+
+
+    "half=upper": { "model": "dndmod:block/null" }
   }
 }

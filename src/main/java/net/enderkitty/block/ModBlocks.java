@@ -54,7 +54,7 @@ public class ModBlocks {
             .strength(5.6f).requiresTool()), ModItemGroup.MISC);
     public static final Block CRACKED_SILVER_BLOCK = registerBlock("cracked_silver_block", new Block(FabricBlockSettings.of(Material.STONE)
             .strength(5.6f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ModItemGroup.MISC);
-    public static final Block SILVER_STAIRS = registerBlock("silver_stairs", new ModStairsBlock(ModBlocks.SILVER_BLOCK.getDefaultState(),
+    public static final Block SILVER_STAIRS = registerBlock("silver_stairs", new StairsBlock(ModBlocks.SILVER_BLOCK.getDefaultState(),
             FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ModItemGroup.MISC);
     public static final Block SILVER_SLAB = registerBlock("silver_slab", new SlabBlock(FabricBlockSettings.of(Material.METAL)
             .strength(4.0f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ModItemGroup.MISC);
@@ -71,7 +71,7 @@ public class ModBlocks {
             .strength(6f).requiresTool(), UniformIntProvider.create(2, 6)), ModItemGroup.MISC);
     public static final Block NETHERRACK_ELECTRUM_ORE = registerBlock("netherrack_electrum_ore", new OreBlock(FabricBlockSettings.of(Material.STONE)
             .strength(1f).requiresTool().sounds(BlockSoundGroup.NETHER_GOLD_ORE), UniformIntProvider.create(2, 6)), ModItemGroup.MISC);
-    public static final Block ELECTRUM_STAIRS = registerBlock("electrum_stairs", new ModStairsBlock(ModBlocks.SILVER_BLOCK.getDefaultState(),
+    public static final Block ELECTRUM_STAIRS = registerBlock("electrum_stairs", new StairsBlock(ModBlocks.SILVER_BLOCK.getDefaultState(),
             FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool().sounds(BlockSoundGroup.COPPER)), ModItemGroup.MISC);
     public static final Block ELECTRUM_SLAB = registerBlock("electrum_slab", new SlabBlock(FabricBlockSettings.of(Material.METAL)
             .strength(4.0f).requiresTool().sounds(BlockSoundGroup.COPPER)), ModItemGroup.MISC);
@@ -86,12 +86,12 @@ public class ModBlocks {
             .strength(6.5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE), UniformIntProvider.create(1, 3)), ModItemGroup.MISC);
     public static final Block SCULK_PLATINUM_ORE = registerBlock("sculk_platinum_ore", new OreBlock(FabricBlockSettings.of(Material.SCULK)
             .strength(0.2f).sounds(BlockSoundGroup.SCULK_CATALYST), UniformIntProvider.create(1, 5)), ModItemGroup.MISC);
-    public static final Block PLATINUM_STAIRS = registerBlock("platinum_stairs", new ModStairsBlock(ModBlocks.SILVER_BLOCK.getDefaultState(),
+    public static final Block PLATINUM_STAIRS = registerBlock("platinum_stairs", new StairsBlock(ModBlocks.SILVER_BLOCK.getDefaultState(),
             FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool().sounds(BlockSoundGroup.COPPER)), ModItemGroup.MISC);
     public static final Block PLATINUM_SLAB = registerBlock("platinum_slab", new SlabBlock(FabricBlockSettings.of(Material.METAL)
             .strength(4.0f).requiresTool().sounds(BlockSoundGroup.COPPER)), ModItemGroup.MISC);
 
-    public static final Block STONE_STATUE = registerBlock("stone_statue", new StoneStatueBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool().nonOpaque()), ModItemGroup.MISC);
+    public static final Block STONE_STATUE = registerBlock("stone_statue", new StoneStatueBlock(FabricBlockSettings.of(Material.STONE).strength(3f, 3f).requiresTool().nonOpaque()), ModItemGroup.MISC);
 
 
 

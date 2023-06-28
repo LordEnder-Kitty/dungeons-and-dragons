@@ -101,7 +101,13 @@
   "item.dndmod.netherite_dagger": "Netherite Dagger",
   "item.dndmod.silvered_iron_dagger": "Silvered Iron Dagger",
 
-  "item.dndmod.greatclub": "Greatclub",
+  "item.dndmod.wooden_greatclub": "Wooden Greatclub",
+  "item.dndmod.stone_greatclub": "Stone Greatclub",
+  "item.dndmod.golden_greatclub": "Golden Greatclub",
+  "item.dndmod.iron_greatclub": "Iron Greatclub",
+  "item.dndmod.diamond_greatclub": "Diamond Greatclub",
+  "item.dndmod.netherite_greatclub": "Netherite Greatclub",
+
   "item.dndmod.handaxe": "Handaxe",
   "item.dndmod.javelin": "Javelin",
   "item.dndmod.light_hammer": "Light Hammer",
@@ -341,5 +347,6 @@
 
 
   "death.attack.dagger": "%1$s was fucked up by %2$s's dagger",
-  "death.attack.dagger.item": "%1$s was FUCKING MURDERED by %2$s with %3$s"
+  "death.attack.dagger.item": "%1$s was FUCKING MURDERED by %2$s with %3$s",
+  "death.attack.blunt": "%1$s was bludgeoned to death by %2$s"
 }
