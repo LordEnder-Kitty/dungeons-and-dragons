@@ -1,13 +1,13 @@
 {
-  "minecraft:recipes/building_blocks/pink_concrete_powder": {
-    "criteria": {
-      "has_sand": "2023-06-11 20:10:37 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/sandstone": {
     "criteria": {
       "has_sand": "2023-06-11 20:10:36 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pink_concrete_powder": {
+    "criteria": {
+      "has_sand": "2023-06-11 20:10:37 -0500"
     },
     "done": true
   },
@@ -47,9 +47,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/magenta_concrete_powder": {
+  "minecraft:recipes/food/mushroom_stew": {
     "criteria": {
-      "has_sand": "2023-06-11 20:10:37 -0500"
+      "has_bowl": "2023-06-11 20:10:20 -0500"
     },
     "done": true
   },
@@ -59,9 +59,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/mushroom_stew": {
+  "minecraft:recipes/building_blocks/magenta_concrete_powder": {
     "criteria": {
-      "has_bowl": "2023-06-11 20:10:20 -0500"
+      "has_sand": "2023-06-11 20:10:37 -0500"
     },
     "done": true
   },
@@ -101,23 +101,32 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/green_dye": {
+    "criteria": {
+      "has_cactus": "2023-06-28 07:04:52 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cyan_concrete_powder": {
     "criteria": {
       "has_sand": "2023-06-11 20:10:37 -0500"
     },
     "done": true
   },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:beach": "2023-06-11 20:10:25 -0500",
+      "minecraft:river": "2023-06-28 07:03:27 -0500",
+      "minecraft:desert": "2023-06-28 07:03:29 -0500",
+      "minecraft:savanna": "2023-06-28 07:05:34 -0500"
+    },
+    "done": false
+  },
   "minecraft:recipes/building_blocks/glass": {
     "criteria": {
       "has_sand": "2023-06-11 20:10:36 -0500"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:beach": "2023-06-11 20:10:25 -0500"
-    },
-    "done": false
   },
   "DataVersion": 3120
 }

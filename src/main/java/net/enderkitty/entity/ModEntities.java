@@ -1,6 +1,7 @@
 package net.enderkitty.entity;
 
 import net.enderkitty.DndMod;
+import net.enderkitty.bombage.MyBombEntity;
 import net.enderkitty.entity.entities.*;
 import net.enderkitty.entity.entities.HoundEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -64,4 +65,7 @@ public class ModEntities {
             Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "dagger_netherite"),
             FabricEntityTypeBuilder.<DaggerEntityNetherite>create(SpawnGroup.MISC, DaggerEntityNetherite::new)
                     .dimensions(EntityDimensions.fixed(0.4F, 0.4F)).trackRangeBlocks(4).trackedUpdateRate(10).build());
+
+    public static final EntityType<MyBombEntity> MY_BOMB = Registry.register(Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "my_bomb"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MISC, MyBombEntity::new).dimensions(EntityDimensions.changing(1f, 1f)).forceTrackedVelocityUpdates(true).build());
 }

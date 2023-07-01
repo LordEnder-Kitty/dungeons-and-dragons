@@ -279,8 +279,11 @@
   "enchantment.dndmod.lightning": "Lightning",
   "effect.dndmod.freeze": "Frost",
 
-  "item.dndmod.wizard_staff": "Wizard Staff",
-  "item.dndmod.wizard_staff_ice": "Wizard Staff of Frost",
+  "block.dndmod.my_bomb": "Currently Unnamed Bomb",
+
+  "item.dndmod.wizard_staff": "Mages Staff",
+  "tooltip.mage_staff.fireball": "§6Right Click To Shoot A Fireball",
+  "tooltip.mage_staff.freeze": "§3Crouching While Attacking Applies Freeze Effect To Target",
 
   "item.dndmod.ancient_sword": "Ancient Sword",
   "item.dndmod.ancient_axe": "Ancient Axe",
@@ -348,5 +351,7 @@
 
   "death.attack.dagger": "%1$s was fucked up by %2$s's dagger",
   "death.attack.dagger.item": "%1$s was FUCKING MURDERED by %2$s with %3$s",
-  "death.attack.blunt": "%1$s was bludgeoned to death by %2$s"
+  "death.attack.blunt": "%1$s was bludgeoned to death by %2$s",
+
+  "gamerule.doomCommands": "Doom Commands"
 }

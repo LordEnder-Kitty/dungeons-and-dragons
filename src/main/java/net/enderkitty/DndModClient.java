@@ -1,6 +1,8 @@
 package net.enderkitty;
 
 import net.enderkitty.block.ModBlocks;
+import net.enderkitty.bombage.BombEntity;
+import net.enderkitty.bombage.DndModBlockEntityRenderer;
 import net.enderkitty.entity.client.armor.VampireArmorRenderer;
 import net.enderkitty.entity.entities.boats.ModBoatEntities;
 import net.enderkitty.entity.ModEntities;
@@ -17,12 +19,23 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.minecraft.block.BlockState;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.entity.EntityType;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
+import java.util.function.Function;
+
 public class DndModClient implements ClientModInitializer {
+    public static void registryRenders() {
+        registerBlockEntityRender(ModEntities.MY_BOMB, e -> ModBlocks.MY_BOMB.getDefaultState());
+    }
+    private static <T extends BombEntity> void registerBlockEntityRender(EntityType<T> block, Function<T, BlockState> stateGetter) {
+        EntityRendererRegistry.register(block, ctx -> new DndModBlockEntityRenderer<>(ctx, stateGetter));
+    }
+
     @Override
     public void onInitializeClient() {
 
@@ -89,5 +102,6 @@ public class DndModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModBoatEntities.CHEST_BOAT.get(), context -> new ModBoatRenderer<>(context, true));
         ModBoatModel.registerLayers();
 
+        DndModClient.registryRenders();
     }
 }

@@ -21,14 +21,16 @@ public class DoomCommand {
         ServerPlayerEntity player = source.getPlayer();
         assert player != null;
         World world = player.getEntityWorld();
+        if (world.getGameRules().getBoolean(CommandGamerule.DOOM_COMMANDS)) {
 
-        world.playSound(
-                null,
-                player.getBlockPos(),
-                ModSounds.DOOM,
-                SoundCategory.MASTER,
-                20.0f, 1.0f);
+            world.playSound(
+                    null,
+                    player.getBlockPos(),
+                    ModSounds.DOOM,
+                    SoundCategory.MASTER,
+                    20.0f, 1.0f);
 
+        }
         return 1;
     }
 }

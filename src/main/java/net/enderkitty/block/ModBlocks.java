@@ -2,6 +2,7 @@ package net.enderkitty.block;
 
 import net.enderkitty.DndMod;
 import net.enderkitty.block.blocks.*;
+import net.enderkitty.bombage.MyBombBlock;
 import net.enderkitty.item.ModItemGroup;
 import net.enderkitty.world.feature.tree.AlderSaplingGenerator;
 import net.enderkitty.world.feature.tree.AshSaplingGenerator;
@@ -93,6 +94,8 @@ public class ModBlocks {
 
     public static final Block STONE_STATUE = registerBlock("stone_statue", new StoneStatueBlock(FabricBlockSettings.of(Material.STONE).strength(3f, 3f).requiresTool().nonOpaque()), ModItemGroup.MISC);
 
+    public static final Block MY_BOMB = registerBlock("my_bomb", new MyBombBlock(FabricBlockSettings.of(Material.METAL).strength(1f)), ModItemGroup.MISC);
+    public static final Block STRIPMINER = registerBlock("stripminer", new MyBombBlock(FabricBlockSettings.of(Material.METAL).strength(1f)), ModItemGroup.MISC);
 
 
     //The Tavern

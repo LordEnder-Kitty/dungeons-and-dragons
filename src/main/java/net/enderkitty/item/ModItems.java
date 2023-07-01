@@ -20,10 +20,13 @@ import java.util.function.Supplier;
 public class ModItems {
 
     //Marked For Deprecation
+    @Deprecated
     public static final Item RICK_ROLL_MUSIC_DISC = registerItem("rick_roll_music_disc", new MusicDiscItem(7, ModSounds.RICK_ROLL,
             new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC).group(ModItemGroup.MISC), 333));
+    @Deprecated
     public static final Item BLUE_DRAGON_BREATH_WEAPON = registerItem("blue_dragon_breath_weapon",
             new BlueDragonBreathWeaponItem(ToolMaterials.DIAMOND, 4, -1f, new FabricItemSettings().rarity(Rarity.EPIC).maxDamage(-1).group(ModItemGroup.WEAPONS)));
+    @Deprecated
     public static final Item VAMPIRE_FIST = registerItem("vampire_fist", new VampireFistItem(ToolMaterials.STONE, 4, -1f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(-1).rarity(Rarity.EPIC)));
 
@@ -65,8 +68,6 @@ public class ModItems {
     public static final Item MAP5 = registerItem("map5", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
 
     public static final Item WIZARD_STAFF = registerItem("wizard_staff", new WizardStaffItem(ToolMaterials.WOOD, 3, -2f,
-            new FabricItemSettings().maxDamage(-1).rarity(Rarity.RARE).group(ModItemGroup.WEAPONS)));
-    public static final Item WIZARD_STAFF_ICE = registerItem("wizard_staff_ice", new WizardStaffIceItem(ToolMaterials.WOOD, 3, -2f,
             new FabricItemSettings().maxDamage(-1).rarity(Rarity.RARE).group(ModItemGroup.WEAPONS)));
 
 
@@ -144,13 +145,13 @@ public class ModItems {
 //Weapons
 
     //Ancient Weaponry
-    public static final Item ANCIENT_SWORD = registerItem("ancient_sword", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 7f, -2.6f,
+    public static final Item ANCIENT_SWORD = registerItem("ancient_sword", new SwordItem(ToolMaterials.IRON, 7, -2.6f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(-1).rarity(Rarity.EPIC)));
-    public static final Item ANCIENT_AXE = registerItem("ancient_axe", new AxeItem((ToolMaterial) ToolMaterials.IRON, (int) 7f, -2.8f,
+    public static final Item ANCIENT_AXE = registerItem("ancient_axe", new AxeItem(ToolMaterials.IRON, 7f, -2.8f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(-1).rarity(Rarity.EPIC)));
-    public static final Item ANCIENT_MACE = registerItem("ancient_mace", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 7f, -2.6f,
+    public static final Item ANCIENT_MACE = registerItem("ancient_mace", new SwordItem(ToolMaterials.IRON, 7, -2.6f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(-1).rarity(Rarity.EPIC)));
-    public static final Item ANCIENT_STAFF = registerItem("ancient_staff", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 8f, -2.6f,
+    public static final Item ANCIENT_STAFF = registerItem("ancient_staff", new SwordItem(ToolMaterials.IRON, 8, -2.6f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(-1).rarity(Rarity.EPIC)));
     public static final Item ANCIENT_BOW = registerItem("ancient_bow", new BowItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(-1).rarity(Rarity.EPIC)));
 
@@ -161,30 +162,30 @@ public class ModItems {
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(250).rarity(Rarity.UNCOMMON)));
     public static final Item SILVERED_HANDAXE = registerItem("silvered_handaxe", new SilveredThrowableItem(
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(90).rarity(Rarity.UNCOMMON)));
-    public static final Item SILVERED_GLAIVE = registerItem("silvered_glaive", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 5.3f, -2.8f,
+    public static final Item SILVERED_GLAIVE = registerItem("silvered_glaive", new SwordItem(ToolMaterials.IRON, 5, -2.8f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(250).rarity(Rarity.UNCOMMON)));
-    public static final Item SILVERED_GREATSWORD =registerItem("silvered_greatsword", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 5.3f, -3f,
+    public static final Item SILVERED_GREATSWORD =registerItem("silvered_greatsword", new SwordItem(ToolMaterials.IRON, 5, -3f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(280).rarity(Rarity.UNCOMMON)));
-    public static final Item SILVERED_LONGSWORD = registerItem("silvered_longsword", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 5f, -2.8f,
+    public static final Item SILVERED_LONGSWORD = registerItem("silvered_longsword", new SwordItem(ToolMaterials.IRON, 5, -2.8f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(250).rarity(Rarity.UNCOMMON)));
-    public static final Item SILVERED_RAPIER = registerItem("silvered_rapier", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 4f, -2,
+    public static final Item SILVERED_RAPIER = registerItem("silvered_rapier", new SwordItem(ToolMaterials.IRON, 4, -2,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(220).rarity(Rarity.UNCOMMON)));
-    public static final Item SILVERED_SCIMITAR = registerItem("silvered_scimitar", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 4.5f, -2.2f,
+    public static final Item SILVERED_SCIMITAR = registerItem("silvered_scimitar", new SwordItem(ToolMaterials.IRON, 5, -2.2f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(230).rarity(Rarity.UNCOMMON)));
-    public static final Item SILVERED_SHORTSWORD = registerItem("silvered_shortsword", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 4.2f, -2.2f,
+    public static final Item SILVERED_SHORTSWORD = registerItem("silvered_shortsword", new SwordItem(ToolMaterials.IRON, 4, -2.2f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(230).rarity(Rarity.UNCOMMON)));
     public static final Item SILVERED_IRON_SICKLE = registerItem("silvered_iron_sickle", new SwordItem(ToolMaterials.IRON, 4, -2f,
             new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(140)));
 
 
     //Simple Melee Weapons
-    public static final Item WOODEN_CLUB = registerItem("wooden_club", new BluntItem((ToolMaterial) ToolMaterials.WOOD, (int) 3.0f, -2.2f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(68)));
-    public static final Item STONE_CLUB = registerItem("stone_club", new BluntItem((ToolMaterial) ToolMaterials.STONE, (int) 3.5f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(96)));
-    public static final Item GOLDEN_CLUB = registerItem("golden_club", new BluntItem((ToolMaterial) ToolMaterials.GOLD, (int) 4.0f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(60)));
-    public static final Item IRON_CLUB = registerItem("iron_club", new BluntItem((ToolMaterial) ToolMaterials.IRON, (int) 4.5f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(216)));
-    public static final Item DIAMOND_CLUB = registerItem("diamond_club", new BluntItem((ToolMaterial) ToolMaterials.DIAMOND, (int) 5.0f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(436)));
-    public static final Item NETHERITE_CLUB = registerItem("netherite_club", new BluntItem((ToolMaterial) ToolMaterials.NETHERITE, (int) 5.5f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(954)));
-    public static final Item SILVERED_IRON_CLUB = registerItem("silvered_iron_club", new BluntItem((ToolMaterial) ToolMaterials.IRON, (int) 6f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(216)));
+    public static final Item WOODEN_CLUB = registerItem("wooden_club", new BluntItem(ToolMaterials.WOOD, 3.0f, -2.2f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(68)));
+    public static final Item STONE_CLUB = registerItem("stone_club", new BluntItem(ToolMaterials.STONE, 3.5f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(96)));
+    public static final Item GOLDEN_CLUB = registerItem("golden_club", new BluntItem(ToolMaterials.GOLD, 4.0f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(60)));
+    public static final Item IRON_CLUB = registerItem("iron_club", new BluntItem(ToolMaterials.IRON, 4.5f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(216)));
+    public static final Item DIAMOND_CLUB = registerItem("diamond_club", new BluntItem(ToolMaterials.DIAMOND, 5.0f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(436)));
+    public static final Item NETHERITE_CLUB = registerItem("netherite_club", new BluntItem(ToolMaterials.NETHERITE, 5.5f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(954)));
+    public static final Item SILVERED_IRON_CLUB = registerItem("silvered_iron_club", new BluntItem(ToolMaterials.IRON, 6f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(216)));
 
     public static final Item WOODEN_DAGGER = registerItem("wooden_dagger", new DaggerWoodItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(148)));
     public static final Item STONE_DAGGER = registerItem("stone_dagger", new DaggerStoneItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(246)));
@@ -217,22 +218,22 @@ public class ModItems {
 
     //Martial Weapons
     public static final Item BATTLEAXE = registerItem("battleaxe", new AxeItem(ToolMaterials.IRON, 4f, -3f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(244)));
-    public static final Item FLAIL = registerItem("flail", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 3.8f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(238)));
-    public static final Item GLAIVE = registerItem("glaive", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 4f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(258)));
+    public static final Item FLAIL = registerItem("flail", new SwordItem(ToolMaterials.IRON,4, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(238)));
+    public static final Item GLAIVE = registerItem("glaive", new SwordItem(ToolMaterials.IRON, 4, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(258)));
     public static final Item GREATAXE = registerItem("greataxe", new AxeItem(ToolMaterials.IRON, 4.4f, -3f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(256)));
-    public static final Item GREATSWORD =registerItem("greatsword", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 4f, -3f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(284)));
-    public static final Item HALBERD = registerItem("halberd", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 3.8f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(246)));
-    public static final Item LANCE = registerItem("lance", new BluntItem((ToolMaterial) ToolMaterials.IRON, (int) 6.6f, -3.4f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(268)));
-    public static final Item LONGSWORD = registerItem("longsword", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 3.8f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(256)));
-    public static final Item MAUL = registerItem("maul", new BluntItem((ToolMaterial) ToolMaterials.IRON, (int) 3.8f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(248)));
-    public static final Item MORNING_STAR = registerItem("morning_star", new BluntItem((ToolMaterial) ToolMaterials.IRON, (int) 3.8f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(250)));
-    public static final Item PIKE = registerItem("pike", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 4f, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(256)));
-    public static final Item RAPIER = registerItem("rapier", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 3f, -2, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(224)));
-    public static final Item SCIMITAR = registerItem("scimitar", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 3.4f, -2.2f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(234)));
-    public static final Item SHORTSWORD = registerItem("shortsword", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 3.2f, -2.2f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(238)));
-    public static final Item WAR_PICK = registerItem("war_pick", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 3f, -2f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(218)));
-    public static final Item WARHAMMER = registerItem("warhammer", new BluntItem((ToolMaterial) ToolMaterials.IRON, (int) 3.4f, -3f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(264)));
-    public static final Item WHIP = registerItem("whip", new SwordItem((ToolMaterial) ToolMaterials.IRON, (int) 2.8f, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(264)));
+    public static final Item GREATSWORD =registerItem("greatsword", new SwordItem(ToolMaterials.IRON, 4, -3f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(284)));
+    public static final Item HALBERD = registerItem("halberd", new SwordItem(ToolMaterials.IRON, 4, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(246)));
+    public static final Item LANCE = registerItem("lance", new BluntItem(ToolMaterials.IRON, 6.6f, -3.4f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(268)));
+    public static final Item LONGSWORD = registerItem("longsword", new SwordItem(ToolMaterials.IRON, 4, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(256)));
+    public static final Item MAUL = registerItem("maul", new BluntItem(ToolMaterials.IRON, 4, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(248)));
+    public static final Item MORNING_STAR = registerItem("morning_star", new BluntItem(ToolMaterials.IRON, 4, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(250)));
+    public static final Item PIKE = registerItem("pike", new SwordItem(ToolMaterials.IRON, 4, -2.8f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(256)));
+    public static final Item RAPIER = registerItem("rapier", new SwordItem(ToolMaterials.IRON, 3, -2, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(224)));
+    public static final Item SCIMITAR = registerItem("scimitar", new SwordItem(ToolMaterials.IRON, 3, -2.2f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(234)));
+    public static final Item SHORTSWORD = registerItem("shortsword", new SwordItem(ToolMaterials.IRON, 3, -2.2f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(238)));
+    public static final Item WAR_PICK = registerItem("war_pick", new SwordItem(ToolMaterials.IRON, 3, -2f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(218)));
+    public static final Item WARHAMMER = registerItem("warhammer", new BluntItem(ToolMaterials.IRON, 3, -3f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(264)));
+    public static final Item WHIP = registerItem("whip", new SwordItem(ToolMaterials.IRON, 3, -2.6f, new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(264)));
 
     //Martial Ranged Weapons
     public static final Item BLOWGUN = registerItem("blowgun", new BowItem(new FabricItemSettings().group(ModItemGroup.WEAPONS).maxDamage(96)));

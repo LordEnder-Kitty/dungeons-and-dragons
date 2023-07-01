@@ -1,6 +1,7 @@
 package net.enderkitty;
 
 import net.enderkitty.block.ModBlocks;
+import net.enderkitty.commands.CommandGamerule;
 import net.enderkitty.commands.StopDoomCommand;
 import net.enderkitty.commands.DoomCommand;
 import net.enderkitty.effect.ModEffects;
@@ -82,5 +83,6 @@ public class DndMod implements ModInitializer {
             DoomCommand.register(dispatcher);
             StopDoomCommand.register(dispatcher);
         });
+        CommandGamerule.register();
     }
 }
