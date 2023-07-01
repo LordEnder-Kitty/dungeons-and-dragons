@@ -40,33 +40,27 @@ public class DndMod implements ModInitializer {
         ModWorldGen.generateWorldGen();
 
         ModItems.registerModItems();
-        ModBlocks.registerModBlocks();
-
-        ModBlockEntities.registerBlockEntities();
-
         RegisterModPotions.registerPotions();
-
-        GeckoLib.initialize();
-
-        ModLootTableModifiers.modifyLootTables();
-
+        ModRecipes.registerRecipes();
         ModEnchantments.registerModEnchantments();
 
-        ModEffects.registerEffects();
-
-        ModFluids.register();
-
-        ModSounds.registerModSounds();
-
+        ModBlocks.registerModBlocks();
+        ModBlockEntities.registerBlockEntities();
         ModFlammableBlocks.registerFlammableBlocks();
         ModStrippableBlocks.registerStrippables();
+        ModFluids.register();
 
+        ModLootTableModifiers.modifyLootTables();
+        ModSounds.registerModSounds();
+        ModScreenHandlers.registerAllScreenHandlers();
+
+        GeckoLib.initialize();
+        ModEffects.registerEffects();
         ModVillagers.registerVillagers();
         ModVillagers.registerTrades();
-
         ModDamageSources.registerDamageSources();
-
         ModBoatEntities.registerBoatEntities();
+
 
         FabricDefaultAttributeRegistry.register(ModEntities.HOUND, HoundEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.VAMPIRE_SPAWN, VampireSpawnEntity.setAttributes());
@@ -76,8 +70,6 @@ public class DndMod implements ModInitializer {
         FabricDefaultAttributeRegistry.register(ModEntities.PRIEST, PriestEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.DEATH_KNIGHT, DeathKnightEntity.setAttributes());
 
-        ModScreenHandlers.registerAllScreenHandlers();
-        ModRecipes.registerRecipes();
 
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             DoomCommand.register(dispatcher);
