@@ -2,8 +2,8 @@ package net.enderkitty;
 
 import net.enderkitty.block.ModBlocks;
 import net.enderkitty.commands.CommandGamerule;
-import net.enderkitty.commands.StopDoomCommand;
 import net.enderkitty.commands.DoomCommand;
+import net.enderkitty.commands.StopDoomCommand;
 import net.enderkitty.effect.ModEffects;
 import net.enderkitty.enchantment.ModEnchantments;
 import net.enderkitty.entity.ModBlockEntities;
@@ -69,6 +69,7 @@ public class DndMod implements ModInitializer {
         FabricDefaultAttributeRegistry.register(ModEntities.HOSTILE_VILLAGER, HostileVillagerEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.PRIEST, PriestEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.DEATH_KNIGHT, DeathKnightEntity.setAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.BALLISTA, BallistaEntity.setAttributes());
 
 
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {

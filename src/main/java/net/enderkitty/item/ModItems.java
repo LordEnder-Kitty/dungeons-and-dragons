@@ -70,6 +70,8 @@ public class ModItems {
     public static final Item WIZARD_STAFF = registerItem("wizard_staff", new WizardStaffItem(ToolMaterials.WOOD, 3, -2f,
             new FabricItemSettings().maxDamage(-1).rarity(Rarity.RARE).group(ModItemGroup.WEAPONS)));
 
+    public static final Item BALLISTA = registerItem("ballista", new Item(new FabricItemSettings().group(ModItemGroup.MISC)));
+
 
 
     //You meet in a tavern

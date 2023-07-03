@@ -39,6 +39,8 @@ public class ModBlocks {
     public static final Block FOG_BLOCK = registerBlock("fog_block", new Block(FabricBlockSettings.of(Material.WOOL)
             .strength(-1f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)), ModItemGroup.MISC);
 
+    public static final Block ENTITY_SPAWNING_BLOCK = registerBlock("entity_spawning_block", new CustomBlock(FabricBlockSettings.of(Material.WOOD).strength(1f).nonOpaque()), ModItemGroup.MISC);
+
     public static final Block SILVER_BLOCK = registerBlock("silver_block", new Block(FabricBlockSettings.of(Material.METAL)
             .strength(6f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ModItemGroup.MISC);
     public static final Block RAW_SILVER_BLOCK = registerBlock("raw_silver_block", new Block(FabricBlockSettings.of(Material.STONE)

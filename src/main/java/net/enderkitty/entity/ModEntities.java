@@ -68,4 +68,7 @@ public class ModEntities {
 
     public static final EntityType<MyBombEntity> MY_BOMB = Registry.register(Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "my_bomb"),
             FabricEntityTypeBuilder.create(SpawnGroup.MISC, MyBombEntity::new).dimensions(EntityDimensions.changing(1f, 1f)).forceTrackedVelocityUpdates(true).build());
+
+    public static final EntityType<BallistaEntity> BALLISTA = Registry.register(Registry.ENTITY_TYPE, new Identifier(DndMod.MOD_ID, "ballista"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MISC, BallistaEntity::new).dimensions(EntityDimensions.changing(1, 1)).build());
 }

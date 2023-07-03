@@ -1,0 +1,15 @@
+{
+  "minecraft:recipes/misc/diamond": {
+    "criteria": {
+      "has_diamond_block": "2023-07-02 10:52:13 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:beach": "2023-07-02 10:52:20 -0500"
+    },
+    "done": false
+  },
+  "DataVersion": 3120
+}

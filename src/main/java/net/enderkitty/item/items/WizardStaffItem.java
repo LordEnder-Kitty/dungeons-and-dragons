@@ -8,6 +8,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FireballEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.sound.SoundCategory;
@@ -32,20 +33,64 @@ public class WizardStaffItem extends SwordItem {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        ItemStack itemStack = user.getStackInHand(hand);
-        world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_FIRECHARGE_USE, SoundCategory.NEUTRAL, 0.5F, 2);
+        world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_FIRECHARGE_USE, SoundCategory.NEUTRAL, 0.5F, 1);
 
-        if (!world.isClient) {
-            FireballEntity proj = new FireballEntity(EntityType.FIREBALL, world);
-            proj.setPos(user.getX(), user.getEyeY() - .5, user.getZ());
-            proj.setOwner(user);
-          //proj.setVelocity(user, user.getPitch(), user.getYaw(), 0, 4, 1);
-            world.spawnEntity(proj);
+        ItemStack fireCharge = new ItemStack(Items.FIRE_CHARGE);
+        Direction direction = user.getHorizontalFacing();
+
+        /* Middle Fireball */
+        FireballEntity proj = new FireballEntity(EntityType.FIREBALL, world);
+        if (!world.isClient && direction == Direction.NORTH && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj.setPos(user.getX(), user.getEyeY() +1, user.getZ() -2);
+            proj.setOwner(user); world.spawnEntity(proj); user.getInventory().removeOne(fireCharge);
+        } else if (direction == Direction.EAST && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj.setPos(user.getX() +2, user.getEyeY() +1, user.getZ());
+            proj.setOwner(user); world.spawnEntity(proj); user.getInventory().removeOne(fireCharge);;
+        } else if (direction == Direction.SOUTH && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj.setPos(user.getX(), user.getEyeY() +1, user.getZ() +2);
+            proj.setOwner(user); world.spawnEntity(proj); user.getInventory().removeOne(fireCharge);;
+        } else if (direction == Direction.WEST && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj.setPos(user.getX() -2, user.getEyeY() +1, user.getZ());
+            proj.setOwner(user); world.spawnEntity(proj); user.getInventory().removeOne(fireCharge);;
         }
 
-        user.getItemCooldownManager().set(this, 20 * 3);
+        /* Left Fireball */
+        FireballEntity proj2 = new FireballEntity(EntityType.FIREBALL, world);
+        if (!world.isClient && user.isSneaking() && direction == Direction.NORTH && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj2.setPos(user.getX() -2, user.getEyeY() -.5, user.getZ() -2);
+            proj2.setOwner(user); world.spawnEntity(proj2); user.getInventory().removeOne(fireCharge);;
+        } else if (user.isSneaking() && direction == Direction.SOUTH && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj2.setPos(user.getX() -2, user.getEyeY() -.5, user.getZ() +2);
+            proj2.setOwner(user); world.spawnEntity(proj2); user.getInventory().removeOne(fireCharge);;
+        } else if (user.isSneaking() && direction == Direction.EAST && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj2.setPos(user.getX() +2, user.getEyeY() -.5, user.getZ() -2);
+            proj2.setOwner(user); world.spawnEntity(proj2); user.getInventory().removeOne(fireCharge);;
+        } else if (user.isSneaking() && direction == Direction.WEST && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj2.setPos(user.getX() -2, user.getEyeY() -.5, user.getZ() -2);
+            proj2.setOwner(user); world.spawnEntity(proj2); user.getInventory().removeOne(fireCharge);;
+        }
 
-        return TypedActionResult.success(itemStack, world.isClient());
+        /* Right Fireball */
+        FireballEntity proj3 = new FireballEntity(EntityType.FIREBALL, world);
+        if (!world.isClient && user.isSneaking() && direction == Direction.NORTH && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj3.setPos(user.getX() +2, user.getEyeY() -.5, user.getZ() -2);
+            proj3.setOwner(user); world.spawnEntity(proj3); user.getInventory().removeOne(fireCharge);;
+        } else if (user.isSneaking() && direction == Direction.SOUTH && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj3.setPos(user.getX() +2, user.getEyeY() -.5, user.getZ() +2);
+            proj3.setOwner(user);world.spawnEntity(proj3); user.getInventory().removeOne(fireCharge);;
+        } else if (user.isSneaking() && direction == Direction.EAST && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj3.setPos(user.getX() +2, user.getEyeY() -.5, user.getZ() +2);
+            proj3.setOwner(user);world.spawnEntity(proj3); user.getInventory().removeOne(fireCharge);;
+        } else if (user.isSneaking() && direction == Direction.WEST && user.getInventory().count(fireCharge.getItem()) > 0) {
+            proj3.setPos(user.getX() -2, user.getEyeY() -.5, user.getZ() +2);
+            proj3.setOwner(user);world.spawnEntity(proj3); user.getInventory().removeOne(fireCharge);;
+        }
+
+
+        user.getItemCooldownManager().set(this, 20);
+
+        ItemStack thisItemStack = user.getStackInHand(hand);
+        return TypedActionResult.success(thisItemStack, world.isClient());
     }
 
     @Override

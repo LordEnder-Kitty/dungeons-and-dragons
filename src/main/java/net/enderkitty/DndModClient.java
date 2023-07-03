@@ -91,6 +91,8 @@ public class DndModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.PRIEST, PriestRenderer::new);
         EntityRendererRegistry.register(ModEntities.DEATH_KNIGHT, DeathKnightRenderer::new);
 
+        EntityRendererRegistry.register(ModEntities.BALLISTA, BallistaRenderer::new);
+
         EntityRendererRegistry.register(ModEntities.DAGGER_WOOD, DaggerRendererWood::new);
         EntityRendererRegistry.register(ModEntities.DAGGER_STONE, DaggerRendererStone::new);
         EntityRendererRegistry.register(ModEntities.DAGGER_GOLD, DaggerRendererGold::new);
