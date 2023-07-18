@@ -31,15 +31,13 @@ import java.util.List;
 public class ModBlocks {
 
     public static final Block BALL_BEARINGS = registerBlock("ball_bearings", new BallBearingsBlock(FabricBlockSettings.of(Material.METAL)
-            .strength(0.6f).slipperiness(1F).nonOpaque().sounds(BlockSoundGroup.METAL)), ModItemGroup.MISC, "tooltip.dndmod.ball_bearings");
+            .strength(0.6f)/*.slipperiness(1F)*/.nonOpaque().sounds(BlockSoundGroup.METAL)), ModItemGroup.MISC, "tooltip.dndmod.ball_bearings");
     public static final Block ALCHEMY_TABLE = registerBlock("alchemy_table", new AlchemyTableBlock(FabricBlockSettings.of(Material.STONE).strength(2f).nonOpaque()), ModItemGroup.MISC);
     public static final Block ADVENTURING_TABLE = registerBlock("adventuring_table", new AdventuringTableBlock(FabricBlockSettings.of(Material.WOOD)
             .strength(2f).requiresTool().nonOpaque().sounds(BlockSoundGroup.WOOD)), ModItemGroup.MISC, "tooltip.dndmod.adventuring_table");
 
     public static final Block FOG_BLOCK = registerBlock("fog_block", new Block(FabricBlockSettings.of(Material.WOOL)
             .strength(-1f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)), ModItemGroup.MISC);
-
-    public static final Block ENTITY_SPAWNING_BLOCK = registerBlock("entity_spawning_block", new CustomBlock(FabricBlockSettings.of(Material.WOOD).strength(1f).nonOpaque()), ModItemGroup.MISC);
 
     public static final Block SILVER_BLOCK = registerBlock("silver_block", new Block(FabricBlockSettings.of(Material.METAL)
             .strength(6f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ModItemGroup.MISC);
